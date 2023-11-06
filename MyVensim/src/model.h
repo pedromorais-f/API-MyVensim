@@ -14,9 +14,9 @@ class Model{
     vector<System*> systems;
     vector<Flow*> flows;
 public:
-    Model();
     Model(string = "");
     Model(const Model&);
+    Model& operator=(const Model&);
     virtual ~Model();
 
     typedef vector<System*> :: iterator systemsIterator;

@@ -8,16 +8,12 @@
 using namespace std;
 
 class Flow{
-    string name;
     System *begin, *end;
 public:
-    Flow(string="", System* = nullptr, System* = nullptr);
+    Flow(System* = nullptr, System* = nullptr);
     virtual ~Flow();
     Flow (const Flow&);
     Flow& operator=(const Flow&);
-
-    void setName(string);
-    string getName() const;
 
     void setBegin(System*);
     System* getBegin() const;
@@ -25,7 +21,7 @@ public:
     void setEnd(System*);
     System* getEnd() const;
 
-    virtual double setFunction() = 0;
+    virtual double executeFunction() = 0;
 };
 
 

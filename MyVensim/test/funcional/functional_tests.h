@@ -3,12 +3,15 @@
 
 
 #include <iostream>
+#include <assert.h>
+#include <cmath>
+#include "../../src/model.h"
 
 using namespace std;
 
-bool testeLogistico();
-bool testeExponencial();
-bool testeComplexo();
+void logisticTest();
+void exponentialTest();
+void complexTest();
 
 
 #endif
