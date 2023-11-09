@@ -1,10 +1,5 @@
 #include "model.h"
 
-
-Model :: Model(string nome){
-    this->name = name;
-}
-
 Model :: Model(const Model &model){
     name = model.getName();
     systems.insert(systems.begin(), model.systems.begin(), model.systems.end());
@@ -24,6 +19,14 @@ Model& Model :: operator=(const Model &model){
     flows.insert(flows.begin(), model.flows.begin(), model.flows.end());
 
     return *this;
+}
+
+Model :: Model(){
+    name = "";
+}
+
+Model :: Model(string nome){
+    this->name = name;
 }
 
 Model :: ~Model(){}
@@ -73,6 +76,7 @@ bool Model :: remove(System *system){
             return true;
         }
     }
+
     return false;
 }
 
@@ -86,7 +90,6 @@ bool Model :: remove(Flow *flow){
     return false;
 }
 
-
 bool Model :: run(int t_begin, int t_end){
     if(t_begin < 0 || t_end < 0 || t_begin > t_end)
         return false;
@@ -94,7 +97,7 @@ bool Model :: run(int t_begin, int t_end){
 
     double values[flows.size()] = {};
 
-    for (int i = t_begin; i <= t_end; i++){
+    for (int i = t_begin; i < t_end; i++){
        
         flowsIterator it = flowsBegin();
         for (long unsigned int j = 0; j < flows.size(); j++){
@@ -120,14 +123,13 @@ bool Model :: run(int t_begin, int t_end){
 }
 
 void Model :: summary(){
+    cout << "\nModel Summary" << endl;
     
     cout << "------------------------------" << endl;
 
-    cout << "\nModel Summary" << endl;
 
-    for(System *system : this->systems){
+    for(System *system : this->systems)
         cout << *system << endl;
-    }
 
     cout << "------------------------------" << endl;
 }

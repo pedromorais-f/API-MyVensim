@@ -1,5 +1,10 @@
 #include "flow.h"
 
+Flow :: Flow(){
+    begin = nullptr;
+    end = nullptr;
+}
+
 Flow :: Flow(System *begin, System *end){
     this->begin = begin;
     this->end = end;
@@ -21,8 +26,6 @@ Flow& Flow :: operator=(const Flow &flow){
 
     return *this;
 }
-
-
 
 void Flow :: setBegin(System *begin){
     this->begin = begin;

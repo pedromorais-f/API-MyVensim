@@ -1,5 +1,9 @@
 #include "system.h"
 
+System :: System(){
+    name = "";
+    value = 0.0;
+}
 
 System :: System(string name, double value){
     this->name = name;
@@ -40,7 +44,7 @@ double System :: getValue() const{
 }
 
 ostream& operator<<(ostream &out, System &system){
-    out << "\nName:" << system.getName() << endl << "Value:" << system.getValue() << endl;
+    out << "Name:" << system.getName() << endl << "Value:" << system.getValue() << endl;
 
     return out;
 }

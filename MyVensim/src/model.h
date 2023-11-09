@@ -10,13 +10,16 @@
 using namespace std;
 
 class Model{
+protected:
     string name;
     vector<System*> systems;
     vector<Flow*> flows;
-public:
-    Model(string = "");
+private:
     Model(const Model&);
     Model& operator=(const Model&);
+public:
+    Model();
+    Model(string);
     virtual ~Model();
 
     typedef vector<System*> :: iterator systemsIterator;

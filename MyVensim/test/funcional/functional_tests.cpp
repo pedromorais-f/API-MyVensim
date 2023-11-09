@@ -5,7 +5,6 @@ class LogisticFlow : public Flow{
 public:
     LogisticFlow(){}
     LogisticFlow(System *begin, System *end) : Flow(begin, end){}
-    LogisticFlow(const LogisticFlow& lf) : Flow(lf){}
     virtual ~LogisticFlow(){}
 
     double executeFunction(){
@@ -19,7 +18,6 @@ class ExponentialFlow : public Flow{
 public:
     ExponentialFlow(){}
     ExponentialFlow(System *begin, System *end) : Flow(begin, end){}
-    ExponentialFlow(const ExponentialFlow& ef) : Flow(ef){}
     virtual ~ExponentialFlow(){}
 
     double executeFunction(){
@@ -33,7 +31,6 @@ class ComplexFlow : public Flow{
 public:
     ComplexFlow(){}
     ComplexFlow(System *begin, System *end) : Flow(begin, end){}
-    ComplexFlow(const ComplexFlow& cf) : Flow(cf){}
     virtual ~ComplexFlow(){}
 
     double executeFunction(){
@@ -56,12 +53,12 @@ void logisticTest(){
     model.add(&p2);
     model.add(&logistica);
 
-    model.run(1, 100);
+    model.run(0, 100);
 
     model.summary();
 
-    assert(fabs((p1.getValue()) - 88.2167) < 0.0001);
-    assert(fabs((p2.getValue()) - 21.7833) < 0.0001);
+    assert(fabs(round(p1.getValue() * 10000) - 88.2167 * 10000) < 1);
+    assert(fabs(round(p2.getValue() * 10000) - 21.7833 * 10000) < 1);
 
     
     cout << "Logistic Test Passed\n" << endl;
@@ -79,12 +76,12 @@ void exponentialTest(){
     model.add(&pop2);
     model.add(&exponencial);
 
-    model.run(1, 100);
+    model.run(0, 100);
 
     model.summary();
 
-    assert(fabs((pop1.getValue()) - 36.6032) < 0.0001);
-    assert(fabs((pop2.getValue()) - 63.3968) < 0.0001);
+    assert(fabs(round(pop1.getValue() * 10000) - 36.6032 * 10000) < 1);
+    assert(fabs(round(pop2.getValue() * 10000) - 63.3968 * 10000) < 1);
 
     cout << "Exponential Test Passed\n" << endl;
 }
@@ -108,15 +105,15 @@ void complexTest(){
     model.add(&u);
     model.add(&v);
 
-    model.run(1, 100);
+    model.run(0, 100);
 
     model.summary();
 
-    assert(fabs((Q1.getValue()) - 31.8513) < 0.0001);
-    assert(fabs((Q2.getValue()) - 18.4003) < 0.0001);
-    assert(fabs((Q3.getValue()) - 77.1143) < 0.0001);
-    assert(fabs((Q4.getValue()) - 56.1728) < 0.0001);
-    assert(fabs((Q5.getValue()) - 16.4612) < 0.0001);
+    assert(fabs(round(Q1.getValue() * 10000) - 31.8513 * 10000) < 1);
+    assert(fabs(round(Q2.getValue() * 10000) - 18.4003 * 10000) < 1);
+    assert(fabs(round(Q3.getValue() * 10000) - 77.1143 * 10000) < 1);
+    assert(fabs(round(Q4.getValue() * 10000) - 56.1728 * 10000) < 1);
+    assert(fabs(round(Q5.getValue() * 10000) - 16.4612 * 10000) < 1);
 
     cout << "Complex Test Passed" << endl;
 }

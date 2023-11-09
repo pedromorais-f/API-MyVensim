@@ -8,9 +8,11 @@
 using namespace std;
 
 class Flow{
+protected:
     System *begin, *end;
 public:
-    Flow(System* = nullptr, System* = nullptr);
+    Flow();
+    Flow(System*, System*);
     virtual ~Flow();
     Flow (const Flow&);
     Flow& operator=(const Flow&);

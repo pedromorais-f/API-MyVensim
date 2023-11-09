@@ -9,10 +9,12 @@ using namespace std;
 
 
 class System{
+protected:
     string name;
     double value;
 public:
-    System(string = "", double = 0.0);
+    System();
+    System(string, double);
     virtual ~System();
     System(const System&);
     System& operator=(const System&);
