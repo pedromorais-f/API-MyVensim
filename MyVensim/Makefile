@@ -1,6 +1,6 @@
 all: bin/flow.o bin/model.o bin/system.o bin/functional_tests.o bin/mainFTest.o 
 	@g++ bin/flow.o bin/model.o bin/system.o bin/functional_tests.o bin/mainFTest.o -o bin/fTests
-
+	@rm -r bin/*.o
 
 #Functional Tests
 
