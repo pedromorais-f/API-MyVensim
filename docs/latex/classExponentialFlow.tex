@@ -1,0 +1,165 @@
+\doxysection{Exponential\+Flow Class Reference}
+\hypertarget{classExponentialFlow}{}\label{classExponentialFlow}\index{ExponentialFlow@{ExponentialFlow}}
+
+
+Inheritance diagram for Exponential\+Flow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classExponentialFlow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Exponential\+Flow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classExponentialFlow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classExponentialFlow_a1f981db78e6635fd9837648960d8dc8d}{Exponential\+Flow}} ()
+\item 
+\mbox{\hyperlink{classExponentialFlow_a845dfd7dbed6aa1ee512d2ec2dc963aa}{Exponential\+Flow}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})
+\item 
+virtual \mbox{\hyperlink{classExponentialFlow_a277e286dce1aaef6ca7415b83b73d27d}{\texorpdfstring{$\sim$}{\string~}\+Exponential\+Flow}} ()
+\item 
+double \mbox{\hyperlink{classExponentialFlow_ac41a726ed3552ef1c63ee5b6a1c838d6}{execute\+Function}} ()
+\begin{DoxyCompactList}\small\item\em Pure virtual function that must be implemented in derived classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlow_a29b196062af2aeac985f6a307279676a}{Flow}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Constructor that takes two \doxylink{classSystem}{System} objects as parameters. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFlow_a5991efa6e8cf88c4ef2125cc727db333}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlow_a4995436d003d8b696ec5952af104b118}{Flow}} (const \mbox{\hyperlink{classFlow}{Flow}} \&)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlow_ae153a1f37345b026a1e4f5ee88d0d40f}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&)
+\begin{DoxyCompactList}\small\item\em Assignment operator overload. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a89429b1fc6e9e488149162ac65f1e28e}{set\+Begin}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Set the starting system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_aac2dd2df3b6a4c1c4f6ddd2646614b8c}{get\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Get the starting system of the flow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a81a6329485fb4de952647d87a778c751}{set\+End}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Set the ending system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_ab834263c4c10d95c508331e2da71d847}{get\+End}} () const
+\begin{DoxyCompactList}\small\item\em Get the ending system of the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}}
+\begin{DoxyCompactList}\small\item\em Source and Target of the class \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{functional__tests_8cpp_source}{functional\+\_\+tests.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classExponentialFlow_a1f981db78e6635fd9837648960d8dc8d}\label{classExponentialFlow_a1f981db78e6635fd9837648960d8dc8d} 
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Exponential\+Flow\+::\+Exponential\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{functional__tests_8cpp_source}{functional\+\_\+tests.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \{\}}
+
+\end{DoxyCode}
+\Hypertarget{classExponentialFlow_a845dfd7dbed6aa1ee512d2ec2dc963aa}\label{classExponentialFlow_a845dfd7dbed6aa1ee512d2ec2dc963aa} 
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Exponential\+Flow\+::\+Exponential\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{begin,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{functional__tests_8cpp_source}{functional\+\_\+tests.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020\ :\ \mbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}}(\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}},\ \mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})\{\}}
+
+\end{DoxyCode}
+\Hypertarget{classExponentialFlow_a277e286dce1aaef6ca7415b83b73d27d}\label{classExponentialFlow_a277e286dce1aaef6ca7415b83b73d27d} 
+\index{ExponentialFlow@{ExponentialFlow}!````~ExponentialFlow@{\texorpdfstring{$\sim$}{\string~}ExponentialFlow}}
+\index{````~ExponentialFlow@{\texorpdfstring{$\sim$}{\string~}ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ExponentialFlow()}{\string~ExponentialFlow()}}
+{\footnotesize\ttfamily virtual Exponential\+Flow\+::\texorpdfstring{$\sim$}{\string~}\+Exponential\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{functional__tests_8cpp_source}{functional\+\_\+tests.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classExponentialFlow_ac41a726ed3552ef1c63ee5b6a1c838d6}\label{classExponentialFlow_ac41a726ed3552ef1c63ee5b6a1c838d6} 
+\index{ExponentialFlow@{ExponentialFlow}!executeFunction@{executeFunction}}
+\index{executeFunction@{executeFunction}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{executeFunction()}{executeFunction()}}
+{\footnotesize\ttfamily double Exponential\+Flow\+::execute\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Pure virtual function that must be implemented in derived classes. 
+
+Represents the execution of the flow and returns a double value.
+
+\begin{DoxyReturn}{Returns}
+The result of the flow\textquotesingle{}s execution 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFlow_a3e9249aaabe8a49653f212bb18f18d76}{Flow}}.
+
+
+
+Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{functional__tests_8cpp_source}{functional\+\_\+tests.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlow_aac2dd2df3b6a4c1c4f6ddd2646614b8c}{getBegin}}()-\/>\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ value;}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classExponentialFlow_ac41a726ed3552ef1c63ee5b6a1c838d6_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/test/funcional/\mbox{\hyperlink{functional__tests_8cpp}{functional\+\_\+tests.\+cpp}}\end{DoxyCompactItemize}
