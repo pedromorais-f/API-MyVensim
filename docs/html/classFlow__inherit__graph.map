@@ -1,9 +1,9 @@
 <map id="Flow" name="Flow">
-<area shape="rect" id="Node000001" title="Declaration of the class Flow." alt="" coords="179,5,233,31"/>
-<area shape="rect" id="Node000002" href="$classComplexFlow.html" title=" " alt="" coords="5,79,116,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,39,86,81,83,76,169,34"/>
-<area shape="rect" id="Node000003" href="$classExponentialFlow.html" title=" " alt="" coords="141,79,271,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,44,209,79,203,79,203,44"/>
-<area shape="rect" id="Node000004" href="$classLogisticFlow.html" title=" " alt="" coords="296,79,399,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="242,34,325,76,323,81,239,39"/>
+<area shape="rect" id="Node000001" title="Declaration of the class Flow." alt="" coords="181,5,327,271"/>
+<area shape="rect" id="Node000002" href="$classComplexFlow.html" title=" " alt="" coords="5,319,151,444"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,251,125,320,121,317,171,248"/>
+<area shape="rect" id="Node000003" href="$classExponentialFlow.html" title=" " alt="" coords="175,319,333,444"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,284,257,318,251,318,251,284"/>
+<area shape="rect" id="Node000004" href="$classLogisticFlow.html" title=" " alt="" coords="357,319,503,444"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="337,248,387,317,383,320,333,251"/>
 </map>
