@@ -5,7 +5,7 @@
 #include <iostream>
 #include <assert.h>
 #include <cmath>
-#include "../../src/model.h"
+#include "../../src/Model.h"
 
 using namespace std;
 

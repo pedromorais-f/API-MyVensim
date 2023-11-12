@@ -1,4 +1,4 @@
-#include "system.h"
+#include "System.h"
 
 System :: System(){
     name = "";

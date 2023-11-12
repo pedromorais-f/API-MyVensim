@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include "system.h"
+#include "System.h"
 
 using namespace std;
 

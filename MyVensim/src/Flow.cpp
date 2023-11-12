@@ -1,4 +1,4 @@
-#include "flow.h"
+#include "Flow.h"
 
 Flow :: Flow(){
     begin = nullptr;
