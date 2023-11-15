@@ -1,7 +1,0 @@
-<map id="System::getName" name="System::getName">
-<area shape="rect" id="Node000001" title="Get the name of the system." alt="" coords="199,31,337,56"/>
-<area shape="rect" id="Node000002" href="$classSystem.html#ab96adee223ec4fd0da0edeff35ec3599" title="Assignment operator overload." alt="" coords="5,5,151,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,35,151,30,151,25,186,30"/>
-<area shape="rect" id="Node000003" href="$classSystem.html#ac888972ef9b5778076b1cb552320ae52" title="Copy constructor for the System class." alt="" coords="14,55,142,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,56,142,62,142,57,185,51"/>
-</map>

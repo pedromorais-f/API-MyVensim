@@ -1,7 +1,0 @@
-<map id="System::System" name="System::System">
-<area shape="rect" id="Node000001" title="Copy constructor for the System class." alt="" coords="5,31,133,56"/>
-<area shape="rect" id="Node000002" href="$classSystem.html#a47ece132a04247cd74aea11537830bd4" title="Get the name of the system." alt="" coords="181,5,320,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,32,167,27,168,32,134,37"/>
-<area shape="rect" id="Node000003" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="Get the value associated with the system." alt="" coords="183,55,319,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,49,169,54,168,59,133,54"/>
-</map>
