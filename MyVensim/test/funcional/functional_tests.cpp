@@ -63,12 +63,12 @@ void logisticTest(){
     assert(fabs(round(p2.getValue() * 10000) - 21.7833 * 10000) < 1);
 
     
-    cout << "Logistic Test Passed\n" << endl;
-
     delete &model;
     delete &p1;
     delete &p2;
     delete &logistic;
+    cout << "Logistic Test Passed\n" << endl;
+
 }
 
 void exponentialTest(){
@@ -91,12 +91,12 @@ void exponentialTest(){
     assert(fabs(round(pop1.getValue() * 10000) - 36.6032 * 10000) < 1);
     assert(fabs(round(pop2.getValue() * 10000) - 63.3968 * 10000) < 1);
 
-    cout << "Exponential Test Passed\n" << endl;
-
     delete &model;
     delete &pop1;
     delete &pop2;
     delete &exponential;
+    cout << "Exponential Test Passed\n" << endl;
+
 }
 
 void complexTest(){
@@ -137,8 +137,6 @@ void complexTest(){
     assert(fabs(round(Q4.getValue() * 10000) - 56.1728 * 10000) < 1);
     assert(fabs(round(Q5.getValue() * 10000) - 16.4612 * 10000) < 1);
 
-    cout << "Complex Test Passed" << endl;
-
     delete &model;
     delete &Q1;
     delete &Q2;
@@ -151,4 +149,6 @@ void complexTest(){
     delete &t;
     delete &u;
     delete &v;
+    cout << "Complex Test Passed" << endl;
+
 }
