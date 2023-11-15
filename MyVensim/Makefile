@@ -1,5 +1,5 @@
-all: bin/Flow.o bin/Model.o bin/System.o bin/functional_tests.o bin/mainFTest.o 
-	@g++ bin/Flow.o bin/Model.o bin/System.o bin/functional_tests.o bin/mainFTest.o -o bin/fTests
+all: bin/FlowImpl.o bin/ModelImpl.o bin/SystemImpl.o bin/functional_tests.o bin/mainFTest.o 
+	@g++ bin/FlowImpl.o bin/ModelImpl.o bin/SystemImpl.o bin/functional_tests.o bin/mainFTest.o -o bin/fTests
 	@rm -r bin/*.o
 
 #Functional Tests
@@ -16,14 +16,14 @@ bin/functional_tests.o: test/funcional/functional_tests.cpp
 
 #Classes
 
-bin/System.o: src/System.cpp
-	@g++ -c src/System.cpp -o bin/System.o -Wall
+bin/SystemImpl.o: src/SystemImpl.cpp
+	@g++ -c src/SystemImpl.cpp -o bin/SystemImpl.o -Wall
 
 
-bin/Model.o: src/Model.cpp
-	@g++ -c src/Model.cpp -o bin/Model.o -Wall
+bin/ModelImpl.o: src/ModelImpl.cpp
+	@g++ -c src/ModelImpl.cpp -o bin/ModelImpl.o -Wall
 
 
-bin/Flow.o: src/Flow.cpp
-	@g++ -c src/Flow.cpp -o bin/Flow.o -Wall
+bin/FlowImpl.o: src/FlowImpl.cpp
+	@g++ -c src/FlowImpl.cpp -o bin/FlowImpl.o -Wall
 

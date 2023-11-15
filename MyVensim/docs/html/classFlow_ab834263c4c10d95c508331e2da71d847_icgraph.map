@@ -1,0 +1,9 @@
+<map id="Flow::getEnd" name="Flow::getEnd">
+<area shape="rect" id="Node000001" title="Get the ending system of the flow." alt="" coords="269,55,375,80"/>
+<area shape="rect" id="Node000002" href="$classLogisticFlow.html#ab13aa2218e41515991af57a443baee8b" title="Pure virtual function that must be implemented in derived classes." alt="" coords="5,5,221,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,54,221,45,172,33,173,28,222,39,259,49"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a4995436d003d8b696ec5952af104b118" title="Copy constructor for the Flow class." alt="" coords="68,55,159,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="256,70,159,70,159,65,256,65"/>
+<area shape="rect" id="Node000004" href="$classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f" title="Assignment operator overload." alt="" coords="50,104,177,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,86,222,94,169,107,168,101,221,89,255,80"/>
+</map>

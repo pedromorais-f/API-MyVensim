@@ -1,10 +1,10 @@
-#include "functional_tests.h"
+#include "functional_tests.hpp"
 
 
-class LogisticFlow : public Flow{
+class LogisticFlow : public FlowImpl{
 public:
     LogisticFlow(){}
-    LogisticFlow(System *begin, System *end) : Flow(begin, end){}
+    LogisticFlow(System *begin, System *end) : FlowImpl(begin, end){}
     virtual ~LogisticFlow(){}
 
     double executeFunction(){
@@ -14,10 +14,10 @@ public:
     }
 };
 
-class ExponentialFlow : public Flow{
+class ExponentialFlow : public FlowImpl{
 public:
     ExponentialFlow(){}
-    ExponentialFlow(System *begin, System *end) : Flow(begin, end){}
+    ExponentialFlow(System *begin, System *end) : FlowImpl(begin, end){}
     virtual ~ExponentialFlow(){}
 
     double executeFunction(){
@@ -27,10 +27,10 @@ public:
     }
 };
 
-class ComplexFlow : public Flow{
+class ComplexFlow : public FlowImpl{
 public:
     ComplexFlow(){}
-    ComplexFlow(System *begin, System *end) : Flow(begin, end){}
+    ComplexFlow(System *begin, System *end) : FlowImpl(begin, end){}
     virtual ~ComplexFlow(){}
 
     double executeFunction(){
@@ -45,36 +45,44 @@ void logisticTest(){
     
     cout << "\nStarting Logistic Test\n" << endl;
     
-    Model model;
-    System p1("P1", 100.0), p2("P2", 10.0);
-    LogisticFlow logistica(&p1, &p2);
+    Model& model = *new ModelImpl("Logistic Model");
+    System& p1 = *new SystemImpl("P1", 100.0);
+    System& p2 = *new SystemImpl("P2", 10.0);
+    Flow& logistic = *new LogisticFlow(&p1, &p2);
 
     model.add(&p1);
     model.add(&p2);
-    model.add(&logistica);
+    model.add(&logistic);
 
     model.run(0, 100);
 
     model.summary();
+
 
     assert(fabs(round(p1.getValue() * 10000) - 88.2167 * 10000) < 1);
     assert(fabs(round(p2.getValue() * 10000) - 21.7833 * 10000) < 1);
 
     
     cout << "Logistic Test Passed\n" << endl;
+
+    delete &model;
+    delete &p1;
+    delete &p2;
+    delete &logistic;
 }
 
 void exponentialTest(){
     
     cout << "\nStarting Exponential Test\n" << endl;
     
-    Model model;
-    System pop1("POP1", 100.0), pop2("POP2", 0.0);
-    ExponentialFlow exponencial(&pop1, &pop2);
+    Model& model = *new ModelImpl("Exponential Model");
+    System& pop1 = *new SystemImpl("POP1", 100.0);
+    System& pop2 = *new SystemImpl("POP2", 0.0);
+    Flow& exponential = *new ExponentialFlow(&pop1, &pop2);
 
     model.add(&pop1);
     model.add(&pop2);
-    model.add(&exponencial);
+    model.add(&exponential);
 
     model.run(0, 100);
 
@@ -84,14 +92,28 @@ void exponentialTest(){
     assert(fabs(round(pop2.getValue() * 10000) - 63.3968 * 10000) < 1);
 
     cout << "Exponential Test Passed\n" << endl;
+
+    delete &model;
+    delete &pop1;
+    delete &pop2;
+    delete &exponential;
 }
 
 void complexTest(){
     cout << "\nStarting Complex Test\n" << endl;
     
-    Model model;
-    System Q1("Q1", 100.0), Q2("Q2", 0.0), Q3("Q3", 100.0), Q4("Q4", 0.0), Q5("Q5", 0.0);
-    ComplexFlow f(&Q1, &Q2), g(&Q1, &Q3), r(&Q2, &Q5), t(&Q2, &Q3), u(&Q3, &Q4), v(&Q4, &Q1);
+    Model& model = *new ModelImpl("Complex Model");
+    System& Q1 = *new SystemImpl("Q1", 100.0); 
+    System& Q2 = *new SystemImpl("Q2", 0.0);
+    System& Q3 = *new SystemImpl("Q3", 100.0);
+    System& Q4 = *new SystemImpl("Q4", 0.0);
+    System& Q5 = *new SystemImpl("Q5", 0.0);
+    Flow& f = *new ComplexFlow(&Q1, &Q2);
+    Flow& g = *new ComplexFlow(&Q1, &Q3);
+    Flow& r = *new ComplexFlow(&Q2, &Q5);
+    Flow& t = *new ComplexFlow(&Q2, &Q3);
+    Flow& u = *new ComplexFlow(&Q3, &Q4);
+    Flow& v = *new ComplexFlow(&Q4, &Q1);
 
     model.add(&Q1);
     model.add(&Q2);
@@ -116,4 +138,17 @@ void complexTest(){
     assert(fabs(round(Q5.getValue() * 10000) - 16.4612 * 10000) < 1);
 
     cout << "Complex Test Passed" << endl;
+
+    delete &model;
+    delete &Q1;
+    delete &Q2;
+    delete &Q3;
+    delete &Q4;
+    delete &Q5;
+    delete &f;
+    delete &g;
+    delete &r;
+    delete &t;
+    delete &u;
+    delete &v;
 }
