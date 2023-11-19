@@ -1,15 +1,15 @@
 #include "unit_test.hpp"
 
 void run_test_System(){
-    unit_System_constructor_default();
+    unit_System_Constructor_Default();
 
-    unit_System_construtor();
+    unit_System_Construtor();
 
-    unit_System_destrutor();
+    unit_System_Destrutor();
 
-    unit_System_construtor_copy();
+    unit_System_Construtor_Copy();
 
-    unit_System_operator_equals();
+    unit_System_Equals();
 
     unit_System_setName();
 
@@ -19,5 +19,51 @@ void run_test_System(){
 
     unit_System_getValue();
 
-    unit_System_operator_comparison();
+    unit_System_compare();
+}
+
+void run_test_Flow(){
+    unit_Flow_Constructor_Default();
+
+    unit_Flow_Constructor();
+
+    unit_Flow_Destrutor();
+
+    unit_Flow_Construtor_Copy();
+
+    unit_Flow_Equals();
+
+    unit_Flow_setBegin();
+
+    unit_Flow_getBegin();
+
+    unit_Flow_setEnd();
+
+    unit_Flow_getEnd();
+}
+
+void run_test_Model(){
+    unit_Model_Constructor_Default();
+
+    unit_Model_Constructor();
+
+    unit_Model_Destrutor();
+
+    unit_Model_setName();
+
+    unit_Model_getName();
+
+    unit_Model_addSystem();
+
+    unit_Model_addFlow();
+
+    unit_Model_removeSystem();
+
+    unit_Model_removeFlow();
+
+    unit_Model_SystemBeginEnd();
+
+    unit_Model_FlowBeginEnd();
+
+    unit_Model_run();
 }

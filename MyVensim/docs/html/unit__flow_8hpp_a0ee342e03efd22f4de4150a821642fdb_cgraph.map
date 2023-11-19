@@ -1,0 +1,5 @@
+<map id="unit_Flow_getEnd" name="unit_Flow_getEnd">
+<area shape="rect" id="Node000001" title="Unit test for the getEnd method of the Flow class." alt="" coords="5,5,143,31"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a0e8d9a54d44cd150112595fd1068c3c5" title="Pure virtual function to get the ending system of the flow." alt="" coords="191,5,296,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,15,177,15,177,21,143,21"/>
+</map>

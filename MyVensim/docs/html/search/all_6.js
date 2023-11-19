@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['getbegin_0',['getBegin',['../classFlow.html#aac2dd2df3b6a4c1c4f6ddd2646614b8c',1,'Flow']]],
-  ['getend_1',['getEnd',['../classFlow.html#ab834263c4c10d95c508331e2da71d847',1,'Flow']]],
-  ['getname_2',['getname',['../classModel.html#a65e1711255fbab5883708002ef89f773',1,'Model::getName()'],['../classSystem.html#a47ece132a04247cd74aea11537830bd4',1,'System::getName() const']]],
-  ['getvalue_3',['getValue',['../classSystem.html#aa7d17369d1034e7d8643a63f69d1901d',1,'System']]]
+  ['logisticflow_0',['logisticflow',['../classLogisticFlow.html',1,'LogisticFlow'],['../classLogisticFlow.html#ab0f7906cfe1a27e18a4f558124e53ee0',1,'LogisticFlow::LogisticFlow()'],['../classLogisticFlow.html#a19e27a6b25feca2bf2ca809146e89ad2',1,'LogisticFlow::LogisticFlow(System *begin, System *end)'],['../classLogisticFlow.html#ab0f7906cfe1a27e18a4f558124e53ee0',1,'LogisticFlow::LogisticFlow()'],['../classLogisticFlow.html#a19e27a6b25feca2bf2ca809146e89ad2',1,'LogisticFlow::LogisticFlow(System *begin, System *end)'],['../classLogisticFlow.html#a05370e1e359028a7bef7e97b50534ac9',1,'LogisticFlow::LogisticFlow(Flow &amp;flow)'],['../classLogisticFlow.html#ab0f7906cfe1a27e18a4f558124e53ee0',1,'LogisticFlow::LogisticFlow()'],['../classLogisticFlow.html#a19e27a6b25feca2bf2ca809146e89ad2',1,'LogisticFlow::LogisticFlow(System *begin, System *end)'],['../classLogisticFlow.html#a05370e1e359028a7bef7e97b50534ac9',1,'LogisticFlow::LogisticFlow(Flow &amp;flow)']]],
+  ['logistictest_1',['logistictest',['../functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6',1,'logisticTest():&#160;functional_tests.cpp'],['../functional__tests_8hpp.html#a6c242456889f3f38d4f88e34922fada6',1,'logisticTest():&#160;functional_tests.cpp']]]
 ];

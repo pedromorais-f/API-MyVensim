@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['na_20dinamica_20de_20sistemas_0',['framework-para-construcao-de-simulacoes-baseadas-na-dinamica-de-sistemas',['../md_README.html',1,'']]],
-  ['name_1',['name',['../classModel.html#a2d9aef6a80a205a03e4e99b5483af9a0',1,'Model::name'],['../classSystem.html#a29fe2868c0d56fdebc67f1bef5d5cca3',1,'System::name']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../classSystemImpl.html#a91898b778c997ed43a7f58aaa6258210',1,'SystemImpl::operator&lt;&lt;'],['../SystemImpl_8cpp.html#a3b3559d94ed0126898efba9f09d6c970',1,'operator&lt;&lt;():&#160;SystemImpl.cpp']]],
+  ['operator_3d_1',['operator=',['../classFlowImpl.html#a22ed015e864eba17baee68994a3dfd6b',1,'FlowImpl::operator=()'],['../classSystemImpl.html#a21ff1901ed75b0b2e19ee273eaf98ca5',1,'SystemImpl::operator=()']]],
+  ['operator_3d_3d_2',['operator==',['../classFlowImpl.html#a36eb29867b76b4ca4518a0ca78d30f25',1,'FlowImpl::operator==()'],['../classSystemImpl.html#afa9bca3b7c79eff70d01075033549da8',1,'SystemImpl::operator==()']]]
 ];

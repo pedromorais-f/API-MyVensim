@@ -51,6 +51,13 @@ void ModelImpl :: setName(string name){
     this->name = name;
 }
 
+int ModelImpl :: flowsSize(){
+    return flows.size();
+}
+int ModelImpl :: systemsSize(){
+    return systems.size();
+}
+
 string ModelImpl :: getName() const{
     return name;
 }

@@ -1,0 +1,7 @@
+<map id="SystemImpl::operator=" name="SystemImpl::operator=">
+<area shape="rect" id="Node000001" title="Assignment operator overload." alt="" coords="5,31,180,56"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#ab4f23c21832d6bbef462a5a20b296912" title="Pure virtual function to get the name of the system." alt="" coords="228,5,367,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,30,214,26,215,31,181,35"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="229,55,365,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,51,216,55,215,60,180,56"/>
+</map>

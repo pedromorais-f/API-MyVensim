@@ -1,44 +1,44 @@
 \doxysection{functional\+\_\+tests.\+cpp}
-\hypertarget{functional__tests_8cpp_source}{}\label{functional__tests_8cpp_source}\index{MyVensim/test/funcional/functional\_tests.cpp@{MyVensim/test/funcional/functional\_tests.cpp}}
+\hypertarget{functional__tests_8cpp_source}{}\label{functional__tests_8cpp_source}\index{test/funcional/functional\_tests.cpp@{test/funcional/functional\_tests.cpp}}
 \mbox{\hyperlink{functional__tests_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{functional__tests_8h}{functional\_tests.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{functional__tests_8hpp}{functional\_tests.hpp}}"{}}}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00002}00002\ }
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00003}00003\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00004}\mbox{\hyperlink{classLogisticFlow}{00004}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00004}\mbox{\hyperlink{classLogisticFlow}{00004}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}\{}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00005}00005\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00006}\mbox{\hyperlink{classLogisticFlow_ab0f7906cfe1a27e18a4f558124e53ee0}{00006}}\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_ab0f7906cfe1a27e18a4f558124e53ee0}{LogisticFlow}}()\{\}}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00007}\mbox{\hyperlink{classLogisticFlow_a19e27a6b25feca2bf2ca809146e89ad2}{00007}}\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_a19e27a6b25feca2bf2ca809146e89ad2}{LogisticFlow}}(\mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})\ :\ \mbox{\hyperlink{classFlow}{Flow}}(\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}},\ \mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})\{\}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00007}\mbox{\hyperlink{classLogisticFlow_a19e27a6b25feca2bf2ca809146e89ad2}{00007}}\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_a19e27a6b25feca2bf2ca809146e89ad2}{LogisticFlow}}(\mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})\ :\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}(\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}},\ \mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})\{\}}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00008}\mbox{\hyperlink{classLogisticFlow_adabfb4a28ef10f247eda68dc083edef3}{00008}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classLogisticFlow_adabfb4a28ef10f247eda68dc083edef3}{\string~LogisticFlow}}()\{\}}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00009}00009\ }
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00010}\mbox{\hyperlink{classLogisticFlow_ab13aa2218e41515991af57a443baee8b}{00010}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classLogisticFlow_ab13aa2218e41515991af57a443baee8b}{executeFunction}}()\{}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlow_ab834263c4c10d95c508331e2da71d847}{getEnd}}()-\/>\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlowImpl_a7b07f691e98d9f1443041af4dc89878b}{getEnd}}()-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00012}00012\ }
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ value\ *\ (1\ -\/\ value\ /\ 70.0);}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00014}00014\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00015}00015\ \};}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00016}00016\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00017}\mbox{\hyperlink{classExponentialFlow}{00017}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00017}\mbox{\hyperlink{classExponentialFlow}{00017}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}\{}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00018}00018\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00019}\mbox{\hyperlink{classExponentialFlow_a1f981db78e6635fd9837648960d8dc8d}{00019}}\ \ \ \ \ \mbox{\hyperlink{classExponentialFlow_a1f981db78e6635fd9837648960d8dc8d}{ExponentialFlow}}()\{\}}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00020}\mbox{\hyperlink{classExponentialFlow_a845dfd7dbed6aa1ee512d2ec2dc963aa}{00020}}\ \ \ \ \ \mbox{\hyperlink{classExponentialFlow_a845dfd7dbed6aa1ee512d2ec2dc963aa}{ExponentialFlow}}(\mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})\ :\ \mbox{\hyperlink{classFlow}{Flow}}(\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}},\ \mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})\{\}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00020}\mbox{\hyperlink{classExponentialFlow_a845dfd7dbed6aa1ee512d2ec2dc963aa}{00020}}\ \ \ \ \ \mbox{\hyperlink{classExponentialFlow_a845dfd7dbed6aa1ee512d2ec2dc963aa}{ExponentialFlow}}(\mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})\ :\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}(\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}},\ \mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})\{\}}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00021}\mbox{\hyperlink{classExponentialFlow_a277e286dce1aaef6ca7415b83b73d27d}{00021}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classExponentialFlow_a277e286dce1aaef6ca7415b83b73d27d}{\string~ExponentialFlow}}()\{\}}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00022}00022\ }
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00023}\mbox{\hyperlink{classExponentialFlow_ac41a726ed3552ef1c63ee5b6a1c838d6}{00023}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classExponentialFlow_ac41a726ed3552ef1c63ee5b6a1c838d6}{executeFunction}}()\{}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlow_aac2dd2df3b6a4c1c4f6ddd2646614b8c}{getBegin}}()-\/>\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlowImpl_a627c43fe1fc29a2d416d65766305977d}{getBegin}}()-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ value;}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00027}00027\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00028}00028\ \};}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00029}00029\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00030}\mbox{\hyperlink{classComplexFlow}{00030}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classComplexFlow}{ComplexFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00030}\mbox{\hyperlink{classComplexFlow}{00030}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classComplexFlow}{ComplexFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}\{}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00031}00031\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00032}\mbox{\hyperlink{classComplexFlow_a5842ce02ac6229830dbe8895b61891cf}{00032}}\ \ \ \ \ \mbox{\hyperlink{classComplexFlow_a5842ce02ac6229830dbe8895b61891cf}{ComplexFlow}}()\{\}}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00033}\mbox{\hyperlink{classComplexFlow_ae51a86994f81384662c3e2fb81e7115c}{00033}}\ \ \ \ \ \mbox{\hyperlink{classComplexFlow_ae51a86994f81384662c3e2fb81e7115c}{ComplexFlow}}(\mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})\ :\ \mbox{\hyperlink{classFlow}{Flow}}(\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}},\ \mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})\{\}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00033}\mbox{\hyperlink{classComplexFlow_ae51a86994f81384662c3e2fb81e7115c}{00033}}\ \ \ \ \ \mbox{\hyperlink{classComplexFlow_ae51a86994f81384662c3e2fb81e7115c}{ComplexFlow}}(\mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})\ :\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}(\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}},\ \mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})\{\}}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00034}\mbox{\hyperlink{classComplexFlow_a1bcfddcdeceb0c1b9d769879a8271530}{00034}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classComplexFlow_a1bcfddcdeceb0c1b9d769879a8271530}{\string~ComplexFlow}}()\{\}}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00035}00035\ }
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00036}\mbox{\hyperlink{classComplexFlow_a1321de8d4e7789950af6dc9289f47eb2}{00036}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classComplexFlow_a1321de8d4e7789950af6dc9289f47eb2}{executeFunction}}()\{}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlow_aac2dd2df3b6a4c1c4f6ddd2646614b8c}{getBegin}}()-\/>\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlowImpl_a627c43fe1fc29a2d416d65766305977d}{getBegin}}()-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00038}00038\ }
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ value;}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00040}00040\ \ \ \ \ \}}
@@ -49,77 +49,112 @@
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00045}00045\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00046}00046\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Logistic\ Test\(\backslash\)n"{}}\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00047}00047\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\ model;}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\ p1(\textcolor{stringliteral}{"{}P1"{}},\ 100.0),\ p2(\textcolor{stringliteral}{"{}P2"{}},\ 10.0);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}\ logistica(\&p1,\ \&p2);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00051}00051\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00052}00052\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&p1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00053}00053\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&p2);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00054}00054\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&logistica);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00055}00055\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00056}00056\ \ \ \ \ model.\mbox{\hyperlink{classModel_ae28905e784ed85422a0c770b92080e76}{run}}(0,\ 100);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00057}00057\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00058}00058\ \ \ \ \ model.\mbox{\hyperlink{classModel_a7e97de0ef7c2f7eb22c25878a341b469}{summary}}();}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00059}00059\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00060}00060\ \ \ \ \ assert(fabs(round(p1.getValue()\ *\ 10000)\ -\/\ 88.2167\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00061}00061\ \ \ \ \ assert(fabs(round(p2.\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()\ *\ 10000)\ -\/\ 21.7833\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00062}00062\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00063}00063\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00064}00064\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Logistic\ Test\ Passed\(\backslash\)n"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00065}00065\ \}}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00066}00066\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00067}\mbox{\hyperlink{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea}{00067}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea}{exponentialTest}}()\{}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00068}00068\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00069}00069\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Exponential\ Test\(\backslash\)n"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00070}00070\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00071}00071\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\ model;}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00072}00072\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\ pop1(\textcolor{stringliteral}{"{}POP1"{}},\ 100.0),\ pop2(\textcolor{stringliteral}{"{}POP2"{}},\ 0.0);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00073}00073\ \ \ \ \ \mbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}\ exponencial(\&pop1,\ \&pop2);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00074}00074\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00075}00075\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&pop1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00076}00076\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&pop2);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00077}00077\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&exponencial);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00078}00078\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00079}00079\ \ \ \ \ model.\mbox{\hyperlink{classModel_ae28905e784ed85422a0c770b92080e76}{run}}(0,\ 100);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00080}00080\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00081}00081\ \ \ \ \ model.\mbox{\hyperlink{classModel_a7e97de0ef7c2f7eb22c25878a341b469}{summary}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Logistic\ Model"{}});}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ p1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}P1"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ p2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}P2"{}},\ 10.0);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logistic\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&p1,\ \&p2);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00053}00053\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&p1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00054}00054\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&p2);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00055}00055\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&logistic);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00057}00057\ \ \ \ \ model.\mbox{\hyperlink{classModel_a92d3f9f1c9edd642606a4dececd57131}{run}}(0,\ 100);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00059}00059\ \ \ \ \ model.\mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00062}00062\ \ \ \ \ assert(fabs(round(p1.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 88.2167\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00063}00063\ \ \ \ \ assert(fabs(round(p2.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 21.7833\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00065}00065\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00066}00066\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keyword}{delete}\ \&p1;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{keyword}{delete}\ \&p2;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{keyword}{delete}\ \&logistic;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00070}00070\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Logistic\ Test\ Passed\(\backslash\)n"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00074}\mbox{\hyperlink{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea}{00074}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea}{exponentialTest}}()\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00075}00075\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00076}00076\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Exponential\ Test\(\backslash\)n"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00077}00077\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00078}00078\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Exponential\ Model"{}});}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00079}00079\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ pop1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}POP1"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00080}00080\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ pop2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}POP2"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00081}00081\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ exponential\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}(\&pop1,\ \&pop2);}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00082}00082\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00083}00083\ \ \ \ \ assert(fabs(round(pop1.getValue()\ *\ 10000)\ -\/\ 36.6032\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00084}00084\ \ \ \ \ assert(fabs(round(pop2.\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()\ *\ 10000)\ -\/\ 63.3968\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00085}00085\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00086}00086\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Exponential\ Test\ Passed\(\backslash\)n"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00087}00087\ \}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00083}00083\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&pop1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00084}00084\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&pop2);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00085}00085\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&exponential);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00087}00087\ \ \ \ \ model.\mbox{\hyperlink{classModel_a92d3f9f1c9edd642606a4dececd57131}{run}}(0,\ 100);}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00088}00088\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00089}\mbox{\hyperlink{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5}{00089}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5}{complexTest}}()\{}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00090}00090\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Complex\ Test\(\backslash\)n"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00091}00091\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00092}00092\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\ model;}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00093}00093\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\ Q1(\textcolor{stringliteral}{"{}Q1"{}},\ 100.0),\ Q2(\textcolor{stringliteral}{"{}Q2"{}},\ 0.0),\ Q3(\textcolor{stringliteral}{"{}Q3"{}},\ 100.0),\ Q4(\textcolor{stringliteral}{"{}Q4"{}},\ 0.0),\ Q5(\textcolor{stringliteral}{"{}Q5"{}},\ 0.0);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00094}00094\ \ \ \ \ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}\ f(\&Q1,\ \&Q2),\ g(\&Q1,\ \&Q3),\ r(\&Q2,\ \&Q5),\ t(\&Q2,\ \&Q3),\ u(\&Q3,\ \&Q4),\ v(\&Q4,\ \&Q1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00095}00095\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00096}00096\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&Q1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00097}00097\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&Q2);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00098}00098\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&Q3);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00099}00099\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&Q4);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00100}00100\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&Q5);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00101}00101\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&f);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00102}00102\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&g);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00103}00103\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&r);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00104}00104\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&t);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00105}00105\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&u);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00106}00106\ \ \ \ \ model.\mbox{\hyperlink{classModel_ad4fcd314fc1c2f581e8469c8767587bc}{add}}(\&v);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00107}00107\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00108}00108\ \ \ \ \ model.\mbox{\hyperlink{classModel_ae28905e784ed85422a0c770b92080e76}{run}}(0,\ 100);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00109}00109\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00110}00110\ \ \ \ \ model.\mbox{\hyperlink{classModel_a7e97de0ef7c2f7eb22c25878a341b469}{summary}}();}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00111}00111\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00112}00112\ \ \ \ \ assert(fabs(round(Q1.getValue()\ *\ 10000)\ -\/\ 31.8513\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00113}00113\ \ \ \ \ assert(fabs(round(Q2.getValue()\ *\ 10000)\ -\/\ 18.4003\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00114}00114\ \ \ \ \ assert(fabs(round(Q3.getValue()\ *\ 10000)\ -\/\ 77.1143\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00115}00115\ \ \ \ \ assert(fabs(round(Q4.getValue()\ *\ 10000)\ -\/\ 56.1728\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00116}00116\ \ \ \ \ assert(fabs(round(Q5.\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()\ *\ 10000)\ -\/\ 16.4612\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00089}00089\ \ \ \ \ model.\mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00091}00091\ \ \ \ \ assert(fabs(round(pop1.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 36.6032\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00092}00092\ \ \ \ \ assert(fabs(round(pop2.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 63.3968\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00094}00094\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00095}00095\ \ \ \ \ \textcolor{keyword}{delete}\ \&pop1;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00096}00096\ \ \ \ \ \textcolor{keyword}{delete}\ \&pop2;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00097}00097\ \ \ \ \ \textcolor{keyword}{delete}\ \&exponential;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00098}00098\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Exponential\ Test\ Passed\(\backslash\)n"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00100}00100\ \}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00102}\mbox{\hyperlink{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5}{00102}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5}{complexTest}}()\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00103}00103\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Complex\ Test\(\backslash\)n"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00104}00104\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00105}00105\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Complex\ Model"{}});}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00106}00106\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q1"{}},\ 100.0);\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00107}00107\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q2"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00108}00108\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q3\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q3"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00109}00109\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q4\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q4"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00110}00110\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q5\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q5"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00111}00111\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ f\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q1,\ \&Q2);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00112}00112\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ g\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q1,\ \&Q3);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00113}00113\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ r\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q2,\ \&Q5);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00114}00114\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ t\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q2,\ \&Q3);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00115}00115\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ u\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q3,\ \&Q4);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00116}00116\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ v\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q4,\ \&Q1);}
 \DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00117}00117\ }
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00118}00118\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Complex\ Test\ Passed"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00119}00119\ \}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00118}00118\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00119}00119\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q2);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00120}00120\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q3);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00121}00121\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q4);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00122}00122\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q5);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00123}00123\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&f);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00124}00124\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&g);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00125}00125\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&r);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00126}00126\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&t);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00127}00127\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&u);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00128}00128\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&v);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00130}00130\ \ \ \ \ model.\mbox{\hyperlink{classModel_a92d3f9f1c9edd642606a4dececd57131}{run}}(0,\ 100);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00131}00131\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00132}00132\ \ \ \ \ model.\mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00134}00134\ \ \ \ \ assert(fabs(round(Q1.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 31.8513\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00135}00135\ \ \ \ \ assert(fabs(round(Q2.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 18.4003\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00136}00136\ \ \ \ \ assert(fabs(round(Q3.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 77.1143\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00137}00137\ \ \ \ \ assert(fabs(round(Q4.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 56.1728\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00138}00138\ \ \ \ \ assert(fabs(round(Q5.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 16.4612\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00140}00140\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00141}00141\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q1;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00142}00142\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q2;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00143}00143\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q3;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00144}00144\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q4;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00145}00145\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q5;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00146}00146\ \ \ \ \ \textcolor{keyword}{delete}\ \&f;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00147}00147\ \ \ \ \ \textcolor{keyword}{delete}\ \&g;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00148}00148\ \ \ \ \ \textcolor{keyword}{delete}\ \&r;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00149}00149\ \ \ \ \ \textcolor{keyword}{delete}\ \&t;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00150}00150\ \ \ \ \ \textcolor{keyword}{delete}\ \&u;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00151}00151\ \ \ \ \ \textcolor{keyword}{delete}\ \&v;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00152}00152\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Complex\ Test\ Passed"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{functional__tests_8cpp_source_l00154}00154\ \}}
 
 \end{DoxyCode}

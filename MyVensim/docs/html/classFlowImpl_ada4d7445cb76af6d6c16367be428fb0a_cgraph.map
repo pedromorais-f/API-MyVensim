@@ -1,0 +1,7 @@
+<map id="FlowImpl::FlowImpl" name="FlowImpl::FlowImpl">
+<area shape="rect" id="Node000001" title="Copy constructor for the FlowImpl class." alt="" coords="5,31,156,56"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a00cac5efd69c52e5a7ed4e68abfd4509" title="Pure virtual function to get the beginning system of the flow." alt="" coords="204,5,323,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,30,190,25,191,31,157,36"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a0e8d9a54d44cd150112595fd1068c3c5" title="Pure virtual function to get the ending system of the flow." alt="" coords="211,55,316,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,51,197,56,197,61,156,56"/>
+</map>

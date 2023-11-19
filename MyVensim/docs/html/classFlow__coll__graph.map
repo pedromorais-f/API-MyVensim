@@ -1,5 +1,3 @@
 <map id="Flow" name="Flow">
-<area shape="rect" id="Node000001" title="Declaration of the class Flow." alt="" coords="5,328,151,573"/>
-<area shape="rect" id="Node000002" href="$classSystem.html" title="Declaration of the class System." alt="" coords="25,5,131,251"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,251,81,312,75,312,75,251"/>
+<area shape="rect" id="Node000001" title="Abstract base class representing a flow in a system model." alt="" coords="5,5,151,171"/>
 </map>

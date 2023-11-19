@@ -1,0 +1,5 @@
+<map id="FlowImpl::getEnd" name="FlowImpl::getEnd">
+<area shape="rect" id="Node000001" title="Get the ending system of the flow." alt="" coords="269,5,404,31"/>
+<area shape="rect" id="Node000002" href="$classLogisticFlow.html#ab13aa2218e41515991af57a443baee8b" title="Pure virtual function that must be implemented in derived classes." alt="" coords="5,5,221,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,21,222,21,222,15,255,15"/>
+</map>

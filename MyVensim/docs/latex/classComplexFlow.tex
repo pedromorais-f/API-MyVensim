@@ -7,7 +7,7 @@ Inheritance diagram for Complex\+Flow\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=189pt]{classComplexFlow__inherit__graph}
+\includegraphics[height=550pt]{classComplexFlow__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -25,41 +25,48 @@ Collaboration diagram for Complex\+Flow\+:
 \item 
 \mbox{\hyperlink{classComplexFlow_a5842ce02ac6229830dbe8895b61891cf}{Complex\+Flow}} ()
 \item 
-\mbox{\hyperlink{classComplexFlow_ae51a86994f81384662c3e2fb81e7115c}{Complex\+Flow}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})
+\mbox{\hyperlink{classComplexFlow_ae51a86994f81384662c3e2fb81e7115c}{Complex\+Flow}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})
 \item 
 virtual \mbox{\hyperlink{classComplexFlow_a1bcfddcdeceb0c1b9d769879a8271530}{\texorpdfstring{$\sim$}{\string~}\+Complex\+Flow}} ()
 \item 
 double \mbox{\hyperlink{classComplexFlow_a1321de8d4e7789950af6dc9289f47eb2}{execute\+Function}} ()
 \begin{DoxyCompactList}\small\item\em Pure virtual function that must be implemented in derived classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlowImpl_aa835ccb3c368c683aa95d660175a298b}{Flow\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classFlowImpl}{Flow\+Impl} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowImpl_a221d47dd3e90b27f6025c7e35fc63637}{Flow\+Impl}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Constructor that takes two \doxylink{classSystem}{System} objects as parameters. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFlowImpl_a2d91539593b336aee4a19048f8a82e8c}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classFlowImpl}{Flow\+Impl} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowImpl_ada4d7445cb76af6d6c16367be428fb0a}{Flow\+Impl}} (\mbox{\hyperlink{classFlow}{Flow}} \&)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \doxylink{classFlowImpl}{Flow\+Impl} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowImpl}{Flow\+Impl}} \& \mbox{\hyperlink{classFlowImpl_a22ed015e864eba17baee68994a3dfd6b}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&)
+\begin{DoxyCompactList}\small\item\em Assignment operator overload. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowImpl_a8b2a89140290339f2c5c6a79c6da0f5c}{set\+Begin}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Set the starting system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_a627c43fe1fc29a2d416d65766305977d}{get\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Get the starting system of the flow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowImpl_a6583461348e5829675bfd5fe6382329a}{set\+End}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Set the ending system of the flow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_a7b07f691e98d9f1443041af4dc89878b}{get\+End}} () const
+\begin{DoxyCompactList}\small\item\em Get the ending system of the flow. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFlowImpl_a36eb29867b76b4ca4518a0ca78d30f25}{operator==}} (const \mbox{\hyperlink{classFlow}{Flow}} \&) const
+\begin{DoxyCompactList}\small\item\em Overloaded equality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}} ()
-\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFlow_a29b196062af2aeac985f6a307279676a}{Flow}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
-\begin{DoxyCompactList}\small\item\em Constructor that takes two \doxylink{classSystem}{System} objects as parameters. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{classFlow_a5991efa6e8cf88c4ef2125cc727db333}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
-\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFlow_a4995436d003d8b696ec5952af104b118}{Flow}} (const \mbox{\hyperlink{classFlow}{Flow}} \&)
-\begin{DoxyCompactList}\small\item\em Copy constructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlow_ae153a1f37345b026a1e4f5ee88d0d40f}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&)
-\begin{DoxyCompactList}\small\item\em Assignment operator overload. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFlow_a89429b1fc6e9e488149162ac65f1e28e}{set\+Begin}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
-\begin{DoxyCompactList}\small\item\em Set the starting system of the flow. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_aac2dd2df3b6a4c1c4f6ddd2646614b8c}{get\+Begin}} () const
-\begin{DoxyCompactList}\small\item\em Get the starting system of the flow. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFlow_a81a6329485fb4de952647d87a778c751}{set\+End}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
-\begin{DoxyCompactList}\small\item\em Set the ending system of the flow. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_ab834263c4c10d95c508331e2da71d847}{get\+End}} () const
-\begin{DoxyCompactList}\small\item\em Get the ending system of the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}}
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}}
 \item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}}
-\begin{DoxyCompactList}\small\item\em Source and Target of the class \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}}
+\begin{DoxyCompactList}\small\item\em Source and Target systems of the \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -97,7 +104,7 @@ Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00033}{33}} o
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00033\ :\ \mbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}}(\mbox{\hyperlink{classFlow_a4979734ec4f20c155c73e2cd958c3854}{begin}},\ \mbox{\hyperlink{classFlow_a432c147de538e8ef72d7040528b347ef}{end}})\{\}}
+\DoxyCodeLine{00033\ :\ \mbox{\hyperlink{classFlowImpl_aa835ccb3c368c683aa95d660175a298b}{FlowImpl}}(\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}},\ \mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})\{\}}
 
 \end{DoxyCode}
 \Hypertarget{classComplexFlow_a1bcfddcdeceb0c1b9d769879a8271530}\label{classComplexFlow_a1bcfddcdeceb0c1b9d769879a8271530} 
@@ -131,11 +138,11 @@ Pure virtual function that must be implemented in derived classes.
 Represents the execution of the flow and returns a double value.
 
 \begin{DoxyReturn}{Returns}
-The result of the flow\textquotesingle{}s execution 
+The result of the flow\textquotesingle{}s execution. 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classFlow_a3e9249aaabe8a49653f212bb18f18d76}{Flow}}.
+Implements \mbox{\hyperlink{classFlowImpl_a7f3c660150c834afe98bb95f6f5607fd}{Flow\+Impl}}.
 
 
 
@@ -144,13 +151,14 @@ Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00036}{36}} o
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlow_aac2dd2df3b6a4c1c4f6ddd2646614b8c}{getBegin}}()-\/>\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlowImpl_a627c43fe1fc29a2d416d65766305977d}{getBegin}}()-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
 \DoxyCodeLine{00038\ }
 \DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ value;}
 \DoxyCodeLine{00040\ \ \ \ \ \}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -161,4 +169,4 @@ Here is the call graph for this function\+:\nopagebreak
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-My\+Vensim/test/funcional/\mbox{\hyperlink{functional__tests_8cpp}{functional\+\_\+tests.\+cpp}}\end{DoxyCompactItemize}
+test/funcional/\mbox{\hyperlink{functional__tests_8cpp}{functional\+\_\+tests.\+cpp}}\end{DoxyCompactItemize}

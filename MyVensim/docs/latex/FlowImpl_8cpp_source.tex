@@ -1,0 +1,60 @@
+\doxysection{Flow\+Impl.\+cpp}
+\hypertarget{FlowImpl_8cpp_source}{}\label{FlowImpl_8cpp_source}\index{src/FlowImpl.cpp@{src/FlowImpl.cpp}}
+\mbox{\hyperlink{FlowImpl_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{FlowImpl_8hpp}{FlowImpl.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00003}\mbox{\hyperlink{classFlowImpl_aa835ccb3c368c683aa95d660175a298b}{00003}}\ FlowImpl\ ::\ FlowImpl()\{}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00004}00004\ \ \ \ \ begin\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00005}00005\ \ \ \ \ end\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00006}00006\ \}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00008}\mbox{\hyperlink{classFlowImpl_a221d47dd3e90b27f6025c7e35fc63637}{00008}}\ FlowImpl\ ::\ FlowImpl(\mbox{\hyperlink{classSystem}{System}}\ *begin,\ \mbox{\hyperlink{classSystem}{System}}\ *end)\{}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00009}00009\ \ \ \ \ this-\/>begin\ =\ begin;}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00010}00010\ \ \ \ \ this-\/>end\ =\ end;}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00011}00011\ \}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00013}\mbox{\hyperlink{classFlowImpl_a2d91539593b336aee4a19048f8a82e8c}{00013}}\ FlowImpl\ ::\ \string~FlowImpl()\{\}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00015}\mbox{\hyperlink{classFlowImpl_ada4d7445cb76af6d6c16367be428fb0a}{00015}}\ FlowImpl\ ::\ FlowImpl(\mbox{\hyperlink{classFlow}{Flow}}\ \&flow)\{}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00016}00016\ \ \ \ \ begin\ =\ flow.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}();}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00017}00017\ \ \ \ \ end\ =\ flow.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}();}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00020}\mbox{\hyperlink{classFlowImpl_a22ed015e864eba17baee68994a3dfd6b}{00020}}\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}\&\ FlowImpl\ ::\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlow}{Flow}}\ \&flow)\{}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keyword}{this}\ ==\ \&flow)}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00024}00024\ \ \ \ \ begin\ =\ flow.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}();}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00025}00025\ \ \ \ \ end\ =\ flow.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}();}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00030}\mbox{\hyperlink{classFlowImpl_a8b2a89140290339f2c5c6a79c6da0f5c}{00030}}\ \textcolor{keywordtype}{void}\ FlowImpl\ ::\ setBegin(\mbox{\hyperlink{classSystem}{System}}\ *begin)\{}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00031}00031\ \ \ \ \ this-\/>begin\ =\ begin;}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00034}\mbox{\hyperlink{classFlowImpl_a627c43fe1fc29a2d416d65766305977d}{00034}}\ \mbox{\hyperlink{classSystem}{System}}*\ FlowImpl\ ::\ getBegin()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00035}00035\ \ \ \ \ \textcolor{keywordflow}{return}\ begin;}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00038}\mbox{\hyperlink{classFlowImpl_a6583461348e5829675bfd5fe6382329a}{00038}}\ \textcolor{keywordtype}{void}\ FlowImpl\ ::\ setEnd(\mbox{\hyperlink{classSystem}{System}}\ *end)\{}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00039}00039\ \ \ \ \ this-\/>end\ =\ end;}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00040}00040\ \}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00042}\mbox{\hyperlink{classFlowImpl_a7b07f691e98d9f1443041af4dc89878b}{00042}}\ \mbox{\hyperlink{classSystem}{System}}*\ FlowImpl\ ::\ getEnd()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{return}\ end;}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00044}00044\ \}}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00046}\mbox{\hyperlink{classFlowImpl_a36eb29867b76b4ca4518a0ca78d30f25}{00046}}\ \textcolor{keywordtype}{bool}\ FlowImpl\ ::\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlow}{Flow}}\&\ flow)\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{keywordflow}{if}(begin\ !=\ flow.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}())\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00049}00049\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordflow}{if}(end\ !=\ flow.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}())\ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00052}00052\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{FlowImpl_8cpp_source_l00054}00054\ \}}
+
+\end{DoxyCode}

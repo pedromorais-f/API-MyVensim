@@ -12,12 +12,12 @@ SystemImpl :: SystemImpl(string name, double value){
 
 SystemImpl :: ~SystemImpl(){}
 
-SystemImpl :: SystemImpl(SystemImpl &system){
+SystemImpl :: SystemImpl(System &system){
     name = system.getName();
     value = system.getValue();
 }
 
-SystemImpl& SystemImpl :: operator=(const SystemImpl& system){
+SystemImpl& SystemImpl :: operator=(const System& system){
     if(this == &system)
         return *this;
 

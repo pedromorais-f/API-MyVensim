@@ -77,6 +77,10 @@ public:
      */
     flowsIterator flowsEnd();
 
+    int flowsSize();
+    
+    int systemsSize();
+
     /**
      * @brief Set the name of the model
      * @param name The name of the model

@@ -1,0 +1,7 @@
+<map id="unit_System_Construtor" name="unit_System_Construtor">
+<area shape="rect" id="Node000001" title="Unit test for the parameterized constructor of the System class." alt="" coords="5,31,184,56"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#ab4f23c21832d6bbef462a5a20b296912" title="Pure virtual function to get the name of the system." alt="" coords="232,5,371,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,30,218,25,219,31,185,35"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="233,55,369,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,51,220,55,219,61,184,56"/>
+</map>

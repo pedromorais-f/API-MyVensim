@@ -1,0 +1,7 @@
+<map id="unit_Model_removeSystem" name="unit_Model_removeSystem">
+<area shape="rect" id="Node000001" title="Unit test for the removeSystem method of the Model class." alt="" coords="5,31,205,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="266,5,361,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,28,252,23,252,28,206,34"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a9f4cb42b7c0cb3ba5cb0118bc8815de5" title="Remove a System object from the model." alt="" coords="253,55,373,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,52,240,56,239,62,205,58"/>
+</map>

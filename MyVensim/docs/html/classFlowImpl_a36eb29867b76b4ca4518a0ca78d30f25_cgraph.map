@@ -1,0 +1,7 @@
+<map id="FlowImpl::operator==" name="FlowImpl::operator==">
+<area shape="rect" id="Node000001" title="Overloaded equality operator." alt="" coords="5,31,172,56"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a00cac5efd69c52e5a7ed4e68abfd4509" title="Pure virtual function to get the beginning system of the flow." alt="" coords="220,5,339,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,30,206,25,207,30,173,35"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a0e8d9a54d44cd150112595fd1068c3c5" title="Pure virtual function to get the ending system of the flow." alt="" coords="227,55,332,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,51,213,56,213,62,172,57"/>
+</map>

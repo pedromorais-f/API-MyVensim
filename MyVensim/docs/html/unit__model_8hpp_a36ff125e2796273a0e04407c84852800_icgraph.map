@@ -1,0 +1,7 @@
+<map id="unit_Model_SystemBeginEnd" name="unit_Model_SystemBeginEnd">
+<area shape="rect" id="Node000001" title="Unit test for the systemsBegin and systemsEnd methods of the Model class." alt="" coords="279,5,489,31"/>
+<area shape="rect" id="Node000002" href="$unit__test_8cpp.html#a533d06849d453f8f9d0da4a88f2b2061" title="Run unit tests for the Model class." alt="" coords="108,5,231,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,21,231,21,231,15,265,15"/>
+<area shape="rect" id="Node000003" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

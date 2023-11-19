@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['operator_3c_3c_0',['operator&lt;&lt;',['../System_8cpp.html#a5dae3bf6c37a76549701208dffb69e7a',1,'System.cpp']]],
-  ['operator_3d_1',['operator=',['../classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f',1,'Flow::operator=()'],['../classSystem.html#ab96adee223ec4fd0da0edeff35ec3599',1,'System::operator=()']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../SystemImpl_8cpp.html#a3b3559d94ed0126898efba9f09d6c970',1,'SystemImpl.cpp']]],
+  ['operator_3d_1',['operator=',['../classFlowImpl.html#a22ed015e864eba17baee68994a3dfd6b',1,'FlowImpl::operator=()'],['../classSystemImpl.html#a21ff1901ed75b0b2e19ee273eaf98ca5',1,'SystemImpl::operator=()']]],
+  ['operator_3d_3d_2',['operator==',['../classFlowImpl.html#a36eb29867b76b4ca4518a0ca78d30f25',1,'FlowImpl::operator==()'],['../classSystemImpl.html#afa9bca3b7c79eff70d01075033549da8',1,'SystemImpl::operator==()']]]
 ];

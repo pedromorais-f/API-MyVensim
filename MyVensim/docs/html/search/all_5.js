@@ -1,13 +1,7 @@
 var searchData=
 [
-  ['flow_0',['flow',['../classFlow.html',1,'Flow'],['../classFlow.html#ac9975e144e606242748197798e87dd32',1,'Flow::Flow()'],['../classFlow.html#a29b196062af2aeac985f6a307279676a',1,'Flow::Flow(System *, System *)'],['../classFlow.html#a4995436d003d8b696ec5952af104b118',1,'Flow::Flow(const Flow &amp;)']]],
-  ['flow_2ecpp_1',['Flow.cpp',['../Flow_8cpp.html',1,'']]],
-  ['flow_2eh_2',['Flow.h',['../Flow_8h.html',1,'']]],
-  ['flows_3',['flows',['../classModel.html#aa76c9411f1cf6da6f4c696b2feadcb1a',1,'Model']]],
-  ['flowsbegin_4',['flowsBegin',['../classModel.html#acc02efd02990d2d4803b5361717ea0e2',1,'Model']]],
-  ['flowsend_5',['flowsEnd',['../classModel.html#a8c200c14da12922aa9c12d7e2aea2748',1,'Model']]],
-  ['flowsiterator_6',['flowsIterator',['../classModel.html#ac2413a62cd7cbbed3103667f4459a035',1,'Model']]],
-  ['framework_20para_20construcao_20de_20simulacoes_20baseadas_20na_20dinamica_20de_20sistemas_7',['framework-para-construcao-de-simulacoes-baseadas-na-dinamica-de-sistemas',['../md_README.html',1,'']]],
-  ['functional_5ftests_2ecpp_8',['functional_tests.cpp',['../functional__tests_8cpp.html',1,'']]],
-  ['functional_5ftests_2eh_9',['functional_tests.h',['../functional__tests_8h.html',1,'']]]
+  ['getbegin_0',['getbegin',['../classFlow.html#a00cac5efd69c52e5a7ed4e68abfd4509',1,'Flow::getBegin()'],['../classFlowImpl.html#a627c43fe1fc29a2d416d65766305977d',1,'FlowImpl::getBegin()']]],
+  ['getend_1',['getend',['../classFlow.html#a0e8d9a54d44cd150112595fd1068c3c5',1,'Flow::getEnd()'],['../classFlowImpl.html#a7b07f691e98d9f1443041af4dc89878b',1,'FlowImpl::getEnd()']]],
+  ['getname_2',['getname',['../classModel.html#aa5365ab557ae47efffdf14ba7a46dac8',1,'Model::getName()'],['../classModelImpl.html#a027d6617b69c45b92243c3caca352ba5',1,'ModelImpl::getName()'],['../classSystem.html#ab4f23c21832d6bbef462a5a20b296912',1,'System::getName()'],['../classSystemImpl.html#a4407f82b905d49335f76c4a18fbfef8d',1,'SystemImpl::getName()']]],
+  ['getvalue_3',['getvalue',['../classSystem.html#a41b673faa6c199eb8e4f204639fab4f2',1,'System::getValue()'],['../classSystemImpl.html#aa21b5abc7021e73715c06449fea9e08f',1,'SystemImpl::getValue()']]]
 ];

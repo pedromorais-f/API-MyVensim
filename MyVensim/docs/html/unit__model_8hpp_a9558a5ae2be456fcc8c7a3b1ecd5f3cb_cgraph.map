@@ -1,0 +1,7 @@
+<map id="unit_Model_removeFlow" name="unit_Model_removeFlow">
+<area shape="rect" id="Node000001" title="Unit test for the removeFlow method of the Model class." alt="" coords="5,31,188,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="249,5,343,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,29,234,23,235,28,189,34"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a9f4cb42b7c0cb3ba5cb0118bc8815de5" title="Remove a System object from the model." alt="" coords="236,55,356,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,52,223,56,222,61,188,57"/>
+</map>

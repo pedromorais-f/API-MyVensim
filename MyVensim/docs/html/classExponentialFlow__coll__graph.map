@@ -1,7 +1,9 @@
 <map id="ExponentialFlow" name="ExponentialFlow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,623,163,748"/>
-<area shape="rect" id="Node000002" href="$classFlow.html" title="Declaration of the class Flow." alt="" coords="11,328,157,573"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,587,87,622,81,622,81,587"/>
-<area shape="rect" id="Node000003" href="$classSystem.html" title="Declaration of the class System." alt="" coords="31,5,137,251"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,251,87,312,81,312,81,251"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="73,563,230,688"/>
+<area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Concrete implementation of the Flow class." alt="" coords="79,248,224,513"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,527,154,563,149,563,149,527"/>
+<area shape="rect" id="Node000003" href="$classFlow.html" title="Abstract base class representing a flow in a system model." alt="" coords="5,5,151,171"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,183,121,247,116,249,99,185"/>
+<area shape="rect" id="Node000004" href="$classSystem.html" title="Abstract base class representing a system in a model." alt="" coords="175,15,274,161"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="209,162,191,233,186,232,204,160"/>
 </map>

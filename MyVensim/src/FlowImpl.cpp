@@ -12,12 +12,12 @@ FlowImpl :: FlowImpl(System *begin, System *end){
 
 FlowImpl :: ~FlowImpl(){}
 
-FlowImpl :: FlowImpl(const FlowImpl &flow){
+FlowImpl :: FlowImpl(Flow &flow){
     begin = flow.getBegin();
     end = flow.getEnd();
 }
 
-FlowImpl& FlowImpl :: operator=(const FlowImpl &flow){
+FlowImpl& FlowImpl :: operator=(const Flow &flow){
     if(this == &flow)
         return *this;
 
@@ -41,4 +41,14 @@ void FlowImpl :: setEnd(System *end){
 
 System* FlowImpl :: getEnd() const{
     return end;
+}
+
+bool FlowImpl :: operator==(const Flow& flow) const{
+    if(begin != flow.getBegin()) 
+        return false;
+    
+    if(end != flow.getEnd()) 
+        return false;
+    
+    return true;
 }

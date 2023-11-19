@@ -1,6 +1,6 @@
 #include "unit_system.hpp"
 
-void unit_System_constructor_default(){
+void unit_System_Constructor_Default(){
     System& system = *new SystemImpl();
 
     assert(system.getName() == "");
@@ -9,7 +9,7 @@ void unit_System_constructor_default(){
     delete &system;
 }
 
-void unit_System_construtor(){
+void unit_System_Construtor(){
     System& system = *new SystemImpl("System1", 100);
 
     assert(system.getName() == "System1");
@@ -18,13 +18,20 @@ void unit_System_construtor(){
     delete &system;
 }
 
-void unit_System_destrutor(){}
+void unit_System_Destrutor(){}
 
-void unit_System_construtor_copy(){
+void unit_System_Construtor_Copy(){
+    System& system1 = *new SystemImpl("System1", 100);
+    System& system2 = *new SystemImpl(system1);
 
+    assert(system1.getName() == system2.getName());
+    assert(system1.getValue() == system2.getValue());
+
+    delete &system1;
+    delete &system2;
 }
 
-void unit_System_operator_equals(){
+void unit_System_Equals(){
     System& system1 = *new SystemImpl("System1", 100);
     System& system2 = *new SystemImpl("System2", 100);
     System& system3 = system1;
@@ -70,6 +77,11 @@ void unit_System_getValue(){
     delete &system;
 }
 
-void unit_System_operator_comparison(){
+void unit_System_compare(){
+    System& system1 = *new SystemImpl("System1", 100);
+    System& system2 = system1;
 
+    assert(&system1 == &system2); 
+
+    delete &system1;
 }
