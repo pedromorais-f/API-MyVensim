@@ -12,7 +12,7 @@ SystemImpl :: SystemImpl(string name, double value){
 
 SystemImpl :: ~SystemImpl(){}
 
-SystemImpl :: SystemImpl(const SystemImpl &system){
+SystemImpl :: SystemImpl(SystemImpl &system){
     name = system.getName();
     value = system.getValue();
 }
@@ -41,6 +41,16 @@ void SystemImpl :: setValue(double value){
 
 double SystemImpl :: getValue() const{
     return value;
+}
+
+bool SystemImpl :: operator==(const System& system) const{
+    if(name != system.getName()) 
+        return false;
+    
+    if(value != system.getValue()) 
+        return false;
+    
+    return true;
 }
 
 ostream& operator<<(ostream &out, SystemImpl &system){

@@ -39,7 +39,7 @@ public:
      * @brief Copy constructor for the System class
      * @param system The System object to be copied
      */
-    SystemImpl(const SystemImpl&);
+    SystemImpl(SystemImpl&);
 
     /**
      * @brief Assignment operator overload
@@ -71,6 +71,8 @@ public:
      * @return The value associated with the system
      */
     double getValue() const;
+
+    bool operator==(const System&) const;
 
     /**
      * @brief Overloaded << operator to allow for system object to be printed to the ostream
