@@ -39,6 +39,16 @@ public:
      * @return The value of the system.
      */
     virtual double getValue() const = 0;
+
+    /**
+     * @brief Pure virtual function representing the override of the operator "=" of system.
+     */
+    virtual System& operator=(const System&) = 0;
+
+    /**
+     * @brief Pure virtual function representing the override of the operator "==" of system.
+     */
+    virtual bool operator==(const System&) const = 0;
 };
 
 #endif

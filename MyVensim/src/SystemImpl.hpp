@@ -76,14 +76,6 @@ public:
      * @return True if the systems are equal, false otherwise.
      */
     bool operator==(const System&) const;
-
-    /**
-     * @brief Overloaded << operator to allow for a System object to be printed to the ostream.
-     * @param out The output stream.
-     * @param system The System object to be printed.
-     * @return A reference to the output stream.
-     */
-    friend ostream& operator<<(ostream&, SystemImpl&);
 };
 
 #endif

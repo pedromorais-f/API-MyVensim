@@ -41,7 +41,11 @@ virtual void \mbox{\hyperlink{classFlow_acb35a71459c15be848c46923be0e11fa}{set\+
 virtual \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{get\+End}} () const =0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to get the ending system of the flow. \end{DoxyCompactList}\item 
 virtual double \mbox{\hyperlink{classFlow_a3e9249aaabe8a49653f212bb18f18d76}{execute\+Function}} ()=0
-\begin{DoxyCompactList}\small\item\em Pure virtual function representing the execution of the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pure virtual function representing the execution of the flow. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlow_abc7aa7f9178c49badf56c845ef3809ed}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function representing the override of the operator "{}="{} of flow. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classFlow_aafbd677301cdd3ba24754a2035f8f693}{operator==}} (const \mbox{\hyperlink{classFlow}{Flow}} \&) const =0
+\begin{DoxyCompactList}\small\item\em Pure virtual function representing the override of the operator "{}=="{} of flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -139,6 +143,34 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{classFlow_a0e8d9a54d44cd150112595fd1068c3c5_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classFlow_abc7aa7f9178c49badf56c845ef3809ed}\label{classFlow_abc7aa7f9178c49badf56c845ef3809ed} 
+\index{Flow@{Flow}!operator=@{operator=}}
+\index{operator=@{operator=}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classFlow}{Flow}} \& Flow\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow}{Flow}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function representing the override of the operator "{}="{} of flow. 
+
+
+
+Implemented in \mbox{\hyperlink{classFlowImpl_a22ed015e864eba17baee68994a3dfd6b}{Flow\+Impl}}.
+
+\Hypertarget{classFlow_aafbd677301cdd3ba24754a2035f8f693}\label{classFlow_aafbd677301cdd3ba24754a2035f8f693} 
+\index{Flow@{Flow}!operator==@{operator==}}
+\index{operator==@{operator==}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily virtual bool Flow\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow}{Flow}} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function representing the override of the operator "{}=="{} of flow. 
+
+
+
+Implemented in \mbox{\hyperlink{classFlowImpl_a36eb29867b76b4ca4518a0ca78d30f25}{Flow\+Impl}}.
+
 \Hypertarget{classFlow_a0ed1020c54f158d82bf54c5e6da03469}\label{classFlow_a0ed1020c54f158d82bf54c5e6da03469} 
 \index{Flow@{Flow}!setBegin@{setBegin}}
 \index{setBegin@{setBegin}!Flow@{Flow}}

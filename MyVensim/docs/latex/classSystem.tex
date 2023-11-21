@@ -24,7 +24,7 @@ Collaboration diagram for System\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=154pt]{classSystem__coll__graph}
+\includegraphics[width=167pt]{classSystem__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -39,7 +39,11 @@ virtual string \mbox{\hyperlink{classSystem_ab4f23c21832d6bbef462a5a20b296912}{g
 virtual void \mbox{\hyperlink{classSystem_a95e6d4c1ce05b47b5fa743fd2401dd03}{set\+Value}} (double)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to set the value of the system. \end{DoxyCompactList}\item 
 virtual double \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{get\+Value}} () const =0
-\begin{DoxyCompactList}\small\item\em Pure virtual function to get the value of the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pure virtual function to get the value of the system. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classSystem}{System}} \& \mbox{\hyperlink{classSystem_ab73e1ebfa825066444140269d67f66a4}{operator=}} (const \mbox{\hyperlink{classSystem}{System}} \&)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function representing the override of the operator "{}="{} of system. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classSystem_a1ca32416fb75f161e674f8364ca834a7}{operator==}} (const \mbox{\hyperlink{classSystem}{System}} \&) const =0
+\begin{DoxyCompactList}\small\item\em Pure virtual function representing the override of the operator "{}=="{} of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -120,6 +124,34 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{classSystem_a41b673faa6c199eb8e4f204639fab4f2_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classSystem_ab73e1ebfa825066444140269d67f66a4}\label{classSystem_ab73e1ebfa825066444140269d67f66a4} 
+\index{System@{System}!operator=@{operator=}}
+\index{operator=@{operator=}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classSystem}{System}} \& System\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function representing the override of the operator "{}="{} of system. 
+
+
+
+Implemented in \mbox{\hyperlink{classSystemImpl_a21ff1901ed75b0b2e19ee273eaf98ca5}{System\+Impl}}.
+
+\Hypertarget{classSystem_a1ca32416fb75f161e674f8364ca834a7}\label{classSystem_a1ca32416fb75f161e674f8364ca834a7} 
+\index{System@{System}!operator==@{operator==}}
+\index{operator==@{operator==}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily virtual bool System\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function representing the override of the operator "{}=="{} of system. 
+
+
+
+Implemented in \mbox{\hyperlink{classSystemImpl_afa9bca3b7c79eff70d01075033549da8}{System\+Impl}}.
+
 \Hypertarget{classSystem_aacc697c3f09eecce394380a6bde96c34}\label{classSystem_aacc697c3f09eecce394380a6bde96c34} 
 \index{System@{System}!setName@{setName}}
 \index{setName@{setName}!System@{System}}

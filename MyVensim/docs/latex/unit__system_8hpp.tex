@@ -37,45 +37,10 @@ void \mbox{\hyperlink{unit__system_8hpp_a672a51794472bbde676a33115e003b15}{unit\
 void \mbox{\hyperlink{unit__system_8hpp_ac322ab5fd0cd1051b54ffab7177032e6}{unit\+\_\+\+System\+\_\+set\+Value}} ()
 \begin{DoxyCompactList}\small\item\em Unit test for the set\+Value method of the \doxylink{classSystem}{System} class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{unit__system_8hpp_ab320622db511f54344c510a9cfdbff94}{unit\+\_\+\+System\+\_\+get\+Value}} ()
-\begin{DoxyCompactList}\small\item\em Unit test for the get\+Value method of the \doxylink{classSystem}{System} class. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__system_8hpp_abbdcc2ce99b81b553417c28b01017813}{unit\+\_\+\+System\+\_\+compare}} ()
-\begin{DoxyCompactList}\small\item\em Unit test for the comparison of two \doxylink{classSystem}{System} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Unit test for the get\+Value method of the \doxylink{classSystem}{System} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{unit__system_8hpp_abbdcc2ce99b81b553417c28b01017813}\label{unit__system_8hpp_abbdcc2ce99b81b553417c28b01017813} 
-\index{unit\_system.hpp@{unit\_system.hpp}!unit\_System\_compare@{unit\_System\_compare}}
-\index{unit\_System\_compare@{unit\_System\_compare}!unit\_system.hpp@{unit\_system.hpp}}
-\doxysubsubsection{\texorpdfstring{unit\_System\_compare()}{unit\_System\_compare()}}
-{\footnotesize\ttfamily void unit\+\_\+\+System\+\_\+compare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Unit test for the comparison of two \doxylink{classSystem}{System} objects. 
-
-
-
-Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ system1;}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00084\ \ \ \ \ assert(\&system1\ ==\ \&system2);\ }
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{00087\ \}}
-
-\end{DoxyCode}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__system_8hpp_abbdcc2ce99b81b553417c28b01017813_icgraph}
-\end{center}
-\end{figure}
 \Hypertarget{unit__system_8hpp_a4470d6f0246edaf5658ed651a104cb65}\label{unit__system_8hpp_a4470d6f0246edaf5658ed651a104cb65} 
 \index{unit\_system.hpp@{unit\_system.hpp}!unit\_System\_Constructor\_Default@{unit\_System\_Constructor\_Default}}
 \index{unit\_System\_Constructor\_Default@{unit\_System\_Constructor\_Default}!unit\_system.hpp@{unit\_system.hpp}}
@@ -176,21 +141,13 @@ Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00023}{23}} of fil
 \DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
 \DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(system1);}
 \DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ assert(system1.\mbox{\hyperlink{classSystem_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ system2.\mbox{\hyperlink{classSystem_ab4f23c21832d6bbef462a5a20b296912}{getName}}());}
-\DoxyCodeLine{00028\ \ \ \ \ assert(system1.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ ==\ system2.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}());}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{00032\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ assert(system1\ ==\ system2);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
+\DoxyCodeLine{00031\ \}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__system_8hpp_a4eae9b231fa17519e164afb0fa7366e3_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -236,21 +193,18 @@ Unit test for the equality comparison of the \doxylink{classSystem}{System} clas
 
 
 
-Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 100);}
-\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system3\ =\ system1;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ system1;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ assert(system1\ ==\ system2);\ }
 \DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ assert(\&system1\ !=\ \&system2);\ }
-\DoxyCodeLine{00040\ \ \ \ \ assert(\&system1\ ==\ \&system3);\ }
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{00044\ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
+\DoxyCodeLine{00040\ \}}
 
 \end{DoxyCode}
 Here is the caller graph for this function\+:\nopagebreak
@@ -272,17 +226,17 @@ Unit test for the get\+Name method of the \doxylink{classSystem}{System} class.
 
 
 
-Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00055}{55}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{00057\ \ \ \ \ }
-\DoxyCodeLine{00058\ \ \ \ \ assert(system.\mbox{\hyperlink{classSystem_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System1"{}});}
-\DoxyCodeLine{00059\ \ \ \ \ }
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{delete}\ \&system;}
-\DoxyCodeLine{00061\ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{00053\ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ assert(system.\mbox{\hyperlink{classSystem_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System1"{}});}
+\DoxyCodeLine{00055\ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{delete}\ \&system;}
+\DoxyCodeLine{00057\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -311,17 +265,17 @@ Unit test for the get\+Value method of the \doxylink{classSystem}{System} class.
 
 
 
-Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Sistema1"{}},\ 100);}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ \ \ \ \ assert(fabs(round(system.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 100\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{delete}\ \&system;}
-\DoxyCodeLine{00078\ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Sistema1"{}},\ 100);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ assert(fabs(round(system.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 100\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{delete}\ \&system;}
+\DoxyCodeLine{00074\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -350,18 +304,18 @@ Unit test for the set\+Name method of the \doxylink{classSystem}{System} class.
 
 
 
-Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00042}{42}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}();}
-\DoxyCodeLine{00048\ \ \ \ \ system.\mbox{\hyperlink{classSystem_aacc697c3f09eecce394380a6bde96c34}{setName}}(\textcolor{stringliteral}{"{}System1"{}});}
-\DoxyCodeLine{00049\ \ \ \ \ }
-\DoxyCodeLine{00050\ \ \ \ \ assert(system.\mbox{\hyperlink{classSystem_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System1"{}});}
-\DoxyCodeLine{00051\ \ \ \ \ }
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{delete}\ \&system;}
-\DoxyCodeLine{00053\ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}();}
+\DoxyCodeLine{00044\ \ \ \ \ system.\mbox{\hyperlink{classSystem_aacc697c3f09eecce394380a6bde96c34}{setName}}(\textcolor{stringliteral}{"{}System1"{}});}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ assert(system.\mbox{\hyperlink{classSystem_ab4f23c21832d6bbef462a5a20b296912}{getName}}()\ ==\ \textcolor{stringliteral}{"{}System1"{}});}
+\DoxyCodeLine{00047\ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{delete}\ \&system;}
+\DoxyCodeLine{00049\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -390,18 +344,18 @@ Unit test for the set\+Value method of the \doxylink{classSystem}{System} class.
 
 
 
-Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00063}{63}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__system_8cpp_source_l00059}{59}} of file \mbox{\hyperlink{unit__system_8cpp_source}{unit\+\_\+system.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}();}
-\DoxyCodeLine{00065\ \ \ \ \ system.\mbox{\hyperlink{classSystem_a95e6d4c1ce05b47b5fa743fd2401dd03}{setValue}}(100);}
-\DoxyCodeLine{00066\ \ \ \ \ }
-\DoxyCodeLine{00067\ \ \ \ \ assert(fabs(round(system.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 100\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{delete}\ \&system;}
-\DoxyCodeLine{00070\ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}();}
+\DoxyCodeLine{00061\ \ \ \ \ system.\mbox{\hyperlink{classSystem_a95e6d4c1ce05b47b5fa743fd2401dd03}{setValue}}(100);}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ assert(fabs(round(system.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 100\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{delete}\ \&system;}
+\DoxyCodeLine{00066\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak

@@ -75,8 +75,6 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">SystemImpl.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -101,58 +99,6 @@ Include dependency graph for SystemImpl.cpp:</div>
 </div>
 </div>
 <p><a href="SystemImpl_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a3b3559d94ed0126898efba9f09d6c970" id="r_a3b3559d94ed0126898efba9f09d6c970"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b3559d94ed0126898efba9f09d6c970">operator&lt;&lt;</a> (ostream &amp;out, <a class="el" href="classSystemImpl.html">SystemImpl</a> &amp;system)</td></tr>
-<tr class="separator:a3b3559d94ed0126898efba9f09d6c970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a3b3559d94ed0126898efba9f09d6c970" name="a3b3559d94ed0126898efba9f09d6c970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b3559d94ed0126898efba9f09d6c970">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classSystemImpl.html">SystemImpl</a> &amp;&#160;</td>
-          <td class="paramname"><em>system</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out</td><td>The output stream. </td></tr>
-    <tr><td class="paramname">system</td><td>The <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> object to be printed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the output stream. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00056">56</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                     {</div>
-<div class="line"><span class="lineno">   57</span>    out &lt;&lt; <span class="stringliteral">&quot;Name:&quot;</span> &lt;&lt; system.<a class="code hl_function" href="classSystemImpl.html#a4407f82b905d49335f76c4a18fbfef8d">getName</a>() &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;Value:&quot;</span> &lt;&lt; system.<a class="code hl_function" href="classSystemImpl.html#aa21b5abc7021e73715c06449fea9e08f">getValue</a>() &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">   60</span>}</div>
-<div class="ttc" id="aclassSystemImpl_html_a4407f82b905d49335f76c4a18fbfef8d"><div class="ttname"><a href="classSystemImpl.html#a4407f82b905d49335f76c4a18fbfef8d">SystemImpl::getName</a></div><div class="ttdeci">string getName() const</div><div class="ttdoc">Get the name of the system.</div><div class="ttdef"><b>Definition</b> <a href="SystemImpl_8cpp_source.html#l00034">SystemImpl.cpp:34</a></div></div>
-<div class="ttc" id="aclassSystemImpl_html_aa21b5abc7021e73715c06449fea9e08f"><div class="ttname"><a href="classSystemImpl.html#aa21b5abc7021e73715c06449fea9e08f">SystemImpl::getValue</a></div><div class="ttdeci">double getValue() const</div><div class="ttdoc">Get the value associated with the system.</div><div class="ttdef"><b>Definition</b> <a href="SystemImpl_8cpp_source.html#l00042">SystemImpl.cpp:42</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

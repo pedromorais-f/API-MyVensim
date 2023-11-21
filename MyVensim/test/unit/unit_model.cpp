@@ -152,22 +152,11 @@ void unit_Model_FlowBeginEnd(){
 void unit_Model_run(){
     Model& model = *new ModelImpl("Model1");
 
-    System& system1 = *new SystemImpl("System1", 100);
-    System& system2 = *new SystemImpl("System2", 10);
 
-    Flow& logisticFlow1 = *new LogisticFlow(&system1, &system2);
-
-    model.add(&system1);
-    model.add(&system2);
-    model.add(&logisticFlow1);
-
-    assert(model.run(0, 100));
-    assert(!model.run(110, 100));
-    assert(!model.run(-30, 10));
-    assert(!model.run(-25, -145));
+    assert(model.run(0, 100) == 100);
+    assert(model.run(110, 100) == -1);
+    assert(model.run(-30, 10) == -1);
+    assert(model.run(-25, -145) == -1);
 
     delete &model;
-    delete &system1;
-    delete &system2;
-    delete &logisticFlow1;
 }

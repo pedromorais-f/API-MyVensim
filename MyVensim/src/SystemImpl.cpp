@@ -52,9 +52,3 @@ bool SystemImpl :: operator==(const System& system) const{
     
     return true;
 }
-
-ostream& operator<<(ostream &out, SystemImpl &system){
-    out << "Name:" << system.getName() << endl << "Value:" << system.getValue() << endl;
-
-    return out;
-}

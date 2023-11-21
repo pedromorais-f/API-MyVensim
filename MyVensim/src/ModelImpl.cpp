@@ -97,14 +97,15 @@ bool ModelImpl :: remove(Flow *flow){
     return false;
 }
 
-bool ModelImpl :: run(int t_begin, int t_end){
+int ModelImpl :: run(int t_begin, int t_end){
     if(t_begin < 0 || t_end < 0 || t_begin > t_end)
-        return false;
+        return -1;
 
 
     double values[flows.size()] = {};
 
-    for (int i = t_begin; i < t_end; i++){
+    int i;
+    for (i = t_begin; i < t_end; i++){
        
         flowsIterator it = flowsBegin();
         for (long unsigned int j = 0; j < flows.size(); j++){
@@ -125,20 +126,22 @@ bool ModelImpl :: run(int t_begin, int t_end){
         }
     }
 
-    return true;
+    return i;
     
 }
 
-// void ModelImpl :: summary(){
-//     cout << "Model Summary\n" << endl;
+void ModelImpl :: summary(){
+    cout << "Model Summary\n" << endl;
 
-//     cout << name << endl;
+    cout << name << endl;
     
-//     cout << "------------------------------" << endl;
+    cout << "------------------------------" << endl;
 
 
-//     for(System *system : this->systems)
-//         cout << "\n" << *dynamic_cast<SystemImpl*>(system) << endl;
+    for(System *system : this->systems){
+        cout << "\nName:" << system->getName() << endl;
+        cout << "Value:" << system->getValue() << endl;
+    }
 
-//     cout << "------------------------------" << endl;
-// }
+    cout << "------------------------------" << endl;
+}

@@ -98,14 +98,14 @@ public:
      * @brief Run the model for a specified number of iterations.
      * @param t_begin The number of iterations to run.
      * @param t_end The time step for each iteration.
-     * @return True if the model ran successfully, false otherwise.
+     * @return The number of iterations in the model.
      */
-    virtual bool run(int, int) = 0;
+    virtual int run(int, int) = 0;
 
     /**
-     * @brief Print a summary of the model's systems and flows.
+     * @brief Print a summary of the model's systems.
      */
-    //virtual void summary() = 0;
+    virtual void summary() = 0;
 };
 
 #endif

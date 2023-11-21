@@ -5,8 +5,7 @@ var indexSectionsWithContent =
   2: "fmsu",
   3: "acefglmorsu~",
   4: "befnsv",
-  5: "fs",
-  6: "o"
+  5: "fs"
 };
 
 var indexSectionNames =
@@ -16,8 +15,7 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "typedefs",
-  6: "related"
+  5: "typedefs"
 };
 
 var indexSectionLabels =
@@ -27,7 +25,6 @@ var indexSectionLabels =
   2: "Files",
   3: "Functions",
   4: "Variables",
-  5: "Typedefs",
-  6: "Friends"
+  5: "Typedefs"
 };
 

@@ -46,6 +46,16 @@ public:
      * @return The result of the flow's execution, of type double.
      */
     virtual double executeFunction() = 0;
+
+    /**
+     * @brief Pure virtual function representing the override of the operator "=" of flow.
+     */
+    virtual Flow& operator=(const Flow&) = 0;
+
+    /**
+     * @brief Pure virtual function representing the override of the operator "==" of flow.
+     */
+    virtual bool operator==(const Flow&) const = 0;
 };
 
 #endif

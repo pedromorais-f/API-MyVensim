@@ -11,8 +11,7 @@ Abstract base class representing a model with systems and flows.
 
 
 
-Inheritance diagram for Model\+:
-\nopagebreak
+Inheritance diagram for Model\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Model\+:
 \end{figure}
 
 
-Collaboration diagram for Model\+:
-\nopagebreak
+Collaboration diagram for Model\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -65,8 +63,10 @@ virtual bool \mbox{\hyperlink{classModel_a9f4cb42b7c0cb3ba5cb0118bc8815de5}{remo
 \begin{DoxyCompactList}\small\item\em Remove a \doxylink{classSystem}{System} object from the model. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classModel_a9bc6d369f92ba6368227e2d3a9838e4a}{remove}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*})=0
 \begin{DoxyCompactList}\small\item\em Remove a \doxylink{classFlow}{Flow} object from the model. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{classModel_a92d3f9f1c9edd642606a4dececd57131}{run}} (int, int)=0
-\begin{DoxyCompactList}\small\item\em Run the model for a specified number of iterations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual int \mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}} (int, int)=0
+\begin{DoxyCompactList}\small\item\em Run the model for a specified number of iterations. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}} ()=0
+\begin{DoxyCompactList}\small\item\em Print a summary of the model\textquotesingle{}s systems. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -328,11 +328,11 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{classModel_a9f4cb42b7c0cb3ba5cb0118bc8815de5_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classModel_a92d3f9f1c9edd642606a4dececd57131}\label{classModel_a92d3f9f1c9edd642606a4dececd57131} 
+\Hypertarget{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}\label{classModel_a4ff5eb3fd50c1853d975bd1e39736c63} 
 \index{Model@{Model}!run@{run}}
 \index{run@{run}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
-{\footnotesize\ttfamily virtual bool Model\+::run (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual int Model\+::run (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -346,17 +346,17 @@ Run the model for a specified number of iterations.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-True if the model ran successfully, false otherwise. 
+The number of iterations in the model. 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelImpl_af6edbdda3958ab4bbe16eb088cfa3cfa}{Model\+Impl}}.
+Implemented in \mbox{\hyperlink{classModelImpl_a9f67e5631ddc2367d7fe428c23a683ea}{Model\+Impl}}.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classModel_a92d3f9f1c9edd642606a4dececd57131_icgraph}
+\includegraphics[width=350pt]{classModel_a4ff5eb3fd50c1853d975bd1e39736c63_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_a2a4f26712202b3ffff7fcf0ad63f2d42}\label{classModel_a2a4f26712202b3ffff7fcf0ad63f2d42} 
@@ -383,6 +383,28 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classModel_a2a4f26712202b3ffff7fcf0ad63f2d42_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_a019a2458da608586cbec1cb51b0cbc3c}\label{classModel_a019a2458da608586cbec1cb51b0cbc3c} 
+\index{Model@{Model}!summary@{summary}}
+\index{summary@{summary}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{summary()}{summary()}}
+{\footnotesize\ttfamily virtual void Model\+::summary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Print a summary of the model\textquotesingle{}s systems. 
+
+
+
+Implemented in \mbox{\hyperlink{classModelImpl_aeabfa48e76fe9c18951ab2f1ad86ebea}{Model\+Impl}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_a019a2458da608586cbec1cb51b0cbc3c_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_a5cf4d533a7ac8752b9f6cab20e7d6f41}\label{classModel_a5cf4d533a7ac8752b9f6cab20e7d6f41} 

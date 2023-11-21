@@ -1,14 +1,7 @@
 #ifndef MODELIMPL_H
 #define MODELIMPL_H
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include "System.hpp"
-#include "Flow.hpp"
 #include "Model.hpp"
-//#include "SystemImpl.hpp"
-#include <typeinfo>
 
 using namespace std;
 
@@ -125,14 +118,14 @@ public:
      * @brief Run the model for a specified number of iterations
      * @param t_begin The number of iterations to run
      * @param t_end The time step for each iteration
-     * @return True if the model ran successfully, false otherwise
+     * @return The number of iterations in the model
      */
-    bool run(int, int);
+    int run(int, int);
 
     /**
-     * @brief Print a summary of the model's systems and flows
+     * @brief Print a summary of the model's systems
      */
-    //void summary();
+    void summary();
 };
 
 #endif

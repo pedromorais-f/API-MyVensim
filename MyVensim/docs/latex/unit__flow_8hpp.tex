@@ -149,23 +149,15 @@ Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00043}{43}} of file 
 \DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
 \DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(logisticflow1);}
 \DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}()\ ==\ logisticflow2.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}());}
-\DoxyCodeLine{00051\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}()\ ==\ logisticflow2.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}());}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow2;}
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{00057\ \}}
+\DoxyCodeLine{00050\ \ \ \ \ assert(logisticflow1\ ==\ logisticflow2);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow2;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
+\DoxyCodeLine{00056\ \}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__flow_8hpp_ad7c6eb53d0fef33d1dddb14937d9e1b2_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -211,21 +203,21 @@ Unit test for the equality comparison of the \doxylink{classFlow}{Flow} class.
 
 
 
-Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00059}{59}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
-\DoxyCodeLine{00062\ }
-\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
-\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow2\ =\ logisticflow1;}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ \ \ \ \ assert(\&logisticflow1\ ==\ \&logisticflow2);}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{00069\ \}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow2\ =\ logisticflow1;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ assert(logisticflow1\ ==\ logisticflow2);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
+\DoxyCodeLine{00068\ \}}
 
 \end{DoxyCode}
 Here is the caller graph for this function\+:\nopagebreak
@@ -247,21 +239,21 @@ Unit test for the get\+Begin method of the \doxylink{classFlow}{Flow} class.
 
 
 
-Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00083}{83}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00082}{82}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
-\DoxyCodeLine{00086\ }
-\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
-\DoxyCodeLine{00088\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}()\ ==\ \&system1);}
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{00093\ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
+\DoxyCodeLine{00087\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}()\ ==\ \&system1);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
+\DoxyCodeLine{00092\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -290,21 +282,21 @@ Unit test for the get\+End method of the \doxylink{classFlow}{Flow} class.
 
 
 
-Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00107}{107}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00106}{106}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
-\DoxyCodeLine{00112\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}()\ ==\ \&system2);}
-\DoxyCodeLine{00113\ }
-\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{00117\ \}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
+\DoxyCodeLine{00111\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}()\ ==\ \&system2);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
+\DoxyCodeLine{00116\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -333,21 +325,21 @@ Unit test for the set\+Begin method of the \doxylink{classFlow}{Flow} class.
 
 
 
-Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00071}{71}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00070}{70}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{00073\ }
-\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}();}
-\DoxyCodeLine{00075\ \ \ \ \ logisticflow1.\mbox{\hyperlink{classFlow_a0ed1020c54f158d82bf54c5e6da03469}{setBegin}}(\&system1);}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00077\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}()\ ==\ \&system1);}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{00081\ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}();}
+\DoxyCodeLine{00074\ \ \ \ \ logisticflow1.\mbox{\hyperlink{classFlow_a0ed1020c54f158d82bf54c5e6da03469}{setBegin}}(\&system1);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}()\ ==\ \&system1);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
+\DoxyCodeLine{00080\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
@@ -376,21 +368,21 @@ Unit test for the set\+End method of the \doxylink{classFlow}{Flow} class.
 
 
 
-Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00095}{95}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
+Definition at line \mbox{\hyperlink{unit__flow_8cpp_source_l00094}{94}} of file \mbox{\hyperlink{unit__flow_8cpp_source}{unit\+\_\+flow.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{00097\ }
-\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}();}
-\DoxyCodeLine{00099\ \ \ \ \ logisticflow1.\mbox{\hyperlink{classFlow_acb35a71459c15be848c46923be0e11fa}{setEnd}}(\&system1);}
-\DoxyCodeLine{00100\ }
-\DoxyCodeLine{00101\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}()\ ==\ \&system1);}
-\DoxyCodeLine{00102\ }
-\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{00105\ \}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}();}
+\DoxyCodeLine{00098\ \ \ \ \ logisticflow1.\mbox{\hyperlink{classFlow_acb35a71459c15be848c46923be0e11fa}{setEnd}}(\&system1);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}()\ ==\ \&system1);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
+\DoxyCodeLine{00104\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak

@@ -50,9 +50,4 @@ void unit_System_setValue();
  */
 void unit_System_getValue();
 
-/**
- * @brief Unit test for the comparison of two System objects.
- */
-void unit_System_compare();
-
 #endif

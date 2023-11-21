@@ -87,9 +87,9 @@ Inheritance diagram for System:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystem__inherit__graph.png" border="0" usemap="#aSystem_inherit__map" alt="Inheritance graph"/></div>
 <map name="aSystem_inherit__map" id="aSystem_inherit__map">
-<area shape="rect" title="Abstract base class representing a system in a model." alt="" coords="20,5,119,151"/>
-<area shape="rect" href="classSystemImpl.html" title="Concrete implementation of the System class." alt="" coords="5,199,133,464"/>
-<area shape="poly" title=" " alt="" coords="72,164,72,198,67,198,67,164"/>
+<area shape="rect" title="Abstract base class representing a system in a model." alt="" coords="11,5,127,191"/>
+<area shape="rect" href="classSystemImpl.html" title="Concrete implementation of the System class." alt="" coords="5,239,133,504"/>
+<area shape="poly" title=" " alt="" coords="72,204,72,239,67,239,67,204"/>
 </map>
 </div>
 <div class="dynheader">
@@ -97,7 +97,7 @@ Collaboration diagram for System:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystem__coll__graph.png" border="0" usemap="#aSystem_coll__map" alt="Collaboration graph"/></div>
 <map name="aSystem_coll__map" id="aSystem_coll__map">
-<area shape="rect" title="Abstract base class representing a system in a model." alt="" coords="5,5,104,151"/>
+<area shape="rect" title="Abstract base class representing a system in a model." alt="" coords="5,5,121,191"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -118,6 +118,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a41b673faa6c199eb8e4f204639fab4f2" id="r_a41b673faa6c199eb8e4f204639fab4f2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41b673faa6c199eb8e4f204639fab4f2">getValue</a> () const =0</td></tr>
 <tr class="memdesc:a41b673faa6c199eb8e4f204639fab4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to get the value of the system.  <br /></td></tr>
 <tr class="separator:a41b673faa6c199eb8e4f204639fab4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73e1ebfa825066444140269d67f66a4" id="r_ab73e1ebfa825066444140269d67f66a4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSystem.html">System</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab73e1ebfa825066444140269d67f66a4">operator=</a> (const <a class="el" href="classSystem.html">System</a> &amp;)=0</td></tr>
+<tr class="memdesc:ab73e1ebfa825066444140269d67f66a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function representing the override of the operator "=" of system.  <br /></td></tr>
+<tr class="separator:ab73e1ebfa825066444140269d67f66a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca32416fb75f161e674f8364ca834a7" id="r_a1ca32416fb75f161e674f8364ca834a7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ca32416fb75f161e674f8364ca834a7">operator==</a> (const <a class="el" href="classSystem.html">System</a> &amp;) const =0</td></tr>
+<tr class="memdesc:a1ca32416fb75f161e674f8364ca834a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function representing the override of the operator "==" of system.  <br /></td></tr>
+<tr class="separator:a1ca32416fb75f161e674f8364ca834a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class representing a system in a model. </p>
@@ -187,31 +193,28 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystem_ab4f23c21832d6bbef462a5a20b296912_icgraph.png" border="0" usemap="#aclassSystem_ab4f23c21832d6bbef462a5a20b296912_icgraph" alt=""/></div>
 <map name="aclassSystem_ab4f23c21832d6bbef462a5a20b296912_icgraph" id="aclassSystem_ab4f23c21832d6bbef462a5a20b296912_icgraph">
-<area shape="rect" title="Pure virtual function to get the name of the system." alt="" coords="553,191,692,216"/>
-<area shape="rect" href="classSystemImpl.html#a21ff1901ed75b0b2e19ee273eaf98ca5" title="Assignment operator overload." alt="" coords="309,5,483,31"/>
-<area shape="poly" title=" " alt="" coords="608,179,592,148,569,111,539,74,504,44,482,33,484,28,507,40,543,71,573,108,596,145,613,177"/>
-<area shape="rect" href="classSystemImpl.html#afa9bca3b7c79eff70d01075033549da8" title="Overloaded equality operator." alt="" coords="303,55,489,80"/>
-<area shape="poly" title=" " alt="" coords="602,182,560,136,534,113,504,94,477,83,479,78,507,89,537,109,564,132,606,178"/>
-<area shape="rect" href="classSystemImpl.html#a048c063c3c25fea38fe957998f08a07f" title="Copy constructor for the SystemImpl class." alt="" coords="303,104,489,129"/>
-<area shape="poly" title=" " alt="" coords="588,186,549,164,504,144,463,132,465,127,506,140,551,160,591,181"/>
-<area shape="rect" href="unit__system_8cpp.html#a4470d6f0246edaf5658ed651a104cb65" title="Unit test for the default constructor of the System class." alt="" coords="303,154,489,194"/>
-<area shape="poly" title=" " alt="" coords="539,195,489,189,489,183,540,190"/>
-<area shape="rect" href="unit__system_8cpp.html#aca5f61ce330bad1c9052e895afb70a94" title="Unit test for the parameterized constructor of the System class." alt="" coords="307,219,485,244"/>
-<area shape="poly" title=" " alt="" coords="540,216,486,223,485,218,539,211"/>
-<area shape="rect" href="unit__system_8cpp.html#a4eae9b231fa17519e164afb0fa7366e3" title="Unit test for the copy constructor of the System class." alt="" coords="287,268,505,293"/>
-<area shape="poly" title=" " alt="" coords="585,225,506,258,461,270,460,265,504,253,583,220"/>
-<area shape="rect" href="unit__system_8cpp.html#a672a51794472bbde676a33115e003b15" title="Unit test for the getName method of the System class." alt="" coords="311,317,481,343"/>
-<area shape="poly" title=" " alt="" coords="603,228,561,269,535,290,507,307,474,320,472,315,504,302,532,285,558,265,599,225"/>
-<area shape="rect" href="unit__system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="Unit test for the setName method of the System class." alt="" coords="311,367,481,392"/>
-<area shape="poly" title=" " alt="" coords="611,230,571,294,542,328,507,356,480,369,478,364,504,352,538,324,567,290,607,227"/>
-<area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,268,239,293"/>
-<area shape="poly" title=" " alt="" coords="305,201,288,208,234,240,192,270,189,266,231,235,285,204,303,196"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,268,60,293"/>
-<area shape="poly" title=" " alt="" coords="94,283,60,283,60,278,94,278"/>
-<area shape="poly" title=" " alt="" coords="324,250,287,258,231,271,230,265,286,253,323,244"/>
-<area shape="poly" title=" " alt="" coords="273,283,239,283,239,278,273,278"/>
-<area shape="poly" title=" " alt="" coords="324,317,231,296,232,291,326,312"/>
-<area shape="poly" title=" " alt="" coords="310,365,286,356,231,326,189,296,192,291,234,322,288,352,312,360"/>
+<area shape="rect" title="Pure virtual function to get the name of the system." alt="" coords="521,161,660,187"/>
+<area shape="rect" href="classSystemImpl.html#a21ff1901ed75b0b2e19ee273eaf98ca5" title="Assignment operator overload." alt="" coords="293,5,467,31"/>
+<area shape="poly" title=" " alt="" coords="572,151,531,97,504,68,472,44,448,33,450,28,475,40,507,64,535,93,577,148"/>
+<area shape="rect" href="classSystemImpl.html#afa9bca3b7c79eff70d01075033549da8" title="Overloaded equality operator." alt="" coords="287,55,473,80"/>
+<area shape="poly" title=" " alt="" coords="563,154,522,123,472,94,442,83,444,78,474,89,525,119,566,150"/>
+<area shape="rect" href="classSystemImpl.html#a048c063c3c25fea38fe957998f08a07f" title="Copy constructor for the SystemImpl class." alt="" coords="287,104,473,129"/>
+<area shape="poly" title=" " alt="" coords="529,160,473,145,427,132,428,127,474,139,531,155"/>
+<area shape="rect" href="unit__system_8cpp.html#a4470d6f0246edaf5658ed651a104cb65" title="Unit test for the default constructor of the System class." alt="" coords="287,154,473,194"/>
+<area shape="poly" title=" " alt="" coords="508,177,473,177,473,171,508,171"/>
+<area shape="rect" href="unit__system_8cpp.html#aca5f61ce330bad1c9052e895afb70a94" title="Unit test for the parameterized constructor of the System class." alt="" coords="291,219,469,244"/>
+<area shape="poly" title=" " alt="" coords="531,193,474,209,428,221,427,216,473,203,529,188"/>
+<area shape="rect" href="unit__system_8cpp.html#a672a51794472bbde676a33115e003b15" title="Unit test for the getName method of the System class." alt="" coords="295,268,465,293"/>
+<area shape="poly" title=" " alt="" coords="566,198,524,229,474,258,440,270,438,265,472,253,521,224,562,193"/>
+<area shape="rect" href="unit__system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="Unit test for the setName method of the System class." alt="" coords="295,317,465,343"/>
+<area shape="poly" title=" " alt="" coords="576,200,535,254,507,283,475,307,447,320,445,315,472,302,503,279,531,251,572,197"/>
+<area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,244,239,269"/>
+<area shape="poly" title=" " alt="" coords="307,201,288,208,202,246,200,241,286,204,305,196"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,244,60,269"/>
+<area shape="poly" title=" " alt="" coords="94,259,60,259,60,254,94,254"/>
+<area shape="poly" title=" " alt="" coords="277,247,239,251,239,246,277,241"/>
+<area shape="poly" title=" " alt="" coords="281,272,238,267,239,262,281,267"/>
+<area shape="poly" title=" " alt="" coords="313,316,286,307,200,272,202,267,288,302,315,311"/>
 </map>
 </div>
 
@@ -249,51 +252,108 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystem_a41b673faa6c199eb8e4f204639fab4f2_icgraph.png" border="0" usemap="#aclassSystem_a41b673faa6c199eb8e4f204639fab4f2_icgraph" alt=""/></div>
 <map name="aclassSystem_a41b673faa6c199eb8e4f204639fab4f2_icgraph" id="aclassSystem_a41b673faa6c199eb8e4f204639fab4f2_icgraph">
-<area shape="rect" title="Pure virtual function to get the value of the system." alt="" coords="559,367,695,392"/>
+<area shape="rect" title="Pure virtual function to get the value of the system." alt="" coords="559,343,695,368"/>
 <area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="Function to perform a complex test." alt="" coords="347,5,451,31"/>
-<area shape="poly" title=" " alt="" coords="622,353,616,290,599,206,585,161,565,118,540,78,509,44,482,28,451,21,452,16,484,23,512,40,544,75,570,116,590,159,604,204,621,289,627,353"/>
+<area shape="poly" title=" " alt="" coords="621,329,614,270,596,192,581,151,562,112,538,75,509,44,481,28,450,21,452,16,483,24,512,40,543,72,567,109,586,149,601,191,619,269,627,328"/>
 <area shape="rect" href="classLogisticFlow.html#ab13aa2218e41515991af57a443baee8b" title="Pure virtual function that must be implemented in derived classes." alt="" coords="291,55,507,80"/>
-<area shape="poly" title=" " alt="" coords="620,354,611,299,592,228,578,192,559,156,536,123,509,95,489,82,492,78,512,91,541,120,564,153,582,189,597,227,616,298,625,353"/>
+<area shape="poly" title=" " alt="" coords="619,330,609,279,589,215,556,150,535,120,509,95,489,82,491,78,512,91,539,117,561,147,594,213,614,278,624,329"/>
 <area shape="rect" href="classExponentialFlow.html#ac41a726ed3552ef1c63ee5b6a1c838d6" title="Pure virtual function that must be implemented in derived classes." alt="" coords="305,105,493,145"/>
-<area shape="poly" title=" " alt="" coords="617,354,604,311,582,258,551,205,531,180,509,159,491,147,494,143,512,155,535,177,555,202,587,256,609,309,622,353"/>
+<area shape="poly" title=" " alt="" coords="615,330,600,292,578,245,548,199,509,159,490,147,493,143,512,155,552,195,583,243,605,290,620,328"/>
 <area shape="rect" href="classComplexFlow.html#a1321de8d4e7789950af6dc9289f47eb2" title="Pure virtual function that must be implemented in derived classes." alt="" coords="287,169,511,195"/>
-<area shape="poly" title=" " alt="" coords="613,355,598,321,576,281,546,241,509,208,488,197,490,192,512,204,550,238,580,278,603,319,618,353"/>
+<area shape="poly" title=" " alt="" coords="611,332,572,269,543,236,509,208,486,197,489,192,512,204,547,232,576,266,616,329"/>
 <area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="Function to perform an exponential test." alt="" coords="336,219,461,244"/>
-<area shape="poly" title=" " alt="" coords="608,357,567,306,540,279,509,258,486,247,461,240,462,235,488,242,512,253,543,275,571,302,612,353"/>
+<area shape="poly" title=" " alt="" coords="604,334,563,294,537,274,510,258,461,242,462,236,512,253,540,270,566,290,607,330"/>
 <area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="Function to perform a logistic test." alt="" coords="351,268,446,293"/>
-<area shape="poly" title=" " alt="" coords="598,360,557,333,510,307,478,297,446,289,447,284,479,291,512,302,560,328,601,356"/>
+<area shape="poly" title=" " alt="" coords="587,339,510,307,446,291,447,286,512,302,589,334"/>
 <area shape="rect" href="classSystemImpl.html#a21ff1901ed75b0b2e19ee273eaf98ca5" title="Assignment operator overload." alt="" coords="311,317,486,343"/>
-<area shape="poly" title=" " alt="" coords="554,366,510,357,459,345,460,340,511,351,556,361"/>
+<area shape="poly" title=" " alt="" coords="545,349,486,342,487,337,545,344"/>
 <area shape="rect" href="classSystemImpl.html#afa9bca3b7c79eff70d01075033549da8" title="Overloaded equality operator." alt="" coords="306,367,491,392"/>
-<area shape="poly" title=" " alt="" coords="545,382,491,382,491,377,545,377"/>
-<area shape="rect" href="classModelImpl.html#af6edbdda3958ab4bbe16eb088cfa3cfa" title="Run the model for a specified number of iterations." alt="" coords="339,416,459,441"/>
-<area shape="poly" title=" " alt="" coords="555,398,459,419,458,413,553,392"/>
+<area shape="poly" title=" " alt="" coords="545,367,492,372,491,367,544,361"/>
+<area shape="rect" href="classModelImpl.html#a9f67e5631ddc2367d7fe428c23a683ea" title="Run the model for a specified number of iterations." alt="" coords="339,416,459,441"/>
+<area shape="poly" title=" " alt="" coords="587,376,511,406,460,420,458,415,510,401,585,371"/>
 <area shape="rect" href="classSystemImpl.html#a048c063c3c25fea38fe957998f08a07f" title="Copy constructor for the SystemImpl class." alt="" coords="305,465,492,491"/>
-<area shape="poly" title=" " alt="" coords="600,403,559,430,512,455,473,468,471,463,510,450,557,426,597,398"/>
+<area shape="poly" title=" " alt="" coords="607,380,565,419,540,439,512,455,479,468,477,463,510,450,537,434,562,415,603,376"/>
 <area shape="rect" href="unit__system_8cpp.html#a4470d6f0246edaf5658ed651a104cb65" title="Unit test for the default constructor of the System class." alt="" coords="306,515,491,555"/>
-<area shape="poly" title=" " alt="" coords="611,405,570,455,543,482,512,504,485,518,483,513,509,500,539,477,566,451,607,402"/>
+<area shape="poly" title=" " alt="" coords="615,382,574,443,546,476,512,504,488,517,485,513,509,500,542,472,570,440,610,379"/>
 <area shape="rect" href="unit__system_8cpp.html#aca5f61ce330bad1c9052e895afb70a94" title="Unit test for the parameterized constructor of the System class." alt="" coords="309,580,488,605"/>
-<area shape="poly" title=" " alt="" coords="620,406,605,443,582,487,552,532,512,569,488,582,486,578,509,565,547,529,578,485,600,441,615,404"/>
-<area shape="rect" href="unit__system_8cpp.html#a4eae9b231fa17519e164afb0fa7366e3" title="Unit test for the copy constructor of the System class." alt="" coords="289,629,508,655"/>
-<area shape="poly" title=" " alt="" coords="623,406,611,452,590,510,558,569,537,596,512,619,490,632,488,627,509,615,533,592,553,566,585,508,606,451,618,405"/>
-<area shape="rect" href="unit__system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Unit test for the getValue method of the System class." alt="" coords="315,679,482,704"/>
-<area shape="poly" title=" " alt="" coords="625,406,616,461,597,532,582,569,564,605,541,639,512,668,484,684,481,680,509,664,536,636,559,603,578,567,592,530,611,460,620,405"/>
-<area shape="rect" href="unit__system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Unit test for the setValue method of the System class." alt="" coords="315,728,482,753"/>
-<area shape="poly" title=" " alt="" coords="627,406,621,470,604,554,590,599,570,643,544,684,512,719,483,735,481,731,509,715,540,680,565,640,585,597,599,553,616,469,622,406"/>
+<area shape="poly" title=" " alt="" coords="621,383,608,424,586,475,554,526,535,549,512,570,490,582,487,578,509,565,531,546,550,523,581,472,603,422,616,381"/>
+<area shape="rect" href="unit__system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Unit test for the getValue method of the System class." alt="" coords="315,629,482,655"/>
+<area shape="poly" title=" " alt="" coords="624,382,614,432,593,497,561,563,539,593,512,619,483,635,481,630,509,615,535,589,556,560,589,495,609,431,619,381"/>
+<area shape="rect" href="unit__system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Unit test for the setValue method of the System class." alt="" coords="315,679,482,704"/>
+<area shape="poly" title=" " alt="" coords="626,382,619,442,601,519,586,561,567,600,543,637,512,669,484,686,481,681,509,665,538,634,562,598,581,558,596,518,614,441,621,382"/>
 <area shape="rect" href="mainFTest_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="146,219,201,244"/>
 <area shape="poly" title=" " alt="" coords="334,25,310,33,288,44,266,63,246,86,215,136,193,184,181,219,176,217,188,182,210,133,242,83,262,60,285,40,308,28,332,20"/>
 <area shape="poly" title=" " alt="" coords="322,234,201,234,201,229,322,229"/>
 <area shape="poly" title=" " alt="" coords="337,270,201,240,202,235,338,265"/>
-<area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,629,239,655"/>
-<area shape="poly" title=" " alt="" coords="305,562,288,570,234,601,192,631,189,627,231,596,285,565,303,557"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,629,60,655"/>
-<area shape="poly" title=" " alt="" coords="94,645,60,645,60,639,94,639"/>
-<area shape="poly" title=" " alt="" coords="326,611,287,619,231,632,230,627,286,614,324,606"/>
-<area shape="poly" title=" " alt="" coords="276,645,239,645,239,639,276,639"/>
-<area shape="poly" title=" " alt="" coords="326,678,232,657,233,652,327,673"/>
-<area shape="poly" title=" " alt="" coords="307,727,286,719,230,688,188,657,191,653,233,684,288,714,308,722"/>
+<area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,604,239,629"/>
+<area shape="poly" title=" " alt="" coords="310,562,288,570,202,606,200,601,286,565,309,557"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,604,60,629"/>
+<area shape="poly" title=" " alt="" coords="94,619,60,619,60,614,94,614"/>
+<area shape="poly" title=" " alt="" coords="296,606,239,612,238,607,296,601"/>
+<area shape="poly" title=" " alt="" coords="301,634,239,627,239,621,302,628"/>
+<area shape="poly" title=" " alt="" coords="314,678,286,670,238,651,198,632,200,627,241,646,288,665,315,673"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ab73e1ebfa825066444140269d67f66a4" name="ab73e1ebfa825066444140269d67f66a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73e1ebfa825066444140269d67f66a4">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classSystem.html">System</a> &amp; System::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSystem.html">System</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pure virtual function representing the override of the operator "=" of system. </p>
+
+<p>Implemented in <a class="el" href="classSystemImpl.html#a21ff1901ed75b0b2e19ee273eaf98ca5">SystemImpl</a>.</p>
+
+</div>
+</div>
+<a id="a1ca32416fb75f161e674f8364ca834a7" name="a1ca32416fb75f161e674f8364ca834a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca32416fb75f161e674f8364ca834a7">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool System::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSystem.html">System</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pure virtual function representing the override of the operator "==" of system. </p>
+
+<p>Implemented in <a class="el" href="classSystemImpl.html#afa9bca3b7c79eff70d01075033549da8">SystemImpl</a>.</p>
 
 </div>
 </div>
@@ -340,7 +400,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="490,21,456,21,456,15,490,15"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
 <area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>
@@ -386,13 +446,13 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classSystem_a95e6d4c1ce05b47b5fa743fd2401dd03_icgraph.png" border="0" usemap="#aclassSystem_a95e6d4c1ce05b47b5fa743fd2401dd03_icgraph" alt=""/></div>
 <map name="aclassSystem_a95e6d4c1ce05b47b5fa743fd2401dd03_icgraph" id="aclassSystem_a95e6d4c1ce05b47b5fa743fd2401dd03_icgraph">
 <area shape="rect" title="Pure virtual function to set the value of the system." alt="" coords="501,31,636,56"/>
-<area shape="rect" href="classModelImpl.html#af6edbdda3958ab4bbe16eb088cfa3cfa" title="Run the model for a specified number of iterations." alt="" coords="310,5,430,31"/>
+<area shape="rect" href="classModelImpl.html#a9f67e5631ddc2367d7fe428c23a683ea" title="Run the model for a specified number of iterations." alt="" coords="310,5,430,31"/>
 <area shape="poly" title=" " alt="" coords="487,36,430,28,431,23,488,30"/>
 <area shape="rect" href="unit__system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Unit test for the setValue method of the System class." alt="" coords="287,55,453,80"/>
 <area shape="poly" title=" " alt="" coords="488,56,454,60,453,55,487,50"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,55,239,80"/>
 <area shape="poly" title=" " alt="" coords="273,70,239,70,239,65,273,65"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,60,80"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,60,80"/>
 <area shape="poly" title=" " alt="" coords="94,70,60,70,60,65,94,65"/>
 </map>
 </div>

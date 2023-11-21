@@ -1,7 +1,5 @@
 <map id="unit_Model_run" name="unit_Model_run">
-<area shape="rect" id="Node000001" title="Unit test for the run method of the Model class." alt="" coords="5,31,128,56"/>
-<area shape="rect" id="Node000002" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="176,5,271,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,31,162,25,163,30,129,36"/>
-<area shape="rect" id="Node000003" href="$classModel.html#a92d3f9f1c9edd642606a4dececd57131" title="Run the model for a specified number of iterations." alt="" coords="178,55,269,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,50,165,56,164,61,128,55"/>
+<area shape="rect" id="Node000001" title="Unit test for the run method of the Model class." alt="" coords="5,5,128,31"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="176,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,15,162,15,162,21,128,21"/>
 </map>

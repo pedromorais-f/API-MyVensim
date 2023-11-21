@@ -137,54 +137,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ab320622db511f54344c510a9cfdbff94" id="r_ab320622db511f54344c510a9cfdbff94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab320622db511f54344c510a9cfdbff94">unit_System_getValue</a> ()</td></tr>
 <tr class="memdesc:ab320622db511f54344c510a9cfdbff94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for the getValue method of the <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> class.  <br /></td></tr>
 <tr class="separator:ab320622db511f54344c510a9cfdbff94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbdcc2ce99b81b553417c28b01017813" id="r_abbdcc2ce99b81b553417c28b01017813"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbdcc2ce99b81b553417c28b01017813">unit_System_compare</a> ()</td></tr>
-<tr class="memdesc:abbdcc2ce99b81b553417c28b01017813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for the comparison of two <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> objects.  <br /></td></tr>
-<tr class="separator:abbdcc2ce99b81b553417c28b01017813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abbdcc2ce99b81b553417c28b01017813" name="abbdcc2ce99b81b553417c28b01017813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbdcc2ce99b81b553417c28b01017813">&#9670;&#160;</a></span>unit_System_compare()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unit_System_compare </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unit test for the comparison of two <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> objects. </p>
-
-<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00080">80</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>                          {</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system1 = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system2 = system1;</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    assert(&amp;system1 == &amp;system2); </div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <span class="keyword">delete</span> &amp;system1;</div>
-<div class="line"><span class="lineno">   87</span>}</div>
-<div class="ttc" id="aclassSystemImpl_html"><div class="ttname"><a href="classSystemImpl.html">SystemImpl</a></div><div class="ttdoc">Concrete implementation of the System class.</div><div class="ttdef"><b>Definition</b> <a href="SystemImpl_8hpp_source.html#l00013">SystemImpl.hpp:13</a></div></div>
-<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">Abstract base class representing a system in a model.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00012">System.hpp:12</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__system_8cpp_abbdcc2ce99b81b553417c28b01017813_icgraph.png" border="0" usemap="#aunit__system_8cpp_abbdcc2ce99b81b553417c28b01017813_icgraph" alt=""/></div>
-<map name="aunit__system_8cpp_abbdcc2ce99b81b553417c28b01017813_icgraph" id="aunit__system_8cpp_abbdcc2ce99b81b553417c28b01017813_icgraph">
-<area shape="rect" title="Unit test for the comparison of two System objects." alt="" coords="287,5,453,31"/>
-<area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
-<area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
-<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a4470d6f0246edaf5658ed651a104cb65" name="a4470d6f0246edaf5658ed651a104cb65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4470d6f0246edaf5658ed651a104cb65">&#9670;&#160;</a></span>unit_System_Constructor_Default()</h2>
 
@@ -211,6 +165,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">    8</span>    </div>
 <div class="line"><span class="lineno">    9</span>    <span class="keyword">delete</span> &amp;system;</div>
 <div class="line"><span class="lineno">   10</span>}</div>
+<div class="ttc" id="aclassSystemImpl_html"><div class="ttname"><a href="classSystemImpl.html">SystemImpl</a></div><div class="ttdoc">Concrete implementation of the System class.</div><div class="ttdef"><b>Definition</b> <a href="SystemImpl_8hpp_source.html#l00013">SystemImpl.hpp:13</a></div></div>
+<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">Abstract base class representing a system in a model.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00012">System.hpp:12</a></div></div>
 <div class="ttc" id="aclassSystem_html_a41b673faa6c199eb8e4f204639fab4f2"><div class="ttname"><a href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">System::getValue</a></div><div class="ttdeci">virtual double getValue() const =0</div><div class="ttdoc">Pure virtual function to get the value of the system.</div></div>
 <div class="ttc" id="aclassSystem_html_ab4f23c21832d6bbef462a5a20b296912"><div class="ttname"><a href="classSystem.html#ab4f23c21832d6bbef462a5a20b296912">System::getName</a></div><div class="ttdeci">virtual string getName() const =0</div><div class="ttdoc">Pure virtual function to get the name of the system.</div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -233,7 +189,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Unit test for the default constructor of the System class." alt="" coords="287,5,472,45"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,13,239,38"/>
 <area shape="poly" title=" " alt="" coords="273,28,239,28,239,23,273,23"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,38"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,38"/>
 <area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
 </map>
 </div>
@@ -286,7 +242,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Unit test for the parameterized constructor of the System class." alt="" coords="287,5,465,31"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
 <area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>
@@ -315,25 +271,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   24</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system1 = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
 <div class="line"><span class="lineno">   25</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system2 = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(system1);</div>
 <div class="line"><span class="lineno">   26</span> </div>
-<div class="line"><span class="lineno">   27</span>    assert(system1.<a class="code hl_function" href="classSystem.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == system2.<a class="code hl_function" href="classSystem.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>());</div>
-<div class="line"><span class="lineno">   28</span>    assert(system1.<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() == system2.<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>());</div>
-<div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span>    <span class="keyword">delete</span> &amp;system1;</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keyword">delete</span> &amp;system2;</div>
-<div class="line"><span class="lineno">   32</span>}</div>
+<div class="line"><span class="lineno">   27</span>    assert(system1 == system2);</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    <span class="keyword">delete</span> &amp;system1;</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keyword">delete</span> &amp;system2;</div>
+<div class="line"><span class="lineno">   31</span>}</div>
 </div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__system_8cpp_a4eae9b231fa17519e164afb0fa7366e3_cgraph.png" border="0" usemap="#aunit__system_8cpp_a4eae9b231fa17519e164afb0fa7366e3_cgraph" alt=""/></div>
-<map name="aunit__system_8cpp_a4eae9b231fa17519e164afb0fa7366e3_cgraph" id="aunit__system_8cpp_a4eae9b231fa17519e164afb0fa7366e3_cgraph">
-<area shape="rect" title="Unit test for the copy constructor of the System class." alt="" coords="5,31,224,56"/>
-<area shape="rect" href="classSystem.html#ab4f23c21832d6bbef462a5a20b296912" title="Pure virtual function to get the name of the system." alt="" coords="272,5,411,31"/>
-<area shape="poly" title=" " alt="" coords="224,28,258,25,258,30,224,34"/>
-<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="273,55,409,80"/>
-<area shape="poly" title=" " alt="" coords="224,52,260,56,260,61,224,58"/>
-</map>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="unit__system_8cpp_a4eae9b231fa17519e164afb0fa7366e3_icgraph.png" border="0" usemap="#aunit__system_8cpp_a4eae9b231fa17519e164afb0fa7366e3_icgraph" alt=""/></div>
@@ -341,7 +284,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Unit test for the copy constructor of the System class." alt="" coords="287,5,505,31"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
 <area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>
@@ -375,7 +318,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Unit test for the destructor of the System class." alt="" coords="287,5,457,31"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
 <area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>
@@ -399,18 +342,15 @@ Here is the caller graph for this function:</div>
 
 <p>Unit test for the equality comparison of the <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00034">34</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                         {</div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system1 = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system2 = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(<span class="stringliteral">&quot;System2&quot;</span>, 100);</div>
-<div class="line"><span class="lineno">   37</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system3 = system1;</div>
+<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00033">33</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                         {</div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system1 = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system2 = system1;</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    assert(system1 == system2); </div>
 <div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    assert(&amp;system1 != &amp;system2); </div>
-<div class="line"><span class="lineno">   40</span>    assert(&amp;system1 == &amp;system3); </div>
-<div class="line"><span class="lineno">   41</span> </div>
-<div class="line"><span class="lineno">   42</span>    <span class="keyword">delete</span> &amp;system1;</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keyword">delete</span> &amp;system2;</div>
-<div class="line"><span class="lineno">   44</span>}</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keyword">delete</span> &amp;system1;</div>
+<div class="line"><span class="lineno">   40</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -419,7 +359,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Unit test for the equality comparison of the System class." alt="" coords="287,5,440,31"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
 <area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>
@@ -443,14 +383,14 @@ Here is the caller graph for this function:</div>
 
 <p>Unit test for the getName method of the <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00055">55</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>                          {</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
-<div class="line"><span class="lineno">   57</span>    </div>
-<div class="line"><span class="lineno">   58</span>    assert(system.<a class="code hl_function" href="classSystem.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System1&quot;</span>);</div>
-<div class="line"><span class="lineno">   59</span>    </div>
-<div class="line"><span class="lineno">   60</span>    <span class="keyword">delete</span> &amp;system;</div>
-<div class="line"><span class="lineno">   61</span>}</div>
+<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00051">51</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>                          {</div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
+<div class="line"><span class="lineno">   53</span>    </div>
+<div class="line"><span class="lineno">   54</span>    assert(system.<a class="code hl_function" href="classSystem.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System1&quot;</span>);</div>
+<div class="line"><span class="lineno">   55</span>    </div>
+<div class="line"><span class="lineno">   56</span>    <span class="keyword">delete</span> &amp;system;</div>
+<div class="line"><span class="lineno">   57</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -469,7 +409,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Unit test for the getName method of the System class." alt="" coords="287,5,457,31"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
 <area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>
@@ -493,14 +433,14 @@ Here is the caller graph for this function:</div>
 
 <p>Unit test for the getValue method of the <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00072">72</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   72</span>                           {</div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(<span class="stringliteral">&quot;Sistema1&quot;</span>, 100);</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    assert(fabs(round(system.<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000) - 100 * 10000) &lt; 1);</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    <span class="keyword">delete</span> &amp;system;</div>
-<div class="line"><span class="lineno">   78</span>}</div>
+<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00068">68</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                           {</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>(<span class="stringliteral">&quot;Sistema1&quot;</span>, 100);</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    assert(fabs(round(system.<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000) - 100 * 10000) &lt; 1);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    <span class="keyword">delete</span> &amp;system;</div>
+<div class="line"><span class="lineno">   74</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -519,7 +459,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Unit test for the getValue method of the System class." alt="" coords="287,5,453,31"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
 <area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>
@@ -543,15 +483,15 @@ Here is the caller graph for this function:</div>
 
 <p>Unit test for the setName method of the <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00046">46</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                          {</div>
-<div class="line"><span class="lineno">   47</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>();</div>
-<div class="line"><span class="lineno">   48</span>    system.<a class="code hl_function" href="classSystem.html#aacc697c3f09eecce394380a6bde96c34">setName</a>(<span class="stringliteral">&quot;System1&quot;</span>);</div>
-<div class="line"><span class="lineno">   49</span>    </div>
-<div class="line"><span class="lineno">   50</span>    assert(system.<a class="code hl_function" href="classSystem.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System1&quot;</span>);</div>
-<div class="line"><span class="lineno">   51</span>    </div>
-<div class="line"><span class="lineno">   52</span>    <span class="keyword">delete</span> &amp;system;</div>
-<div class="line"><span class="lineno">   53</span>}</div>
+<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00042">42</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                          {</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>();</div>
+<div class="line"><span class="lineno">   44</span>    system.<a class="code hl_function" href="classSystem.html#aacc697c3f09eecce394380a6bde96c34">setName</a>(<span class="stringliteral">&quot;System1&quot;</span>);</div>
+<div class="line"><span class="lineno">   45</span>    </div>
+<div class="line"><span class="lineno">   46</span>    assert(system.<a class="code hl_function" href="classSystem.html#ab4f23c21832d6bbef462a5a20b296912">getName</a>() == <span class="stringliteral">&quot;System1&quot;</span>);</div>
+<div class="line"><span class="lineno">   47</span>    </div>
+<div class="line"><span class="lineno">   48</span>    <span class="keyword">delete</span> &amp;system;</div>
+<div class="line"><span class="lineno">   49</span>}</div>
 <div class="ttc" id="aclassSystem_html_aacc697c3f09eecce394380a6bde96c34"><div class="ttname"><a href="classSystem.html#aacc697c3f09eecce394380a6bde96c34">System::setName</a></div><div class="ttdeci">virtual void setName(string)=0</div><div class="ttdoc">Pure virtual function to set the name of the system.</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -573,7 +513,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Unit test for the setName method of the System class." alt="" coords="287,5,456,31"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
 <area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>
@@ -597,15 +537,15 @@ Here is the caller graph for this function:</div>
 
 <p>Unit test for the setValue method of the <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00063">63</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>                           {</div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>();</div>
-<div class="line"><span class="lineno">   65</span>    system.<a class="code hl_function" href="classSystem.html#a95e6d4c1ce05b47b5fa743fd2401dd03">setValue</a>(100);</div>
-<div class="line"><span class="lineno">   66</span>    </div>
-<div class="line"><span class="lineno">   67</span>    assert(fabs(round(system.<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000) - 100 * 10000) &lt; 1);</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    <span class="keyword">delete</span> &amp;system;</div>
-<div class="line"><span class="lineno">   70</span>}</div>
+<p class="definition">Definition at line <a class="el" href="unit__system_8cpp_source.html#l00059">59</a> of file <a class="el" href="unit__system_8cpp_source.html">unit_system.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                           {</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; system = *<span class="keyword">new</span> <a class="code hl_class" href="classSystemImpl.html">SystemImpl</a>();</div>
+<div class="line"><span class="lineno">   61</span>    system.<a class="code hl_function" href="classSystem.html#a95e6d4c1ce05b47b5fa743fd2401dd03">setValue</a>(100);</div>
+<div class="line"><span class="lineno">   62</span>    </div>
+<div class="line"><span class="lineno">   63</span>    assert(fabs(round(system.<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() * 10000) - 100 * 10000) &lt; 1);</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <span class="keyword">delete</span> &amp;system;</div>
+<div class="line"><span class="lineno">   66</span>}</div>
 <div class="ttc" id="aclassSystem_html_a95e6d4c1ce05b47b5fa743fd2401dd03"><div class="ttname"><a href="classSystem.html#a95e6d4c1ce05b47b5fa743fd2401dd03">System::setValue</a></div><div class="ttdeci">virtual void setValue(double)=0</div><div class="ttdoc">Pure virtual function to set the value of the system.</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -627,7 +567,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Unit test for the setValue method of the System class." alt="" coords="287,5,453,31"/>
 <area shape="rect" href="unit__test_8cpp.html#a09b5576cbb862edd991783aff7a49ade" title="Run unit tests for the System class." alt="" coords="108,5,239,31"/>
 <area shape="poly" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>

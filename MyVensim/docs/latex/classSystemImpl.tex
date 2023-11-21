@@ -62,11 +62,6 @@ string \mbox{\hyperlink{classSystemImpl_acd123bacad8aa2b830d9ca9c8098fa84}{name}
 \begin{DoxyCompactList}\small\item\em Name of the system. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classSystemImpl_ad068c75f35f48f312d0899d161ea7481}{value}}
 \begin{DoxyCompactList}\small\item\em Value associated with the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Friends}
-\begin{DoxyCompactItemize}
-\item 
-ostream \& \mbox{\hyperlink{classSystemImpl_a91898b778c997ed43a7f58aaa6258210}{operator$<$$<$}} (ostream \&, \mbox{\hyperlink{classSystemImpl}{System\+Impl}} \&)
-\begin{DoxyCompactList}\small\item\em Overloaded \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} operator to allow for a \doxylink{classSystem}{System} object to be printed to the ostream. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -244,7 +239,7 @@ Definition at line \mbox{\hyperlink{SystemImpl_8cpp_source_l00042}{42}} of file 
 \index{SystemImpl@{SystemImpl}!operator=@{operator=}}
 \index{operator=@{operator=}!SystemImpl@{SystemImpl}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classSystemImpl}{System\+Impl}} \& System\+Impl\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{system }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystemImpl}{System\+Impl}} \& System\+Impl\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -258,6 +253,10 @@ Assignment operator overload.
 \begin{DoxyReturn}{Returns}
 A reference to the current \doxylink{classSystem}{System} object. 
 \end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSystem_ab73e1ebfa825066444140269d67f66a4}{System}}.
+
 
 
 Definition at line \mbox{\hyperlink{SystemImpl_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{SystemImpl_8cpp_source}{System\+Impl.\+cpp}}.
@@ -286,7 +285,7 @@ Here is the call graph for this function\+:\nopagebreak
 \index{SystemImpl@{SystemImpl}!operator==@{operator==}}
 \index{operator==@{operator==}!SystemImpl@{SystemImpl}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
-{\footnotesize\ttfamily bool System\+Impl\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{system }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool System\+Impl\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{system }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -300,6 +299,10 @@ Overloaded equality operator.
 \begin{DoxyReturn}{Returns}
 True if the systems are equal, false otherwise. 
 \end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSystem_a1ca32416fb75f161e674f8364ca834a7}{System}}.
+
 
 
 Definition at line \mbox{\hyperlink{SystemImpl_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{SystemImpl_8cpp_source}{System\+Impl.\+cpp}}.
@@ -382,42 +385,6 @@ Definition at line \mbox{\hyperlink{SystemImpl_8cpp_source_l00038}{38}} of file 
 \DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00039\ \ \ \ \ this-\/>\mbox{\hyperlink{classSystemImpl_ad068c75f35f48f312d0899d161ea7481}{value}}\ =\ \mbox{\hyperlink{classSystemImpl_ad068c75f35f48f312d0899d161ea7481}{value}};}
 \DoxyCodeLine{00040\ \}}
-
-\end{DoxyCode}
-
-
-\doxysubsection{Friends And Related Symbol Documentation}
-\Hypertarget{classSystemImpl_a91898b778c997ed43a7f58aaa6258210}\label{classSystemImpl_a91898b778c997ed43a7f58aaa6258210} 
-\index{SystemImpl@{SystemImpl}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!SystemImpl@{SystemImpl}}
-\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
-{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{\mbox{\hyperlink{classSystemImpl}{System\+Impl}} \&}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
-Overloaded \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} operator to allow for a \doxylink{classSystem}{System} object to be printed to the ostream. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em out} & The output stream. \\
-\hline
-{\em system} & The \doxylink{classSystem}{System} object to be printed. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A reference to the output stream. 
-\end{DoxyReturn}
-
-
-Definition at line \mbox{\hyperlink{SystemImpl_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{SystemImpl_8cpp_source}{System\+Impl.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00057\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}Name:"{}}\ <<\ system.\mbox{\hyperlink{classSystemImpl_a4407f82b905d49335f76c4a18fbfef8d}{getName}}()\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}Value:"{}}\ <<\ system.\mbox{\hyperlink{classSystemImpl_aa21b5abc7021e73715c06449fea9e08f}{getValue}}()\ <<\ endl;}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordflow}{return}\ out;}
-\DoxyCodeLine{00060\ \}}
 
 \end{DoxyCode}
 

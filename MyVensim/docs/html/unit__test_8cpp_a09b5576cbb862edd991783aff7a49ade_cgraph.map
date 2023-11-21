@@ -1,39 +1,35 @@
 <map id="run_test_System" name="run_test_System">
-<area shape="rect" id="Node000001" title="Run unit tests for the System class." alt="" coords="5,244,136,269"/>
-<area shape="rect" id="Node000002" href="$unit__system_8cpp.html#abbdcc2ce99b81b553417c28b01017813" title="Unit test for the comparison of two System objects." alt="" coords="210,5,377,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,243,83,203,104,148,136,89,158,63,182,40,196,32,198,36,186,44,162,66,141,92,109,150,88,205,77,244"/>
-<area shape="rect" id="Node000003" href="$unit__system_8cpp.html#a4470d6f0246edaf5658ed651a104cb65" title="Unit test for the default constructor of the System class." alt="" coords="201,105,386,145"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="81,242,123,199,151,175,183,154,196,148,198,152,185,159,154,179,126,203,85,246"/>
-<area shape="rect" id="Node000006" href="$unit__system_8cpp.html#aca5f61ce330bad1c9052e895afb70a94" title="Unit test for the parameterized constructor of the System class." alt="" coords="204,169,383,195"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="95,241,136,222,183,203,210,195,212,201,185,209,138,227,97,246"/>
-<area shape="rect" id="Node000007" href="$unit__system_8cpp.html#a4eae9b231fa17519e164afb0fa7366e3" title="Unit test for the copy constructor of the System class." alt="" coords="184,219,403,244"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="136,247,170,243,171,248,137,252"/>
-<area shape="rect" id="Node000008" href="$unit__system_8cpp.html#a8f98b53fa7919cdb4577a623238ac263" title="Unit test for the destructor of the System class." alt="" coords="208,416,379,441"/>
-<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="80,268,118,333,148,371,186,402,196,409,194,413,182,407,144,375,113,336,75,271"/>
-<area shape="rect" id="Node000009" href="$unit__system_8cpp.html#a2bebda8ac6c74be5568b86b5e0c9efb2" title="Unit test for the equality comparison of the System class." alt="" coords="217,465,370,491"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="78,269,90,306,111,356,143,408,163,432,186,452,205,463,202,467,182,456,159,435,138,411,106,358,85,308,73,271"/>
-<area shape="rect" id="Node000010" href="$unit__system_8cpp.html#a672a51794472bbde676a33115e003b15" title="Unit test for the getName method of the System class." alt="" coords="208,55,379,80"/>
-<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="75,242,89,211,111,170,143,127,182,91,195,83,198,88,186,95,147,130,116,173,93,214,79,245"/>
-<area shape="rect" id="Node000011" href="$unit__system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Unit test for the getValue method of the System class." alt="" coords="210,317,377,343"/>
-<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="98,267,185,303,213,312,211,317,183,309,96,272"/>
-<area shape="rect" id="Node000012" href="$unit__system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="Unit test for the setName method of the System class." alt="" coords="209,268,378,293"/>
-<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="137,261,195,267,195,273,136,266"/>
-<area shape="rect" id="Node000014" href="$unit__system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Unit test for the setValue method of the System class." alt="" coords="210,367,377,392"/>
-<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="85,268,126,310,154,333,185,353,201,360,199,365,183,358,151,338,122,314,81,271"/>
-<area shape="rect" id="Node000004" href="$classSystem.html#ab4f23c21832d6bbef462a5a20b296912" title="Pure virtual function to get the name of the system." alt="" coords="451,169,589,195"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="374,142,457,163,455,169,372,147"/>
-<area shape="rect" id="Node000005" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="452,219,588,244"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="380,142,404,154,420,167,429,179,438,192,452,204,464,211,462,215,449,208,434,195,425,183,416,171,401,159,377,147"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="383,179,437,179,437,185,383,185"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="353,192,448,213,447,218,352,197"/>
-<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="352,216,447,195,448,200,353,221"/>
-<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="403,229,439,229,439,234,403,234"/>
-<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="369,78,404,90,456,123,498,158,495,162,453,127,401,95,367,83"/>
-<area shape="poly" id="edge16_Node000011_Node000005" title=" " alt="" coords="375,315,401,304,416,292,425,280,434,268,449,254,462,247,464,252,452,259,438,271,429,284,420,296,404,308,377,320"/>
-<area shape="poly" id="edge18_Node000012_Node000004" title=" " alt="" coords="376,265,401,254,416,243,425,230,434,217,449,204,459,198,462,203,452,208,438,221,429,233,420,247,404,259,378,270"/>
-<area shape="rect" id="Node000013" href="$classSystem.html#aacc697c3f09eecce394380a6bde96c34" title="Pure virtual function to set the name of the system." alt="" coords="451,268,589,293"/>
-<area shape="poly" id="edge19_Node000012_Node000013" title=" " alt="" coords="378,278,437,278,437,283,378,283"/>
-<area shape="poly" id="edge21_Node000014_Node000005" title=" " alt="" coords="375,367,401,353,412,342,419,331,425,306,431,281,438,268,449,255,456,249,460,253,452,259,442,271,436,283,430,308,424,333,416,345,404,357,378,372"/>
-<area shape="rect" id="Node000015" href="$classSystem.html#a95e6d4c1ce05b47b5fa743fd2401dd03" title="Pure virtual function to set the value of the system." alt="" coords="453,367,587,392"/>
-<area shape="poly" id="edge22_Node000014_Node000015" title=" " alt="" coords="377,377,439,377,439,382,377,382"/>
+<area shape="rect" id="Node000001" title="Run unit tests for the System class." alt="" coords="5,219,136,244"/>
+<area shape="rect" id="Node000002" href="$unit__system_8cpp.html#a4470d6f0246edaf5658ed651a104cb65" title="Unit test for the default constructor of the System class." alt="" coords="201,154,386,194"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,216,201,195,203,200,121,221"/>
+<area shape="rect" id="Node000005" href="$unit__system_8cpp.html#aca5f61ce330bad1c9052e895afb70a94" title="Unit test for the parameterized constructor of the System class." alt="" coords="204,104,383,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="83,216,125,178,153,157,183,140,204,131,206,136,185,144,155,162,128,182,86,220"/>
+<area shape="rect" id="Node000006" href="$unit__system_8cpp.html#a4eae9b231fa17519e164afb0fa7366e3" title="Unit test for the copy constructor of the System class." alt="" coords="184,317,403,343"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="89,242,131,273,185,304,206,311,204,316,183,308,128,278,86,246"/>
+<area shape="rect" id="Node000007" href="$unit__system_8cpp.html#a8f98b53fa7919cdb4577a623238ac263" title="Unit test for the destructor of the System class." alt="" coords="208,367,379,392"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="82,243,122,297,151,328,185,353,198,359,195,364,183,358,148,332,117,300,78,246"/>
+<area shape="rect" id="Node000008" href="$unit__system_8cpp.html#a2bebda8ac6c74be5568b86b5e0c9efb2" title="Unit test for the equality comparison of the System class." alt="" coords="217,416,370,441"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="79,243,92,276,114,320,145,365,164,385,185,402,205,413,202,418,183,407,161,389,141,368,110,322,87,278,74,245"/>
+<area shape="rect" id="Node000009" href="$unit__system_8cpp.html#a672a51794472bbde676a33115e003b15" title="Unit test for the getName method of the System class." alt="" coords="208,55,379,80"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="76,217,115,156,146,120,183,90,197,83,199,88,185,95,149,124,119,159,81,220"/>
+<area shape="rect" id="Node000010" href="$unit__system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Unit test for the getValue method of the System class." alt="" coords="210,219,377,244"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="136,229,196,229,196,234,136,234"/>
+<area shape="rect" id="Node000011" href="$unit__system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="Unit test for the setName method of the System class." alt="" coords="209,5,378,31"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="73,217,86,182,107,133,139,83,160,60,182,40,195,32,197,37,186,44,163,63,144,86,112,136,91,184,78,219"/>
+<area shape="rect" id="Node000013" href="$unit__system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Unit test for the setValue method of the System class." alt="" coords="210,268,377,293"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="128,241,185,254,222,262,220,268,183,259,127,247"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#ab4f23c21832d6bbef462a5a20b296912" title="Pure virtual function to get the name of the system." alt="" coords="451,80,589,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,151,402,139,478,109,480,114,404,145,367,156"/>
+<area shape="rect" id="Node000004" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="452,189,588,215"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="387,183,439,189,438,195,386,188"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="383,105,436,99,437,104,383,110"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="361,127,404,139,448,159,488,180,485,185,446,164,402,145,360,132"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="379,74,437,81,437,86,378,79"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="376,218,438,210,439,215,377,223"/>
+<area shape="poly" id="edge15_Node000011_Node000003" title=" " alt="" coords="362,28,404,39,482,72,480,77,402,45,361,33"/>
+<area shape="rect" id="Node000012" href="$classSystem.html#aacc697c3f09eecce394380a6bde96c34" title="Pure virtual function to set the name of the system." alt="" coords="451,5,589,31"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="378,15,437,15,437,21,378,21"/>
+<area shape="poly" id="edge18_Node000013_Node000004" title=" " alt="" coords="362,265,402,254,482,219,484,224,404,259,363,271"/>
+<area shape="rect" id="Node000014" href="$classSystem.html#a95e6d4c1ce05b47b5fa743fd2401dd03" title="Pure virtual function to set the value of the system." alt="" coords="453,268,587,293"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="377,278,439,278,439,283,377,283"/>
 </map>

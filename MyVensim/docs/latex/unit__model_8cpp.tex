@@ -1,8 +1,7 @@
 \doxysection{test/unit/unit\+\_\+model.cpp File Reference}
 \hypertarget{unit__model_8cpp}{}\label{unit__model_8cpp}\index{test/unit/unit\_model.cpp@{test/unit/unit\_model.cpp}}
 {\ttfamily \#include "{}unit\+\_\+model.\+hpp"{}}\newline
-Include dependency graph for unit\+\_\+model.\+cpp\+:
-\nopagebreak
+Include dependency graph for unit\+\_\+model.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -434,32 +433,21 @@ Definition at line \mbox{\hyperlink{unit__model_8cpp_source_l00152}{152}} of fil
 \DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00153\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Model1"{}});}
 \DoxyCodeLine{00154\ }
-\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
-\DoxyCodeLine{00157\ }
-\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticFlow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
-\DoxyCodeLine{00159\ }
-\DoxyCodeLine{00160\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&system1);}
-\DoxyCodeLine{00161\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&system2);}
-\DoxyCodeLine{00162\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&logisticFlow1);}
-\DoxyCodeLine{00163\ }
-\DoxyCodeLine{00164\ \ \ \ \ assert(model.\mbox{\hyperlink{classModel_a92d3f9f1c9edd642606a4dececd57131}{run}}(0,\ 100));}
-\DoxyCodeLine{00165\ \ \ \ \ assert(!model.\mbox{\hyperlink{classModel_a92d3f9f1c9edd642606a4dececd57131}{run}}(110,\ 100));}
-\DoxyCodeLine{00166\ \ \ \ \ assert(!model.\mbox{\hyperlink{classModel_a92d3f9f1c9edd642606a4dececd57131}{run}}(-\/30,\ 10));}
-\DoxyCodeLine{00167\ \ \ \ \ assert(!model.\mbox{\hyperlink{classModel_a92d3f9f1c9edd642606a4dececd57131}{run}}(-\/25,\ -\/145));}
-\DoxyCodeLine{00168\ }
-\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
-\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticFlow1;}
-\DoxyCodeLine{00173\ \}}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ assert(model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(0,\ 100)\ ==\ 100);}
+\DoxyCodeLine{00157\ \ \ \ \ assert(model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(110,\ 100)\ ==\ -\/1);}
+\DoxyCodeLine{00158\ \ \ \ \ assert(model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(-\/30,\ 10)\ ==\ -\/1);}
+\DoxyCodeLine{00159\ \ \ \ \ assert(model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(-\/25,\ -\/145)\ ==\ -\/1);}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
+\DoxyCodeLine{00162\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=279pt]{unit__model_8cpp_a37286918320acd70d56642498fa32c18_cgraph}
+\includegraphics[width=276pt]{unit__model_8cpp_a37286918320acd70d56642498fa32c18_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak

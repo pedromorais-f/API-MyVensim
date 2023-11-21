@@ -47,8 +47,7 @@ void unit_Flow_Construtor_Copy(){
     Flow& logisticflow1 = *new LogisticFlow(&system1, &system2);
     Flow& logisticflow2 = *new LogisticFlow(logisticflow1);
 
-    assert(logisticflow1.getBegin() == logisticflow2.getBegin());
-    assert(logisticflow1.getEnd() == logisticflow2.getEnd());
+    assert(logisticflow1 == logisticflow2);
 
     delete &logisticflow1;
     delete &logisticflow2;
@@ -63,7 +62,7 @@ void unit_Flow_Equals(){
     Flow& logisticflow1 = *new LogisticFlow(&system1, &system2);
     Flow& logisticflow2 = logisticflow1;
 
-    assert(&logisticflow1 == &logisticflow2);
+    assert(logisticflow1 == logisticflow2);
 
     delete &logisticflow1;
 }

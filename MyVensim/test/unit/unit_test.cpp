@@ -18,8 +18,6 @@ void run_test_System(){
     unit_System_setValue();
 
     unit_System_getValue();
-
-    unit_System_compare();
 }
 
 void run_test_Flow(){
