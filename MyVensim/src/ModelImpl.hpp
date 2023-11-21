@@ -7,7 +7,7 @@
 #include "System.hpp"
 #include "Flow.hpp"
 #include "Model.hpp"
-#include "SystemImpl.hpp"
+//#include "SystemImpl.hpp"
 #include <typeinfo>
 
 using namespace std;
@@ -132,7 +132,7 @@ public:
     /**
      * @brief Print a summary of the model's systems and flows
      */
-    void summary();
+    //void summary();
 };
 
 #endif

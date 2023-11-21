@@ -105,7 +105,7 @@ public:
     /**
      * @brief Print a summary of the model's systems and flows.
      */
-    virtual void summary() = 0;
+    //virtual void summary() = 0;
 };
 
 #endif

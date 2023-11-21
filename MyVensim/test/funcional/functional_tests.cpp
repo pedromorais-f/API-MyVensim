@@ -56,7 +56,7 @@ void logisticTest(){
 
     model.run(0, 100);
 
-    model.summary();
+    //model.summary();
 
 
     assert(fabs(round(p1.getValue() * 10000) - 88.2167 * 10000) < 1);
@@ -86,7 +86,7 @@ void exponentialTest(){
 
     model.run(0, 100);
 
-    model.summary();
+    //model.summary();
 
     assert(fabs(round(pop1.getValue() * 10000) - 36.6032 * 10000) < 1);
     assert(fabs(round(pop2.getValue() * 10000) - 63.3968 * 10000) < 1);
@@ -129,7 +129,7 @@ void complexTest(){
 
     model.run(0, 100);
 
-    model.summary();
+    //model.summary();
 
     assert(fabs(round(Q1.getValue() * 10000) - 31.8513 * 10000) < 1);
     assert(fabs(round(Q2.getValue() * 10000) - 18.4003 * 10000) < 1);

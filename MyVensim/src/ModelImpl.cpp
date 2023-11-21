@@ -129,16 +129,16 @@ bool ModelImpl :: run(int t_begin, int t_end){
     
 }
 
-void ModelImpl :: summary(){
-    cout << "Model Summary\n" << endl;
+// void ModelImpl :: summary(){
+//     cout << "Model Summary\n" << endl;
 
-    cout << name << endl;
+//     cout << name << endl;
     
-    cout << "------------------------------" << endl;
+//     cout << "------------------------------" << endl;
 
 
-    for(System *system : this->systems)
-        cout << "\n" << *dynamic_cast<SystemImpl*>(system) << endl;
+//     for(System *system : this->systems)
+//         cout << "\n" << *dynamic_cast<SystemImpl*>(system) << endl;
 
-    cout << "------------------------------" << endl;
-}
+//     cout << "------------------------------" << endl;
+// }

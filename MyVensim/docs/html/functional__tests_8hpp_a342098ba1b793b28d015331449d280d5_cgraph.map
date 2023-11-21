@@ -1,11 +1,9 @@
 <map id="complexTest" name="complexTest">
-<area shape="rect" id="Node000001" title="Function to perform a complex test." alt="" coords="5,80,109,105"/>
+<area shape="rect" id="Node000001" title="Function to perform a complex test." alt="" coords="5,55,109,80"/>
 <area shape="rect" id="Node000002" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="178,5,273,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,78,156,40,172,33,174,38,158,44,83,82"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,52,167,32,169,37,102,57"/>
 <area shape="rect" id="Node000003" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="157,55,293,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,82,143,77,144,82,110,87"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,65,144,65,144,70,110,70"/>
 <area shape="rect" id="Node000004" href="$classModel.html#a92d3f9f1c9edd642606a4dececd57131" title="Run the model for a specified number of iterations." alt="" coords="180,104,271,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="110,97,166,106,166,111,109,103"/>
-<area shape="rect" id="Node000005" href="$classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems and flows." alt="" coords="159,153,291,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="85,103,158,138,177,146,175,151,156,143,82,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="102,77,169,97,167,102,100,83"/>
 </map>
