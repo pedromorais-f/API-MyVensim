@@ -1,5 +1,8 @@
 #include "ModelImpl.hpp"
 
+
+vector<Model*> ModelImpl :: models;
+
 ModelImpl :: ModelImpl(const ModelImpl &model){
     name = model.getName();
     systems.insert(systems.begin(), model.systems.begin(), model.systems.end());
@@ -29,7 +32,34 @@ ModelImpl :: ModelImpl(string name){
     this->name = name;
 }
 
-ModelImpl :: ~ModelImpl(){}
+ModelImpl :: ~ModelImpl(){
+    
+    systemsIterator sysIt = systemsBegin();
+    while(sysIt != systemsEnd()){
+        delete *sysIt;
+        sysIt++;
+    }
+
+    systems.clear();
+
+    flowsIterator flowIt = flowsBegin();
+    while(flowIt != flowsEnd()){
+        delete *flowIt;
+        flowIt++;
+    }
+
+    flows.clear();
+
+    modelsIterator modelsIt = modelsBegin();
+    while(modelsIt != modelsEnd()){
+        if(*modelsIt == this){
+            models.erase(modelsIt);
+            break;
+        }
+    }
+
+    models.clear();
+}
 
 ModelImpl :: systemsIterator ModelImpl :: systemsBegin(){
     return systems.begin();
@@ -37,6 +67,10 @@ ModelImpl :: systemsIterator ModelImpl :: systemsBegin(){
 
 ModelImpl :: systemsIterator ModelImpl :: systemsEnd(){
     return systems.end();
+}
+
+int ModelImpl :: systemsSize(){
+    return systems.size();
 }
 
 ModelImpl :: flowsIterator ModelImpl :: flowsBegin(){
@@ -47,15 +81,56 @@ ModelImpl :: flowsIterator ModelImpl :: flowsEnd(){
     return flows.end();
 }
 
-void ModelImpl :: setName(string name){
-    this->name = name;
-}
-
 int ModelImpl :: flowsSize(){
     return flows.size();
 }
-int ModelImpl :: systemsSize(){
-    return systems.size();
+
+ModelImpl :: modelsIterator ModelImpl :: modelsBegin(){
+    return models.begin();
+}
+
+ModelImpl :: modelsIterator ModelImpl :: modelsEnd(){
+    return models.end();
+}
+
+int ModelImpl :: modelsSize(){
+    return models.size();
+}
+
+Model& Model :: createModel(string name){
+    return ModelImpl::createModel(name);
+}
+
+Model& ModelImpl :: createModel(string name){
+    Model *model = new ModelImpl(name);
+    models.push_back(model);
+    return *model;
+}
+
+Model& Model :: createModel(){
+    return ModelImpl::createModel();
+}
+
+Model& ModelImpl :: createModel(){
+    Model *model = new ModelImpl();
+    models.push_back(model);
+    return *model;
+}
+
+System& ModelImpl :: createSystem(string name, double value){
+    System* system = new SystemImpl(name, value);
+    add(system);
+    return *system;
+}
+
+System& ModelImpl :: createSystem(){
+    System* system = new SystemImpl();
+    add(system);
+    return *system;
+}
+
+void ModelImpl :: setName(string name){
+    this->name = name;
 }
 
 string ModelImpl :: getName() const{
@@ -76,6 +151,13 @@ bool ModelImpl :: add(Flow *flow){
     return (size != flows.size());
 }
 
+bool ModelImpl :: add(Model *model){
+    long unsigned int size = models.size();
+    models.push_back(model);
+
+    return (size != models.size());
+}
+
 bool ModelImpl :: remove(System *system){
     for (systemsIterator i = systemsBegin(); i < systemsEnd(); i++){
         if(*i == system){
@@ -91,6 +173,16 @@ bool ModelImpl :: remove(Flow *flow){
     for (flowsIterator i = flowsBegin(); i < flowsEnd(); i++){
         if(*i == flow){
             flows.erase(i);
+            return true;
+        }
+    }
+    return false;
+}
+
+bool ModelImpl :: remove(Model *model){
+    for (modelsIterator i = modelsBegin(); i < modelsEnd(); i++){
+        if(*i == model){
+            models.erase(i);
             return true;
         }
     }

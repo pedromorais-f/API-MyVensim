@@ -1,7 +1,8 @@
 \doxysection{test/funcional/functional\+\_\+tests.cpp File Reference}
 \hypertarget{functional__tests_8cpp}{}\label{functional__tests_8cpp}\index{test/funcional/functional\_tests.cpp@{test/funcional/functional\_tests.cpp}}
 {\ttfamily \#include "{}functional\+\_\+tests.\+hpp"{}}\newline
-Include dependency graph for functional\+\_\+tests.\+cpp\+:\nopagebreak
+Include dependency graph for functional\+\_\+tests.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -41,63 +42,41 @@ Function to perform a complex test.
 
 
 
-Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00101}{101}} of file \mbox{\hyperlink{functional__tests_8cpp_source}{functional\+\_\+tests.\+cpp}}.
+Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00089}{89}} of file \mbox{\hyperlink{functional__tests_8cpp_source}{functional\+\_\+tests.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00102\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Complex\ Test\(\backslash\)n"{}}\ <<\ endl;}
-\DoxyCodeLine{00103\ \ \ \ \ }
-\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Complex\ Model"{}});}
-\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q1"{}},\ 100.0);\ }
-\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q2"{}},\ 0.0);}
-\DoxyCodeLine{00107\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q3\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q3"{}},\ 100.0);}
-\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q4\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q4"{}},\ 0.0);}
-\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q5\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Q5"{}},\ 0.0);}
-\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ f\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q1,\ \&Q2);}
-\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ g\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q1,\ \&Q3);}
-\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ r\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q2,\ \&Q5);}
-\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ t\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q2,\ \&Q3);}
-\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ u\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q3,\ \&Q4);}
-\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ v\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classComplexFlow}{ComplexFlow}}(\&Q4,\ \&Q1);}
-\DoxyCodeLine{00116\ }
-\DoxyCodeLine{00117\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q1);}
-\DoxyCodeLine{00118\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q2);}
-\DoxyCodeLine{00119\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q3);}
-\DoxyCodeLine{00120\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q4);}
-\DoxyCodeLine{00121\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&Q5);}
-\DoxyCodeLine{00122\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&f);}
-\DoxyCodeLine{00123\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&g);}
-\DoxyCodeLine{00124\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&r);}
-\DoxyCodeLine{00125\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&t);}
-\DoxyCodeLine{00126\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&u);}
-\DoxyCodeLine{00127\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&v);}
-\DoxyCodeLine{00128\ }
-\DoxyCodeLine{00129\ \ \ \ \ model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(0,\ 100);}
-\DoxyCodeLine{00130\ }
-\DoxyCodeLine{00131\ \ \ \ \ model.\mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}}();}
-\DoxyCodeLine{00132\ }
-\DoxyCodeLine{00133\ \ \ \ \ assert(fabs(round(Q1.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 31.8513\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00134\ \ \ \ \ assert(fabs(round(Q2.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 18.4003\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00135\ \ \ \ \ assert(fabs(round(Q3.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 77.1143\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00136\ \ \ \ \ assert(fabs(round(Q4.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 56.1728\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00137\ \ \ \ \ assert(fabs(round(Q5.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 16.4612\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00138\ }
-\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
-\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q1;}
-\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q2;}
-\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q3;}
-\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q4;}
-\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keyword}{delete}\ \&Q5;}
-\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keyword}{delete}\ \&f;}
-\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keyword}{delete}\ \&g;}
-\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keyword}{delete}\ \&r;}
-\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keyword}{delete}\ \&t;}
-\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keyword}{delete}\ \&u;}
-\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keyword}{delete}\ \&v;}
-\DoxyCodeLine{00151\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Complex\ Test\ Passed"{}}\ <<\ endl;}
-\DoxyCodeLine{00152\ }
-\DoxyCodeLine{00153\ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Complex\ Test\(\backslash\)n"{}}\ <<\ endl;}
+\DoxyCodeLine{00091\ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ \mbox{\hyperlink{classModelImpl_aedca25d981322204bdf01395241e4752}{ModelImpl::createModel}}(\textcolor{stringliteral}{"{}Complex\ Model"{}});}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q1\ =\ model.\mbox{\hyperlink{classModel_a3fe003a645eedd53d8dda6921dcd4a56}{createSystem}}(\textcolor{stringliteral}{"{}Q1"{}},\ 100.0);\ }
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q2\ =\ model.\mbox{\hyperlink{classModel_a3fe003a645eedd53d8dda6921dcd4a56}{createSystem}}(\textcolor{stringliteral}{"{}Q2"{}},\ 0.0);}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q3\ =\ model.\mbox{\hyperlink{classModel_a3fe003a645eedd53d8dda6921dcd4a56}{createSystem}}(\textcolor{stringliteral}{"{}Q3"{}},\ 100.0);}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q4\ =\ model.\mbox{\hyperlink{classModel_a3fe003a645eedd53d8dda6921dcd4a56}{createSystem}}(\textcolor{stringliteral}{"{}Q4"{}},\ 0.0);}
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ Q5\ =\ model.\mbox{\hyperlink{classModel_a3fe003a645eedd53d8dda6921dcd4a56}{createSystem}}(\textcolor{stringliteral}{"{}Q5"{}},\ 0.0);}
+\DoxyCodeLine{00098\ \ \ \ \ model.\mbox{\hyperlink{classModel_a80c13cc6ebd88648774508758d9b631e}{createFlow}}<\mbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(\&Q1,\ \&Q2);}
+\DoxyCodeLine{00099\ \ \ \ \ model.\mbox{\hyperlink{classModel_a80c13cc6ebd88648774508758d9b631e}{createFlow}}<\mbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(\&Q1,\ \&Q3);}
+\DoxyCodeLine{00100\ \ \ \ \ model.\mbox{\hyperlink{classModel_a80c13cc6ebd88648774508758d9b631e}{createFlow}}<\mbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(\&Q2,\ \&Q5);}
+\DoxyCodeLine{00101\ \ \ \ \ model.\mbox{\hyperlink{classModel_a80c13cc6ebd88648774508758d9b631e}{createFlow}}<\mbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(\&Q2,\ \&Q3);}
+\DoxyCodeLine{00102\ \ \ \ \ model.\mbox{\hyperlink{classModel_a80c13cc6ebd88648774508758d9b631e}{createFlow}}<\mbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(\&Q3,\ \&Q4);}
+\DoxyCodeLine{00103\ \ \ \ \ model.\mbox{\hyperlink{classModel_a80c13cc6ebd88648774508758d9b631e}{createFlow}}<\mbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(\&Q4,\ \&Q1);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(0,\ 100);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ model.\mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}}();}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ assert(fabs(round(Q1.getValue()\ *\ 10000)\ -\/\ 31.8513\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00110\ \ \ \ \ assert(fabs(round(Q2.getValue()\ *\ 10000)\ -\/\ 18.4003\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00111\ \ \ \ \ assert(fabs(round(Q3.getValue()\ *\ 10000)\ -\/\ 77.1143\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00112\ \ \ \ \ assert(fabs(round(Q4.getValue()\ *\ 10000)\ -\/\ 56.1728\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00113\ \ \ \ \ assert(fabs(round(Q5.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 16.4612\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
+\DoxyCodeLine{00116\ \ \ \ \ }
+\DoxyCodeLine{00117\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Complex\ Test\ Passed"{}}\ <<\ endl;}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:
@@ -105,7 +84,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=296pt]{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5_cgraph}
+\includegraphics[width=350pt]{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
@@ -127,37 +106,31 @@ Function to perform an exponential test.
 
 
 
-Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00073}{73}} of file \mbox{\hyperlink{functional__tests_8cpp_source}{functional\+\_\+tests.\+cpp}}.
+Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{functional__tests_8cpp_source}{functional\+\_\+tests.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00074\ \ \ \ \ }
-\DoxyCodeLine{00075\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Exponential\ Test\(\backslash\)n"{}}\ <<\ endl;}
-\DoxyCodeLine{00076\ \ \ \ \ }
-\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Exponential\ Model"{}});}
-\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ pop1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}POP1"{}},\ 100.0);}
-\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ pop2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}POP2"{}},\ 0.0);}
-\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ exponential\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}(\&pop1,\ \&pop2);}
-\DoxyCodeLine{00081\ }
-\DoxyCodeLine{00082\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&pop1);}
-\DoxyCodeLine{00083\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&pop2);}
-\DoxyCodeLine{00084\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&exponential);}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \ \ \ \ model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(0,\ 100);}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \ \ \ \ model.\mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}}();}
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ \ \ \ \ assert(fabs(round(pop1.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 36.6032\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00091\ \ \ \ \ assert(fabs(round(pop2.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 63.3968\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
-\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keyword}{delete}\ \&pop1;}
-\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{delete}\ \&pop2;}
-\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{delete}\ \&exponential;}
-\DoxyCodeLine{00097\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Exponential\ Test\ Passed\(\backslash\)n"{}}\ <<\ endl;}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00099\ \}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Exponential\ Test\(\backslash\)n"{}}\ <<\ endl;}
+\DoxyCodeLine{00070\ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ \mbox{\hyperlink{classModelImpl_aedca25d981322204bdf01395241e4752}{ModelImpl::createModel}}(\textcolor{stringliteral}{"{}Exponential\ Model"{}});}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ pop1\ =\ model.\mbox{\hyperlink{classModel_a3fe003a645eedd53d8dda6921dcd4a56}{createSystem}}(\textcolor{stringliteral}{"{}POP1"{}},\ 100.0);}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ pop2\ =\ model.\mbox{\hyperlink{classModel_a3fe003a645eedd53d8dda6921dcd4a56}{createSystem}}(\textcolor{stringliteral}{"{}POP2"{}},\ 0.0);}
+\DoxyCodeLine{00074\ \ \ \ \ model.\mbox{\hyperlink{classModel_a80c13cc6ebd88648774508758d9b631e}{createFlow}}<\mbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}>(\&pop1,\ \&pop2);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(0,\ 100);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ model.\mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ assert(fabs(round(pop1.getValue()\ *\ 10000)\ -\/\ 36.6032\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00081\ \ \ \ \ assert(fabs(round(pop2.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 63.3968\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Exponential\ Test\ Passed\(\backslash\)n"{}}\ <<\ endl;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:
@@ -165,7 +138,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=312pt]{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph}
+\includegraphics[width=350pt]{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
@@ -195,30 +168,24 @@ Definition at line \mbox{\hyperlink{functional__tests_8cpp_source_l00044}{44}} o
 \DoxyCodeLine{00045\ \ \ \ \ }
 \DoxyCodeLine{00046\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nStarting\ Logistic\ Test\(\backslash\)n"{}}\ <<\ endl;}
 \DoxyCodeLine{00047\ \ \ \ \ }
-\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Logistic\ Model"{}});}
-\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ p1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}P1"{}},\ 100.0);}
-\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ p2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}P2"{}},\ 10.0);}
-\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logistic\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&p1,\ \&p2);}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}\&\ model\ =\ \mbox{\hyperlink{classModelImpl_aedca25d981322204bdf01395241e4752}{ModelImpl::createModel}}(\textcolor{stringliteral}{"{}Logistic\ Model"{}});}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ p1\ =\ model.\mbox{\hyperlink{classModel_a3fe003a645eedd53d8dda6921dcd4a56}{createSystem}}(\textcolor{stringliteral}{"{}P1"{}},\ 100.0);}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ p2\ =\ model.\mbox{\hyperlink{classModel_a3fe003a645eedd53d8dda6921dcd4a56}{createSystem}}(\textcolor{stringliteral}{"{}P2"{}},\ 10.0);}
+\DoxyCodeLine{00051\ \ \ \ \ model.\mbox{\hyperlink{classModel_a80c13cc6ebd88648774508758d9b631e}{createFlow}}<\mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}>(\&p1,\ \&p2);}
 \DoxyCodeLine{00052\ }
-\DoxyCodeLine{00053\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&p1);}
-\DoxyCodeLine{00054\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&p2);}
-\DoxyCodeLine{00055\ \ \ \ \ model.\mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{add}}(\&logistic);}
+\DoxyCodeLine{00053\ \ \ \ \ model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(0,\ 100);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ model.\mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}}();}
 \DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \ \ \ \ model.\mbox{\hyperlink{classModel_a4ff5eb3fd50c1853d975bd1e39736c63}{run}}(0,\ 100);}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \ \ \ \ model.\mbox{\hyperlink{classModel_a019a2458da608586cbec1cb51b0cbc3c}{summary}}();}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \ \ \ \ assert(fabs(round(p1.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 88.2167\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00062\ \ \ \ \ assert(fabs(round(p2.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 21.7833\ *\ 10000)\ <\ 1);}
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00064\ \ \ \ \ }
-\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
-\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{delete}\ \&p1;}
-\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{delete}\ \&p2;}
-\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{delete}\ \&logistic;}
-\DoxyCodeLine{00069\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Logistic\ Test\ Passed\(\backslash\)n"{}}\ <<\ endl;}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00071\ \}}
+\DoxyCodeLine{00057\ \ \ \ \ assert(fabs(round(p1.getValue()\ *\ 10000)\ -\/\ 88.2167\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00058\ \ \ \ \ assert(fabs(round(p2.\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 21.7833\ *\ 10000)\ <\ 1);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{delete}\ \&model;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Logistic\ Test\ Passed\(\backslash\)n"{}}\ <<\ endl;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \}}
 
 \end{DoxyCode}
 Here is the call graph for this function\+:
@@ -226,7 +193,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=289pt]{functional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6_cgraph}
+\includegraphics[width=350pt]{functional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak

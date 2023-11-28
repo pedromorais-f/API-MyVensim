@@ -1,34 +1,27 @@
 <map id="Model::add" name="Model::add">
-<area shape="rect" id="Node000001" title="Add a System object to the model." alt="" coords="537,203,632,228"/>
-<area shape="rect" id="Node000002" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="Function to perform a complex test." alt="" coords="332,5,436,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="574,190,563,157,545,117,520,77,488,44,463,31,435,24,437,19,465,26,491,40,524,74,550,114,568,155,579,189"/>
-<area shape="rect" id="Node000004" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="Function to perform an exponential test." alt="" coords="321,55,447,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="569,192,537,141,514,115,488,94,468,84,446,77,448,72,470,79,491,89,518,111,541,138,573,189"/>
-<area shape="rect" id="Node000005" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="Function to perform a logistic test." alt="" coords="337,104,431,129"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="559,195,527,167,488,143,460,132,431,125,432,120,461,127,491,138,530,163,562,190"/>
-<area shape="rect" id="Node000006" href="$unit__model_8cpp.html#a742a3cf3113b9b5828bf0dfe22abc6a3" title="Unit test for the addFlow method of the Model class." alt="" coords="306,153,462,179"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="524,202,489,193,441,181,443,176,490,187,525,197"/>
-<area shape="rect" id="Node000009" href="$unit__model_8cpp.html#a06390bb362065cf4ccf41ddfa0c33693" title="Unit test for the addSystem method of the Model class." alt="" coords="297,203,471,228"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="523,218,471,218,471,213,523,213"/>
-<area shape="rect" id="Node000010" href="$unit__model_8cpp.html#a311b7da9900493bb3dcd917d1cb45268" title="Unit test for the flowsBegin and flowsEnd methods of the Model class." alt="" coords="287,252,481,277"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="524,233,490,242,439,254,438,249,489,237,523,228"/>
-<area shape="rect" id="Node000011" href="$unit__model_8cpp.html#a9558a5ae2be456fcc8c7a3b1ecd5f3cb" title="Unit test for the removeFlow method of the Model class." alt="" coords="293,301,475,327"/>
-<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="562,240,530,267,491,291,456,304,455,299,488,286,527,262,559,236"/>
-<area shape="rect" id="Node000012" href="$unit__model_8cpp.html#ad30b83679de39115af7c05c286ed505b" title="Unit test for the removeSystem method of the Model class." alt="" coords="284,351,484,376"/>
-<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="573,241,541,292,518,318,491,340,464,353,462,348,488,336,514,314,537,289,569,239"/>
-<area shape="rect" id="Node000013" href="$unit__model_8cpp.html#a36ff125e2796273a0e04407c84852800" title="Unit test for the systemsBegin and systemsEnd methods of the Model class." alt="" coords="279,400,489,425"/>
-<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="579,242,567,276,549,316,524,356,491,389,469,402,466,397,488,385,520,352,545,313,562,274,574,240"/>
-<area shape="rect" id="Node000003" href="$mainFTest_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="142,55,197,80"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="319,35,279,45,197,64,196,59,278,39,318,30"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="307,70,197,70,197,65,307,65"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="323,106,197,76,198,71,324,100"/>
-<area shape="rect" id="Node000007" href="$unit__test_8cpp.html#a533d06849d453f8f9d0da4a88f2b2061" title="Run unit tests for the Model class." alt="" coords="108,276,231,301"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="295,186,280,192,250,212,222,235,183,278,179,274,219,231,247,208,277,188,292,181"/>
-<area shape="rect" id="Node000008" href="$mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,276,60,301"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="94,291,60,291,60,286,94,286"/>
-<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="306,234,280,242,196,278,194,273,278,237,304,229"/>
-<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="274,280,231,284,231,279,273,274"/>
-<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="278,304,231,299,231,293,279,299"/>
-<area shape="poly" id="edge17_Node000012_Node000007" title=" " alt="" coords="308,350,278,341,194,304,196,299,280,335,310,345"/>
-<area shape="poly" id="edge19_Node000013_Node000007" title=" " alt="" coords="296,398,277,390,247,370,219,346,179,303,183,300,222,342,250,365,280,385,298,393"/>
+<area shape="rect" id="Node000001" title="Add a System object to the model." alt="" coords="711,129,805,155"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="520,129,663,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="697,145,663,145,663,139,697,139"/>
+<area shape="rect" id="Node000003" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="Function to perform a complex test." alt="" coords="323,5,427,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="567,121,525,81,471,44,427,29,429,24,473,40,528,77,571,117"/>
+<area shape="rect" id="Node000005" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="Function to perform an exponential test." alt="" coords="313,55,438,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="550,126,471,94,433,83,434,78,473,89,552,121"/>
+<area shape="rect" id="Node000006" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="Function to perform a logistic test." alt="" coords="328,104,423,129"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="506,135,423,125,423,120,507,129"/>
+<area shape="rect" id="Node000007" href="$unit__model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Unit test for the createFlow method of the Model class." alt="" coords="289,153,462,179"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="506,154,463,159,462,154,506,149"/>
+<area shape="rect" id="Node000010" href="$unit__model_8cpp.html#a311b7da9900493bb3dcd917d1cb45268" title="Unit test for the flowsBegin and flowsEnd methods of the Model class." alt="" coords="279,203,472,228"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="550,163,473,193,430,205,429,200,471,187,548,158"/>
+<area shape="rect" id="Node000011" href="$unit__model_8cpp.html#a9558a5ae2be456fcc8c7a3b1ecd5f3cb" title="Unit test for the removeFlow method of the Model class." alt="" coords="284,252,467,277"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="570,167,528,205,473,242,441,254,439,249,471,237,524,201,567,163"/>
+<area shape="rect" id="Node000004" href="$mainFTest_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="142,55,197,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="311,36,198,63,197,58,310,31"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="299,70,197,70,197,65,299,65"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="314,105,196,76,197,71,315,100"/>
+<area shape="rect" id="Node000008" href="$unit__test_8cpp.html#a533d06849d453f8f9d0da4a88f2b2061" title="Run unit tests for the Model class." alt="" coords="108,203,231,228"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="309,184,224,205,223,200,308,179"/>
+<area shape="rect" id="Node000009" href="$mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,203,60,228"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="94,218,60,218,60,213,94,213"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="265,218,231,218,231,213,265,213"/>
+<area shape="poly" id="edge14_Node000011_Node000008" title=" " alt="" coords="308,251,223,231,224,225,309,246"/>
 </map>

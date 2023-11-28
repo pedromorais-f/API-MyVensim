@@ -32,14 +32,19 @@ void unit_Model_setName();
 void unit_Model_getName();
 
 /**
- * @brief Unit test for the addSystem method of the Model class.
+ * @brief Unit test for the createSystem method of the Model class.
  */
-void unit_Model_addSystem();
+void unit_Model_createSystem();
 
 /**
- * @brief Unit test for the addFlow method of the Model class.
+ * @brief Unit test for the createFlow method of the Model class.
  */
-void unit_Model_addFlow();
+void unit_Model_createFlow();
+
+/**
+ * @brief Unit test for the createModel method of the Model class.
+ */
+void unit_Model_createModel();
 
 /**
  * @brief Unit test for the removeSystem method of the Model class.
@@ -60,6 +65,11 @@ void unit_Model_SystemBeginEnd();
  * @brief Unit test for the flowsBegin and flowsEnd methods of the Model class.
  */
 void unit_Model_FlowBeginEnd();
+
+/**
+ * @brief Unit test for the modelsBegin and modelsEnd methods of the Model class.
+ */
+void unit_Model_ModelBeginEnd();
 
 /**
  * @brief Unit test for the run method of the Model class.

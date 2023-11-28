@@ -45,14 +45,10 @@ void logisticTest(){
     
     cout << "\nStarting Logistic Test\n" << endl;
     
-    Model& model = *new ModelImpl("Logistic Model");
-    System& p1 = *new SystemImpl("P1", 100.0);
-    System& p2 = *new SystemImpl("P2", 10.0);
-    Flow& logistic = *new LogisticFlow(&p1, &p2);
-
-    model.add(&p1);
-    model.add(&p2);
-    model.add(&logistic);
+    Model& model = ModelImpl::createModel("Logistic Model");
+    System& p1 = model.createSystem("P1", 100.0);
+    System& p2 = model.createSystem("P2", 10.0);
+    model.createFlow<LogisticFlow>(&p1, &p2);
 
     model.run(0, 100);
 
@@ -63,9 +59,7 @@ void logisticTest(){
 
     
     delete &model;
-    delete &p1;
-    delete &p2;
-    delete &logistic;
+
     cout << "Logistic Test Passed\n" << endl;
 
 }
@@ -74,14 +68,10 @@ void exponentialTest(){
     
     cout << "\nStarting Exponential Test\n" << endl;
     
-    Model& model = *new ModelImpl("Exponential Model");
-    System& pop1 = *new SystemImpl("POP1", 100.0);
-    System& pop2 = *new SystemImpl("POP2", 0.0);
-    Flow& exponential = *new ExponentialFlow(&pop1, &pop2);
-
-    model.add(&pop1);
-    model.add(&pop2);
-    model.add(&exponential);
+    Model& model = ModelImpl::createModel("Exponential Model");
+    System& pop1 = model.createSystem("POP1", 100.0);
+    System& pop2 = model.createSystem("POP2", 0.0);
+    model.createFlow<ExponentialFlow>(&pop1, &pop2);
 
     model.run(0, 100);
 
@@ -91,9 +81,7 @@ void exponentialTest(){
     assert(fabs(round(pop2.getValue() * 10000) - 63.3968 * 10000) < 1);
 
     delete &model;
-    delete &pop1;
-    delete &pop2;
-    delete &exponential;
+
     cout << "Exponential Test Passed\n" << endl;
 
 }
@@ -101,30 +89,18 @@ void exponentialTest(){
 void complexTest(){
     cout << "\nStarting Complex Test\n" << endl;
     
-    Model& model = *new ModelImpl("Complex Model");
-    System& Q1 = *new SystemImpl("Q1", 100.0); 
-    System& Q2 = *new SystemImpl("Q2", 0.0);
-    System& Q3 = *new SystemImpl("Q3", 100.0);
-    System& Q4 = *new SystemImpl("Q4", 0.0);
-    System& Q5 = *new SystemImpl("Q5", 0.0);
-    Flow& f = *new ComplexFlow(&Q1, &Q2);
-    Flow& g = *new ComplexFlow(&Q1, &Q3);
-    Flow& r = *new ComplexFlow(&Q2, &Q5);
-    Flow& t = *new ComplexFlow(&Q2, &Q3);
-    Flow& u = *new ComplexFlow(&Q3, &Q4);
-    Flow& v = *new ComplexFlow(&Q4, &Q1);
-
-    model.add(&Q1);
-    model.add(&Q2);
-    model.add(&Q3);
-    model.add(&Q4);
-    model.add(&Q5);
-    model.add(&f);
-    model.add(&g);
-    model.add(&r);
-    model.add(&t);
-    model.add(&u);
-    model.add(&v);
+    Model& model = ModelImpl::createModel("Complex Model");
+    System& Q1 = model.createSystem("Q1", 100.0); 
+    System& Q2 = model.createSystem("Q2", 0.0);
+    System& Q3 = model.createSystem("Q3", 100.0);
+    System& Q4 = model.createSystem("Q4", 0.0);
+    System& Q5 = model.createSystem("Q5", 0.0);
+    model.createFlow<ComplexFlow>(&Q1, &Q2);
+    model.createFlow<ComplexFlow>(&Q1, &Q3);
+    model.createFlow<ComplexFlow>(&Q2, &Q5);
+    model.createFlow<ComplexFlow>(&Q2, &Q3);
+    model.createFlow<ComplexFlow>(&Q3, &Q4);
+    model.createFlow<ComplexFlow>(&Q4, &Q1);
 
     model.run(0, 100);
 
@@ -137,17 +113,7 @@ void complexTest(){
     assert(fabs(round(Q5.getValue() * 10000) - 16.4612 * 10000) < 1);
 
     delete &model;
-    delete &Q1;
-    delete &Q2;
-    delete &Q3;
-    delete &Q4;
-    delete &Q5;
-    delete &f;
-    delete &g;
-    delete &r;
-    delete &t;
-    delete &u;
-    delete &v;
+    
     cout << "Complex Test Passed" << endl;
 
 }

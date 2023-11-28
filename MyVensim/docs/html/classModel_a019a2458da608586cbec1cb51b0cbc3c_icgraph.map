@@ -1,5 +1,5 @@
 <map id="Model::summary" name="Model::summary">
-<area shape="rect" id="Node000001" title="Print a summary of the model&#39;s systems." alt="" coords="281,55,413,80"/>
+<area shape="rect" id="Node000001" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="281,55,413,80"/>
 <area shape="rect" id="Node000002" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="Function to perform a complex test." alt="" coords="119,5,223,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,53,217,33,218,28,289,48"/>
 <area shape="rect" id="Node000004" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="Function to perform an exponential test." alt="" coords="108,55,233,80"/>

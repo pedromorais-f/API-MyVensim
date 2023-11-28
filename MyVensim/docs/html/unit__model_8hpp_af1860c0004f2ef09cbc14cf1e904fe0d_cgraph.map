@@ -1,0 +1,9 @@
+<map id="unit_Model_createSystem" name="unit_Model_createSystem">
+<area shape="rect" id="Node000001" title="Unit test for the createSystem method of the Model class." alt="" coords="5,55,196,80"/>
+<area shape="rect" id="Node000002" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="244,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,52,259,31,260,36,162,57"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="254,55,414,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,65,240,65,240,70,196,70"/>
+<area shape="rect" id="Node000004" href="$classModel.html#a0fbe0f40b959f8303d23a003d4a00257" title="Get the size of the systems vector." alt="" coords="258,104,410,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,77,260,98,259,104,161,83"/>
+</map>

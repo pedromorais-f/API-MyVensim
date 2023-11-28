@@ -15,7 +15,7 @@ public:
 };
 
 void unit_Model_Constructor_Default(){
-    Model& model = *new ModelImpl();
+    Model& model = ModelImpl::createModel();
 
     assert(model.getName() == "");
 
@@ -23,7 +23,7 @@ void unit_Model_Constructor_Default(){
 }
 
 void unit_Model_Constructor(){
-    Model& model = *new ModelImpl("Model1");
+    Model& model = ModelImpl::createModel("Model1");
 
     assert(model.getName() == "Model1");
 
@@ -33,7 +33,7 @@ void unit_Model_Constructor(){
 void unit_Model_Destrutor(){}
 
 void unit_Model_setName(){
-    Model& model = *new ModelImpl();
+    Model& model = ModelImpl::createModel();
     model.setName("Model1");
 
     assert(model.getName() == "Model1");
@@ -42,66 +42,68 @@ void unit_Model_setName(){
 }
 
 void unit_Model_getName(){
-    Model& model = *new ModelImpl("Model1");
+    Model& model = ModelImpl::createModel("Model1");
 
     assert(model.getName() == "Model1");
 
     delete &model;
 }
 
-void unit_Model_addSystem(){
-    Model& model = *new ModelImpl("Model1");
+void unit_Model_createSystem(){
+    Model& model = ModelImpl::createModel();
 
-    System& system1 = *new SystemImpl();
+    model.createSystem();
 
-    assert(model.add(&system1));
+    assert(model.systemsSize() == 1);
 
     delete &model;
-    delete &system1;
 }
 
-void unit_Model_addFlow(){
-    Model& model = *new ModelImpl("Model1");
+void unit_Model_createFlow(){
+    Model& model = ModelImpl::createModel();
 
-    Flow& logisticFlow = *new LogisticFlow();
+    model.createFlow<LogisticFlow>();
 
-    assert(model.add(&logisticFlow));
+    assert(model.flowsSize() == 1);
 
     delete &model;
-    delete &logisticFlow;
+}
+
+void unit_Model_createModel(){
+    Model& model1 = ModelImpl::createModel();
+    Model& model2 = ModelImpl::createModel();
+
+    assert(model2.modelsSize() == 2);
+
+    delete &model1;
+    delete &model2;
 }
 
 void unit_Model_removeSystem(){
-    Model& model = *new ModelImpl("Model1");
+    Model& model = ModelImpl::createModel();
 
-    System& system1 = *new SystemImpl();
-    model.add(&system1);
+    System& system1 = model.createSystem();
 
     assert(model.remove(&system1));
 
     delete &model;
-    delete &system1;
 }
 
 void unit_Model_removeFlow(){
-    Model& model = *new ModelImpl("Model1");
+    Model& model = ModelImpl::createModel();
 
-    Flow& logisticFlow = *new LogisticFlow();
-    model.add(&logisticFlow);
+    Flow& logisticFlow = model.createFlow<LogisticFlow>();
 
     assert(model.remove(&logisticFlow));
 
     delete &model;
-    delete &logisticFlow;
 }
 
 void unit_Model_SystemBeginEnd(){
-    Model& model = *new ModelImpl("Model1");
+    Model& model = ModelImpl::createModel();
 
-    System& system1 = *new SystemImpl();
-    System& system2 = *new SystemImpl();
-    model.add(&system1);
-    model.add(&system2);
+    System& system1 = model.createSystem();
+    model.createSystem();
 
     assert(*model.systemsBegin() == &system1);
 
@@ -118,17 +120,13 @@ void unit_Model_SystemBeginEnd(){
     
 
     delete &model;
-    delete &system1;
-    delete &system2;
 }
 
 void unit_Model_FlowBeginEnd(){
-    Model& model = *new ModelImpl("Model1");
+    Model& model = ModelImpl::createModel();
 
-    Flow& logisticFlow1 = *new LogisticFlow();
-    Flow& logisticFlow2 = *new LogisticFlow();
-    model.add(&logisticFlow1);
-    model.add(&logisticFlow2);
+    Flow& logisticFlow1 = model.createFlow<LogisticFlow>();
+    model.createFlow<LogisticFlow>();
 
     assert(*model.flowsBegin() == &logisticFlow1);
 
@@ -145,12 +143,35 @@ void unit_Model_FlowBeginEnd(){
     
 
     delete &model;
-    delete &logisticFlow1;
-    delete &logisticFlow2;
+}
+
+void unit_Model_ModelBeginEnd(){
+    Model& model1 = ModelImpl::createModel();
+
+    Model& model2 = ModelImpl::createModel();
+    Model& model3 = ModelImpl::createModel();
+
+    assert(*model3.modelsBegin() == &model1);
+
+    int counter = 0;
+
+    Model :: modelsIterator it = model3.modelsBegin();
+
+    while(it != model3.modelsEnd()){
+        counter++;
+        it++;
+    }
+
+    assert(counter == model3.modelsSize());
+    
+
+    delete &model1;
+    delete &model2;
+    delete &model3;
 }
 
 void unit_Model_run(){
-    Model& model = *new ModelImpl("Model1");
+    Model& model = ModelImpl::createModel();
 
 
     assert(model.run(0, 100) == 100);

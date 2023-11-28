@@ -41,19 +41,22 @@ void run_test_Flow(){
 }
 
 void run_test_Model(){
+    
     unit_Model_Constructor_Default();
-
+    
     unit_Model_Constructor();
-
+    
     unit_Model_Destrutor();
-
+    
     unit_Model_setName();
-
+    
     unit_Model_getName();
+    
+    unit_Model_createSystem();
+    
+    unit_Model_createFlow();
 
-    unit_Model_addSystem();
-
-    unit_Model_addFlow();
+    unit_Model_createModel();
 
     unit_Model_removeSystem();
 
@@ -62,6 +65,8 @@ void run_test_Model(){
     unit_Model_SystemBeginEnd();
 
     unit_Model_FlowBeginEnd();
+
+    unit_Model_ModelBeginEnd();
 
     unit_Model_run();
 }
