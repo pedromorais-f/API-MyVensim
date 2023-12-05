@@ -1,64 +1,40 @@
-all: 
-	g++ -c src/*.cpp test/funcional/*.cpp test/unit/*.cpp -fpic -g -Wall
-	g++ FlowImpl.o ModelImpl.o SystemImpl.o functional_tests.o unit_test.o unit_flow.o unit_system.o unit_model.o -shared -o lib_MyVensim.so -g -Wall
+all: FlowImpl.o ModelImpl.o SystemImpl.o lib_MyVensim.so functional_tests.o unit_system.o unit_flow.o unit_model.o unit_test.o
 	
-	g++ functional_tests.o  test/funcional/mainFTest.cpp -L. -l_MyVensim -o fTests -g -Wall
-	export LD_LIBRARY_PATH=:'/home/projeto/framework-para-construcao-de-simulacoes-baseadas-na-dinamica-de-sistemas/MyVensim'
-	
-	g++  unit_test.o unit_flow.o unit_system.o unit_model.o test/unit/mainUTest.cpp -L. -l_MyVensim -o uTests -Wall -g
-	export LD_LIBRARY_PATH=:'/home/projeto/framework-para-construcao-de-simulacoes-baseadas-na-dinamica-de-sistemas/MyVensim'
-	
-	rm -r *.o
+	@g++ -o bin/fTests test/funcional/mainFTest.cpp bin/functional_tests.o -Lbin -l_myLibrary
 
+	@g++ -o bin/uTests test/unit/mainUTest.cpp bin/unit_system.o bin/unit_flow.o bin/unit_model.o bin/unit_test.o -Lbin -l_myLibrary
 
-
-
-# all: bin/FlowImpl.o bin/ModelImpl.o bin/SystemImpl.o bin/functional_tests.o bin/mainFTest.o bin/unit_system.o bin/unit_flow.o bin/unit_test.o bin/unit_model.o bin/mainUTest.o
-# 	@g++ bin/FlowImpl.o bin/ModelImpl.o bin/SystemImpl.o bin/functional_tests.o bin/mainFTest.o -o bin/fTests
-	
-# 	@g++ bin/FlowImpl.o bin/ModelImpl.o bin/SystemImpl.o bin/unit_system.o bin/unit_flow.o bin/unit_test.o bin/unit_model.o bin/mainUTest.o -o bin/uTests
-	
-# 	@rm -r bin/*.o
+	@export LD_LIBRARY_PATH=:'../MyVensim/bin'
 
 #Unit Tests
 
+unit_system.o: test/unit/unit_system.cpp
+	@g++ -c test/unit/unit_system.cpp -o bin/unit_system.o -Wall
 
-# bin/unit_system.o: test/unit/unit_system.cpp
-# 	@g++ -c test/unit/unit_system.cpp -o bin/unit_system.o -Wall
+unit_flow.o: test/unit/unit_flow.cpp
+	@g++ -c test/unit/unit_flow.cpp -o bin/unit_flow.o -Wall
 
-# bin/unit_flow.o: test/unit/unit_flow.cpp
-# 	@g++ -c test/unit/unit_flow.cpp -o bin/unit_flow.o -Wall
+unit_model.o: test/unit/unit_model.cpp
+	@g++ -c test/unit/unit_model.cpp -o bin/unit_model.o -Wall
 
-# bin/unit_model.o: test/unit/unit_model.cpp
-# 	@g++ -c test/unit/unit_model.cpp -o bin/unit_model.o -Wall
-
-# bin/unit_test.o: test/unit/unit_test.cpp
-# 	@g++ -c test/unit/unit_test.cpp -o bin/unit_test.o -Wall
-
-# bin/mainUTest.o: test/unit/mainUTest.cpp
-# 	@g++ -c test/unit/mainUTest.cpp -o bin/mainUTest.o -Wall
+unit_test.o: test/unit/unit_test.cpp
+	@g++ -c test/unit/unit_test.cpp -o bin/unit_test.o -Wall
 
 # #Functional Tests
 
+functional_tests.o: test/funcional/functional_tests.cpp
+	@g++ -c test/funcional/functional_tests.cpp -o bin/functional_tests.o -Wall
 
-# bin/mainFTest.o: test/funcional/mainFTest.cpp
-# 	@g++ -c test/funcional/mainFTest.cpp -o bin/mainFTest.o -Wall
+#Classes
 
+lib_MyVensim.so: src/FlowImpl.cpp src/ModelImpl.cpp src/SystemImpl.cpp
+	@g++ -shared -o bin/lib_myLibrary.so bin/SystemImpl.o bin/ModelImpl.o bin/FlowImpl.o
 
-# bin/functional_tests.o: test/funcional/functional_tests.cpp
-# 	@g++ -c test/funcional/functional_tests.cpp -o bin/functional_tests.o -Wall
+SystemImpl.o: src/SystemImpl.cpp
+	@g++ -c -fPIC src/SystemImpl.cpp -o bin/SystemImpl.o -Wall 
 
+ModelImpl.o: src/ModelImpl.cpp
+	@g++ -c -fPIC src/ModelImpl.cpp -o bin/ModelImpl.o -Wall 
 
-# #Classes
-
-# bin/SystemImpl.o: src/SystemImpl.cpp
-# 	@g++ -c src/SystemImpl.cpp -o bin/SystemImpl.o -Wall
-
-
-# bin/ModelImpl.o: src/ModelImpl.cpp
-# 	@g++ -c src/ModelImpl.cpp -o bin/ModelImpl.o -Wall
-
-
-# bin/FlowImpl.o: src/FlowImpl.cpp
-# 	@g++ -c src/FlowImpl.cpp -o bin/FlowImpl.o -Wall
-
+FlowImpl.o: src/FlowImpl.cpp
+	@g++ -c -fPIC src/FlowImpl.cpp -o bin/FlowImpl.o -Wall

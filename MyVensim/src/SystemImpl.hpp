@@ -1,11 +1,7 @@
 #ifndef SYSTEMIMPL_H
 #define SYSTEMIMPL_H
 
-#include <iostream>
-#include <string>
 #include "System.hpp"
-
-using namespace std;
 
 /**
  * @brief Concrete implementation of the System class.

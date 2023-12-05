@@ -1,12 +1,7 @@
 #ifndef FLOWIMPL_HPP
 #define FLOWIMPL_HPP
 
-#include <iostream>
-#include <string>
-#include "System.hpp"
 #include "Flow.hpp"
-
-using namespace std;
 
 /**
  * @brief Concrete implementation of the Flow class.

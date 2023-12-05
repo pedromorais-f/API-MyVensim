@@ -2,7 +2,6 @@
 #define MODEL_H
 
 #include <vector>
-#include "System.hpp"
 #include "Flow.hpp"
 
 /**

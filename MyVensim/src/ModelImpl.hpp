@@ -2,8 +2,6 @@
 #define MODELIMPL_H
 
 #include "Model.hpp"
-#include "SystemImpl.hpp"
-#include "FlowImpl.hpp"
 
 using namespace std;
 

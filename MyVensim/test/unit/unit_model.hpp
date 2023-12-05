@@ -3,7 +3,6 @@
 
 #include "../../src/ModelImpl.hpp"
 #include "../../src/FlowImpl.hpp"
-#include "../../src/SystemImpl.hpp"
 #include <assert.h>
 
 /**

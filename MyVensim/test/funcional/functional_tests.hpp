@@ -1,12 +1,10 @@
 #ifndef FUNCTIONAL_TESTS_HPP
 #define FUNCTIONAL_TESTS_HPP
 
-#include <iostream>
 #include <assert.h>
 #include <cmath>
-#include "../../src/ModelImpl.hpp"
 #include "../../src/FlowImpl.hpp"
-#include "../../src/SystemImpl.hpp"
+#include "../../src/ModelImpl.hpp"
 
 using namespace std;
 

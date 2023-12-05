@@ -1,11 +1,7 @@
 #ifndef FLOW_HPP
 #define FLOW_HPP
 
-#include <iostream>
-#include <string>
 #include "System.hpp"
-
-using namespace std;
 
 /**
  * @brief Abstract base class representing a flow in a system model.

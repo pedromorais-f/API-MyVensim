@@ -1,4 +1,6 @@
 #include "ModelImpl.hpp"
+#include "SystemImpl.hpp"
+#include "FlowImpl.hpp"
 
 
 vector<Model*> ModelImpl :: models;
