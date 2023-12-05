@@ -200,7 +200,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class representing a model with systems, flows, and sub-models. </p>
 
-<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00011">11</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00010">10</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ac2413a62cd7cbbed3103667f4459a035" name="ac2413a62cd7cbbed3103667f4459a035"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2413a62cd7cbbed3103667f4459a035">&#9670;&#160;</a></span>flowsIterator</h2>
@@ -216,7 +216,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Iterator for the flows vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00019">19</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00018">18</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Iterator for the models vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00020">20</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00019">19</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Iterator for the systems vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00018">18</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00017">17</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
 
 </div>
 </div>
@@ -282,8 +282,8 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Virtual destructor for the <a class="el" href="classModel.html" title="Abstract base class representing a model with systems, flows, and sub-models.">Model</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00016">16</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>{};</div>
+<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00015">15</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -483,13 +483,13 @@ template&lt;typename TYPE &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the created <a class="el" href="classFlow.html" title="Abstract base class representing a flow in a system model.">Flow</a> object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00111">111</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  111</span>                                                                     {</div>
-<div class="line"><span class="lineno">  112</span>        <a class="code hl_class" href="classFlow.html">Flow</a>* flow = <span class="keyword">new</span> TYPE(begin, end);</div>
-<div class="line"><span class="lineno">  113</span>        <a class="code hl_function" href="#abc3f2e274a4ede4eac9f5e5ce38011df">add</a>(flow);</div>
-<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">return</span> *flow;</div>
-<div class="line"><span class="lineno">  115</span>    }</div>
-<div class="ttc" id="aclassFlow_html"><div class="ttname"><a href="classFlow.html">Flow</a></div><div class="ttdoc">Abstract base class representing a flow in a system model.</div><div class="ttdef"><b>Definition</b> <a href="Flow_8hpp_source.html#l00013">Flow.hpp:13</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Model_8hpp_source.html#l00110">110</a> of file <a class="el" href="Model_8hpp_source.html">Model.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>                                                                     {</div>
+<div class="line"><span class="lineno">  111</span>        <a class="code hl_class" href="classFlow.html">Flow</a>* flow = <span class="keyword">new</span> TYPE(begin, end);</div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_function" href="#abc3f2e274a4ede4eac9f5e5ce38011df">add</a>(flow);</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> *flow;</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+<div class="ttc" id="aclassFlow_html"><div class="ttname"><a href="classFlow.html">Flow</a></div><div class="ttdoc">Abstract base class representing a flow in a system model.</div><div class="ttdef"><b>Definition</b> <a href="Flow_8hpp_source.html#l00009">Flow.hpp:9</a></div></div>
 <div class="ttc" id="aclassModel_html_abc3f2e274a4ede4eac9f5e5ce38011df"><div class="ttname"><a href="#abc3f2e274a4ede4eac9f5e5ce38011df">Model::add</a></div><div class="ttdeci">virtual bool add(System *)=0</div><div class="ttdoc">Add a System object to the model.</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -560,11 +560,11 @@ Here is the caller graph for this function:</div>
 <p>Create and return an instance of the <a class="el" href="classModel.html" title="Abstract base class representing a model with systems, flows, and sub-models.">Model</a> class with a default name. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the created <a class="el" href="classModel.html" title="Abstract base class representing a model with systems, flows, and sub-models.">Model</a> object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ModelImpl_8cpp_source.html#l00110">110</a> of file <a class="el" href="ModelImpl_8cpp_source.html">ModelImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  110</span>                           {</div>
-<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a>();</div>
-<div class="line"><span class="lineno">  112</span>}</div>
-<div class="ttc" id="aclassModelImpl_html_aedca25d981322204bdf01395241e4752"><div class="ttname"><a href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a></div><div class="ttdeci">static Model &amp; createModel()</div><div class="ttdoc">Create and return an instance of the Model class with a default name.</div><div class="ttdef"><b>Definition</b> <a href="ModelImpl_8cpp_source.html#l00114">ModelImpl.cpp:114</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ModelImpl_8cpp_source.html#l00112">112</a> of file <a class="el" href="ModelImpl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>                           {</div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a>();</div>
+<div class="line"><span class="lineno">  114</span>}</div>
+<div class="ttc" id="aclassModelImpl_html_aedca25d981322204bdf01395241e4752"><div class="ttname"><a href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a></div><div class="ttdeci">static Model &amp; createModel()</div><div class="ttdoc">Create and return an instance of the Model class with a default name.</div><div class="ttdef"><b>Definition</b> <a href="ModelImpl_8cpp_source.html#l00116">ModelImpl.cpp:116</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -611,10 +611,10 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the created <a class="el" href="classModel.html" title="Abstract base class representing a model with systems, flows, and sub-models.">Model</a> object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ModelImpl_8cpp_source.html#l00100">100</a> of file <a class="el" href="ModelImpl_8cpp_source.html">ModelImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>                                      {</div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a>(name);</div>
-<div class="line"><span class="lineno">  102</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ModelImpl_8cpp_source.html#l00102">102</a> of file <a class="el" href="ModelImpl_8cpp_source.html">ModelImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>                                      {</div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a>(name);</div>
+<div class="line"><span class="lineno">  104</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
