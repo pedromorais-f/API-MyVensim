@@ -4,7 +4,8 @@
 #include <assert.h>
 #include <cmath>
 #include "../../src/FlowImpl.hpp"
-#include "../../src/ModelImpl.hpp"
+//#include "../../src/ModelImpl.hpp"
+#include "../../src/Model.hpp"
 
 using namespace std;
 

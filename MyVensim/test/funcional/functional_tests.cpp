@@ -45,7 +45,7 @@ void logisticTest(){
     
     cout << "\nStarting Logistic Test\n" << endl;
     
-    Model& model = ModelImpl::createModel("Logistic Model");
+    Model& model = Model::createModel("Logistic Model");
     System& p1 = model.createSystem("P1", 100.0);
     System& p2 = model.createSystem("P2", 10.0);
     model.createFlow<LogisticFlow>(&p1, &p2);
@@ -68,7 +68,7 @@ void exponentialTest(){
     
     cout << "\nStarting Exponential Test\n" << endl;
     
-    Model& model = ModelImpl::createModel("Exponential Model");
+    Model& model = Model::createModel("Exponential Model");
     System& pop1 = model.createSystem("POP1", 100.0);
     System& pop2 = model.createSystem("POP2", 0.0);
     model.createFlow<ExponentialFlow>(&pop1, &pop2);
@@ -89,7 +89,7 @@ void exponentialTest(){
 void complexTest(){
     cout << "\nStarting Complex Test\n" << endl;
     
-    Model& model = ModelImpl::createModel("Complex Model");
+    Model& model = Model::createModel("Complex Model");
     System& Q1 = model.createSystem("Q1", 100.0); 
     System& Q2 = model.createSystem("Q2", 0.0);
     System& Q3 = model.createSystem("Q3", 100.0);

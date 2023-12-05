@@ -2,34 +2,36 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,129,60,155"/>
 <area shape="rect" id="Node000002" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="Function to perform a complex test." alt="" coords="119,80,223,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,130,120,108,122,113,61,135"/>
-<area shape="rect" id="Node000010" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="Function to perform an exponential test." alt="" coords="108,129,233,155"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="60,139,95,139,95,145,60,145"/>
-<area shape="rect" id="Node000011" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="Function to perform a logistic test." alt="" coords="123,179,218,204"/>
-<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="61,149,122,171,120,176,59,154"/>
-<area shape="rect" id="Node000003" href="$classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="300,5,443,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,77,280,41,307,32,309,37,282,46,199,82"/>
-<area shape="rect" id="Node000005" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="281,55,461,80"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="223,83,267,78,268,83,223,89"/>
-<area shape="rect" id="Node000006" href="$classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="291,104,451,129"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="223,96,278,103,277,108,223,101"/>
-<area shape="rect" id="Node000007" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="303,153,439,179"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="205,103,234,116,282,140,304,147,302,152,280,144,232,120,203,108"/>
-<area shape="rect" id="Node000008" href="$classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="326,203,417,228"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="214,103,235,116,251,135,259,154,267,172,283,189,314,204,312,209,280,193,263,175,254,156,247,138,232,120,211,108"/>
-<area shape="rect" id="Node000009" href="$classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="305,252,437,277"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="217,103,235,116,248,132,255,149,259,180,264,210,271,224,283,239,295,247,291,251,280,243,266,227,259,212,254,181,249,150,243,135,231,120,214,108"/>
-<area shape="rect" id="Node000004" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="509,5,604,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="443,15,495,15,495,21,443,21"/>
-<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="213,127,232,116,247,98,254,79,263,60,280,41,291,34,293,39,283,45,267,63,259,81,252,100,235,120,216,132"/>
-<area shape="poly" id="edge11_Node000010_Node000005" title=" " alt="" coords="206,127,232,116,280,90,305,81,307,86,282,95,234,120,208,132"/>
-<area shape="poly" id="edge12_Node000010_Node000006" title=" " alt="" coords="233,131,277,126,278,131,234,137"/>
-<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="234,147,290,154,290,159,233,152"/>
-<area shape="poly" id="edge14_Node000010_Node000008" title=" " alt="" coords="205,152,234,165,282,189,313,199,312,204,280,194,232,170,203,157"/>
-<area shape="poly" id="edge15_Node000010_Node000009" title=" " alt="" coords="214,153,235,165,251,185,259,204,267,222,283,239,294,245,291,250,280,243,263,225,254,206,247,187,232,169,211,157"/>
-<area shape="poly" id="edge17_Node000011_Node000003" title=" " alt="" coords="216,176,231,165,243,150,250,135,254,104,259,73,266,57,279,41,287,35,290,40,283,45,271,60,264,74,259,105,255,137,248,153,235,169,219,181"/>
-<area shape="poly" id="edge18_Node000011_Node000005" title=" " alt="" coords="213,176,232,165,247,147,254,128,263,109,280,91,291,84,293,88,283,95,267,112,259,130,252,150,235,169,216,181"/>
-<area shape="poly" id="edge19_Node000011_Node000006" title=" " alt="" coords="206,176,232,165,280,140,305,131,307,136,282,144,234,170,208,181"/>
-<area shape="poly" id="edge20_Node000011_Node000007" title=" " alt="" coords="218,183,290,174,290,179,219,188"/>
-<area shape="poly" id="edge21_Node000011_Node000008" title=" " alt="" coords="219,194,313,206,312,211,218,200"/>
-<area shape="poly" id="edge22_Node000011_Node000009" title=" " alt="" coords="198,202,282,238,305,246,304,251,280,243,196,207"/>
+<area shape="rect" id="Node000011" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="Function to perform an exponential test." alt="" coords="108,129,233,155"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="60,139,95,139,95,145,60,145"/>
+<area shape="rect" id="Node000012" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="Function to perform a logistic test." alt="" coords="123,179,218,204"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="61,149,122,171,120,176,59,154"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="290,5,433,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="196,78,280,40,300,32,302,37,282,44,198,82"/>
+<area shape="rect" id="Node000005" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="286,55,437,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="223,83,272,77,273,82,223,88"/>
+<area shape="rect" id="Node000007" href="$classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="281,104,441,129"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="223,97,268,102,267,108,223,102"/>
+<area shape="rect" id="Node000008" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="293,153,429,179"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="205,103,234,116,282,140,302,147,300,152,280,144,232,120,203,108"/>
+<area shape="rect" id="Node000009" href="$classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="316,203,407,228"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="214,103,235,116,251,135,259,154,267,172,283,189,304,201,302,205,280,193,263,175,254,156,247,138,232,120,211,108"/>
+<area shape="rect" id="Node000010" href="$classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="295,252,427,277"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="217,103,235,116,248,132,255,148,259,180,264,210,271,224,283,239,288,243,285,247,279,243,266,227,259,211,254,180,250,150,243,135,231,120,214,108"/>
+<area shape="rect" id="Node000004" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="532,5,627,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="433,15,518,15,518,21,433,21"/>
+<area shape="rect" id="Node000006" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="489,55,669,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="437,65,476,65,476,70,437,70"/>
+<area shape="poly" id="edge11_Node000011_Node000003" title=" " alt="" coords="213,127,232,116,247,97,255,79,263,59,280,40,288,35,291,39,283,44,267,62,259,81,252,100,235,120,216,132"/>
+<area shape="poly" id="edge12_Node000011_Node000005" title=" " alt="" coords="206,127,232,116,280,90,302,82,304,87,282,95,234,120,208,132"/>
+<area shape="poly" id="edge13_Node000011_Node000007" title=" " alt="" coords="233,131,267,126,268,132,234,136"/>
+<area shape="poly" id="edge14_Node000011_Node000008" title=" " alt="" coords="234,147,280,153,279,158,233,153"/>
+<area shape="poly" id="edge15_Node000011_Node000009" title=" " alt="" coords="205,152,234,165,282,189,304,197,302,202,280,194,232,170,203,157"/>
+<area shape="poly" id="edge16_Node000011_Node000010" title=" " alt="" coords="214,153,235,165,251,185,259,203,267,221,283,239,291,244,288,248,280,243,263,224,254,206,247,187,232,169,211,157"/>
+<area shape="poly" id="edge18_Node000012_Node000003" title=" " alt="" coords="216,176,231,165,243,150,250,135,254,104,259,72,266,56,279,40,285,36,288,40,283,44,271,59,264,74,259,104,255,136,248,153,235,169,219,181"/>
+<area shape="poly" id="edge19_Node000012_Node000005" title=" " alt="" coords="213,176,232,165,247,147,255,129,263,110,280,91,290,84,293,88,283,95,267,112,260,131,252,150,235,169,216,181"/>
+<area shape="poly" id="edge20_Node000012_Node000007" title=" " alt="" coords="206,176,232,165,280,140,302,131,304,136,282,144,234,170,208,181"/>
+<area shape="poly" id="edge21_Node000012_Node000008" title=" " alt="" coords="218,182,279,174,280,179,219,188"/>
+<area shape="poly" id="edge22_Node000012_Node000009" title=" " alt="" coords="219,195,302,205,301,211,218,200"/>
+<area shape="poly" id="edge23_Node000012_Node000010" title=" " alt="" coords="199,202,282,238,302,245,301,250,280,243,197,206"/>
 </map>

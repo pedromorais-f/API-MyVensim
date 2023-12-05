@@ -1,7 +1,9 @@
 <map id="unit_Model_getName" name="unit_Model_getName">
 <area shape="rect" id="Node000001" title="Unit test for the getName method of the Model class." alt="" coords="5,31,167,56"/>
-<area shape="rect" id="Node000002" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="215,5,395,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,31,201,27,201,33,167,37"/>
-<area shape="rect" id="Node000003" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Get the name of the model." alt="" coords="239,55,370,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,50,226,56,225,61,167,55"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="215,5,365,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,31,200,26,201,32,167,36"/>
+<area shape="rect" id="Node000004" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Get the name of the model." alt="" coords="225,55,355,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,50,211,55,211,61,167,55"/>
+<area shape="rect" id="Node000003" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="413,5,593,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,15,400,15,400,21,366,21"/>
 </map>

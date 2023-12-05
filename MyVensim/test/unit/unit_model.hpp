@@ -1,7 +1,7 @@
 #ifndef UNIT_MODEL_H
 #define UNIT_MODEL_H
 
-#include "../../src/ModelImpl.hpp"
+#include "../../src/Model.hpp"
 #include "../../src/FlowImpl.hpp"
 #include <assert.h>
 

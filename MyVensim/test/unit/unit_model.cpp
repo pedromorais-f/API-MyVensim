@@ -15,7 +15,7 @@ public:
 };
 
 void unit_Model_Constructor_Default(){
-    Model& model = ModelImpl::createModel();
+    Model& model = Model::createModel();
 
     assert(model.getName() == "");
 
@@ -23,7 +23,7 @@ void unit_Model_Constructor_Default(){
 }
 
 void unit_Model_Constructor(){
-    Model& model = ModelImpl::createModel("Model1");
+    Model& model = Model::createModel("Model1");
 
     assert(model.getName() == "Model1");
 
@@ -33,7 +33,7 @@ void unit_Model_Constructor(){
 void unit_Model_Destrutor(){}
 
 void unit_Model_setName(){
-    Model& model = ModelImpl::createModel();
+    Model& model = Model::createModel();
     model.setName("Model1");
 
     assert(model.getName() == "Model1");
@@ -42,7 +42,7 @@ void unit_Model_setName(){
 }
 
 void unit_Model_getName(){
-    Model& model = ModelImpl::createModel("Model1");
+    Model& model = Model::createModel("Model1");
 
     assert(model.getName() == "Model1");
 
@@ -50,7 +50,7 @@ void unit_Model_getName(){
 }
 
 void unit_Model_createSystem(){
-    Model& model = ModelImpl::createModel();
+    Model& model = Model::createModel();
 
     model.createSystem();
 
@@ -60,7 +60,7 @@ void unit_Model_createSystem(){
 }
 
 void unit_Model_createFlow(){
-    Model& model = ModelImpl::createModel();
+    Model& model = Model::createModel();
 
     model.createFlow<LogisticFlow>();
 
@@ -70,8 +70,8 @@ void unit_Model_createFlow(){
 }
 
 void unit_Model_createModel(){
-    Model& model1 = ModelImpl::createModel();
-    Model& model2 = ModelImpl::createModel();
+    Model& model1 = Model::createModel();
+    Model& model2 = Model::createModel();
 
     assert(model2.modelsSize() == 2);
 
@@ -80,7 +80,7 @@ void unit_Model_createModel(){
 }
 
 void unit_Model_removeSystem(){
-    Model& model = ModelImpl::createModel();
+    Model& model = Model::createModel();
 
     System& system1 = model.createSystem();
 
@@ -90,7 +90,7 @@ void unit_Model_removeSystem(){
 }
 
 void unit_Model_removeFlow(){
-    Model& model = ModelImpl::createModel();
+    Model& model = Model::createModel();
 
     Flow& logisticFlow = model.createFlow<LogisticFlow>();
 
@@ -100,7 +100,7 @@ void unit_Model_removeFlow(){
 }
 
 void unit_Model_SystemBeginEnd(){
-    Model& model = ModelImpl::createModel();
+    Model& model = Model::createModel();
 
     System& system1 = model.createSystem();
     model.createSystem();
@@ -123,7 +123,7 @@ void unit_Model_SystemBeginEnd(){
 }
 
 void unit_Model_FlowBeginEnd(){
-    Model& model = ModelImpl::createModel();
+    Model& model = Model::createModel();
 
     Flow& logisticFlow1 = model.createFlow<LogisticFlow>();
     model.createFlow<LogisticFlow>();
@@ -146,10 +146,10 @@ void unit_Model_FlowBeginEnd(){
 }
 
 void unit_Model_ModelBeginEnd(){
-    Model& model1 = ModelImpl::createModel();
+    Model& model1 = Model::createModel();
 
-    Model& model2 = ModelImpl::createModel();
-    Model& model3 = ModelImpl::createModel();
+    Model& model2 = Model::createModel();
+    Model& model3 = Model::createModel();
 
     assert(*model3.modelsBegin() == &model1);
 
@@ -171,7 +171,7 @@ void unit_Model_ModelBeginEnd(){
 }
 
 void unit_Model_run(){
-    Model& model = ModelImpl::createModel();
+    Model& model = Model::createModel();
 
 
     assert(model.run(0, 100) == 100);

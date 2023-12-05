@@ -83,34 +83,32 @@ $(function() {
 <div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &quot;<a class="el" href="FlowImpl_8hpp_source.html">../../src/FlowImpl.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ModelImpl_8hpp_source.html">../../src/ModelImpl.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Model_8hpp_source.html">../../src/Model.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for functional_tests.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="functional__tests_8hpp__incl.png" border="0" usemap="#atest_2funcional_2functional__tests_8hpp" alt=""/></div>
 <map name="atest_2funcional_2functional__tests_8hpp" id="atest_2funcional_2functional__tests_8hpp">
-<area shape="rect" title=" " alt="" coords="81,5,261,45"/>
+<area shape="rect" title=" " alt="" coords="113,5,293,45"/>
 <area shape="rect" title=" " alt="" coords="5,93,80,119"/>
-<area shape="poly" title=" " alt="" coords="141,48,74,88,72,84,138,43"/>
+<area shape="poly" title=" " alt="" coords="166,48,80,90,77,85,163,43"/>
 <area shape="rect" title=" " alt="" coords="105,93,167,119"/>
-<area shape="poly" title=" " alt="" coords="165,47,149,82,144,79,160,44"/>
-<area shape="rect" href="FlowImpl_8hpp.html" title=" " alt="" coords="120,167,277,192"/>
-<area shape="poly" title=" " alt="" coords="177,45,197,153,191,153,172,46"/>
-<area shape="rect" href="ModelImpl_8hpp.html" title=" " alt="" coords="257,93,423,119"/>
-<area shape="poly" title=" " alt="" coords="212,43,304,85,301,90,210,48"/>
-<area shape="rect" href="Flow_8hpp.html" title=" " alt="" coords="185,240,265,265"/>
-<area shape="poly" title=" " alt="" coords="206,191,219,226,214,228,201,193"/>
-<area shape="rect" href="System_8hpp.html" title=" " alt="" coords="176,313,275,339"/>
-<area shape="poly" title=" " alt="" coords="228,266,228,300,223,300,223,266"/>
-<area shape="rect" title=" " alt="" coords="139,387,219,412"/>
-<area shape="poly" title=" " alt="" coords="220,340,196,377,192,374,215,338"/>
-<area shape="rect" title=" " alt="" coords="243,387,301,412"/>
-<area shape="poly" title=" " alt="" coords="235,338,259,374,255,377,231,340"/>
-<area shape="rect" href="Model_8hpp.html" title=" " alt="" coords="301,167,392,192"/>
-<area shape="poly" title=" " alt="" coords="344,119,347,153,342,153,338,119"/>
-<area shape="poly" title=" " alt="" coords="329,194,258,235,255,231,326,190"/>
-<area shape="rect" title=" " alt="" coords="315,240,378,265"/>
-<area shape="poly" title=" " alt="" coords="349,192,349,226,344,226,344,192"/>
+<area shape="poly" title=" " alt="" coords="189,47,157,84,153,81,185,44"/>
+<area shape="rect" href="FlowImpl_8hpp.html" title=" " alt="" coords="192,93,349,119"/>
+<area shape="poly" title=" " alt="" coords="221,44,254,81,250,84,217,47"/>
+<area shape="rect" href="Model_8hpp.html" title=" " alt="" coords="374,93,511,119"/>
+<area shape="poly" title=" " alt="" coords="261,43,395,87,394,92,259,48"/>
+<area shape="rect" href="Flow_8hpp.html" title=" " alt="" coords="269,167,349,192"/>
+<area shape="poly" title=" " alt="" coords="279,118,299,153,294,156,275,120"/>
+<area shape="rect" href="System_8hpp.html" title=" " alt="" coords="260,240,359,265"/>
+<area shape="poly" title=" " alt="" coords="312,192,312,226,307,226,307,192"/>
+<area shape="rect" title=" " alt="" coords="223,313,303,339"/>
+<area shape="poly" title=" " alt="" coords="304,267,280,303,276,300,299,264"/>
+<area shape="rect" title=" " alt="" coords="327,313,385,339"/>
+<area shape="poly" title=" " alt="" coords="319,264,343,300,339,303,315,267"/>
+<area shape="poly" title=" " alt="" coords="422,121,344,162,342,158,420,116"/>
+<area shape="rect" title=" " alt="" coords="411,167,474,192"/>
+<area shape="poly" title=" " alt="" coords="445,119,445,153,440,153,440,119"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -162,7 +160,7 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   89</span>                  {</div>
 <div class="line"><span class="lineno">   90</span>    cout &lt;&lt; <span class="stringliteral">&quot;\nStarting Complex Test\n&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><span class="lineno">   91</span>    </div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_class" href="classModel.html">Model</a>&amp; model = <a class="code hl_function" href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a>(<span class="stringliteral">&quot;Complex Model&quot;</span>);</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_class" href="classModel.html">Model</a>&amp; model = <a class="code hl_function" href="classModel.html#a51a6961eef61a054605c3b781410d753">Model::createModel</a>(<span class="stringliteral">&quot;Complex Model&quot;</span>);</div>
 <div class="line"><span class="lineno">   93</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; Q1 = model.<a class="code hl_function" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56">createSystem</a>(<span class="stringliteral">&quot;Q1&quot;</span>, 100.0); </div>
 <div class="line"><span class="lineno">   94</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; Q2 = model.<a class="code hl_function" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56">createSystem</a>(<span class="stringliteral">&quot;Q2&quot;</span>, 0.0);</div>
 <div class="line"><span class="lineno">   95</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; Q3 = model.<a class="code hl_function" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56">createSystem</a>(<span class="stringliteral">&quot;Q3&quot;</span>, 100.0);</div>
@@ -191,11 +189,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  118</span> </div>
 <div class="line"><span class="lineno">  119</span>}</div>
 <div class="ttc" id="aclassComplexFlow_html"><div class="ttname"><a href="classComplexFlow.html">ComplexFlow</a></div><div class="ttdef"><b>Definition</b> <a href="functional__tests_8cpp_source.html#l00030">functional_tests.cpp:30</a></div></div>
-<div class="ttc" id="aclassModelImpl_html_aedca25d981322204bdf01395241e4752"><div class="ttname"><a href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a></div><div class="ttdeci">static Model &amp; createModel()</div><div class="ttdoc">Create and return an instance of the Model class with a default name.</div><div class="ttdef"><b>Definition</b> <a href="ModelImpl_8cpp_source.html#l00116">ModelImpl.cpp:116</a></div></div>
 <div class="ttc" id="aclassModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdoc">Abstract base class representing a model with systems, flows, and sub-models.</div><div class="ttdef"><b>Definition</b> <a href="Model_8hpp_source.html#l00010">Model.hpp:10</a></div></div>
 <div class="ttc" id="aclassModel_html_a019a2458da608586cbec1cb51b0cbc3c"><div class="ttname"><a href="classModel.html#a019a2458da608586cbec1cb51b0cbc3c">Model::summary</a></div><div class="ttdeci">virtual void summary()=0</div><div class="ttdoc">Print a summary of the model's systems, flows, and sub-models.</div></div>
 <div class="ttc" id="aclassModel_html_a3fe003a645eedd53d8dda6921dcd4a56"><div class="ttname"><a href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56">Model::createSystem</a></div><div class="ttdeci">virtual System &amp; createSystem(string, double)=0</div><div class="ttdoc">Create and return an instance of the System class.</div></div>
 <div class="ttc" id="aclassModel_html_a4ff5eb3fd50c1853d975bd1e39736c63"><div class="ttname"><a href="classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63">Model::run</a></div><div class="ttdeci">virtual int run(int, int)=0</div><div class="ttdoc">Run the model for a specified number of iterations.</div></div>
+<div class="ttc" id="aclassModel_html_a51a6961eef61a054605c3b781410d753"><div class="ttname"><a href="classModel.html#a51a6961eef61a054605c3b781410d753">Model::createModel</a></div><div class="ttdeci">static Model &amp; createModel()</div><div class="ttdoc">Create and return an instance of the Model class with a default name.</div><div class="ttdef"><b>Definition</b> <a href="ModelImpl_8cpp_source.html#l00112">ModelImpl.cpp:112</a></div></div>
 <div class="ttc" id="aclassModel_html_a80c13cc6ebd88648774508758d9b631e"><div class="ttname"><a href="classModel.html#a80c13cc6ebd88648774508758d9b631e">Model::createFlow</a></div><div class="ttdeci">Flow &amp; createFlow(System *begin=nullptr, System *end=nullptr)</div><div class="ttdoc">Create and return an instance of the Flow class.</div><div class="ttdef"><b>Definition</b> <a href="Model_8hpp_source.html#l00110">Model.hpp:110</a></div></div>
 <div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">Abstract base class representing a system in a model.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00012">System.hpp:12</a></div></div>
 <div class="ttc" id="aclassSystem_html_a41b673faa6c199eb8e4f204639fab4f2"><div class="ttname"><a href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">System::getValue</a></div><div class="ttdeci">virtual double getValue() const =0</div><div class="ttdoc">Pure virtual function to get the value of the system.</div></div>
@@ -205,20 +203,22 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="functional__tests_8hpp_a342098ba1b793b28d015331449d280d5_cgraph.png" border="0" usemap="#afunctional__tests_8hpp_a342098ba1b793b28d015331449d280d5_cgraph" alt=""/></div>
 <map name="afunctional__tests_8hpp_a342098ba1b793b28d015331449d280d5_cgraph" id="afunctional__tests_8hpp_a342098ba1b793b28d015331449d280d5_cgraph">
 <area shape="rect" title="Function to perform a complex test." alt="" coords="5,129,109,155"/>
-<area shape="rect" href="classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="176,5,319,31"/>
-<area shape="poly" title=" " alt="" coords="66,127,102,84,127,60,156,40,169,33,171,38,159,44,131,64,106,88,70,131"/>
-<area shape="rect" href="classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="157,55,337,80"/>
-<area shape="poly" title=" " alt="" coords="79,127,156,89,178,81,180,86,158,94,82,132"/>
-<area shape="rect" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="167,104,327,129"/>
-<area shape="poly" title=" " alt="" coords="109,133,153,127,154,132,110,138"/>
-<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="179,153,315,179"/>
-<area shape="poly" title=" " alt="" coords="110,146,166,153,165,158,109,151"/>
-<area shape="rect" href="classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="202,203,293,228"/>
-<area shape="poly" title=" " alt="" coords="83,152,158,188,190,198,188,203,156,192,81,157"/>
-<area shape="rect" href="classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="181,252,313,277"/>
-<area shape="poly" title=" " alt="" coords="70,153,106,195,131,217,159,237,174,245,172,249,156,242,128,222,102,198,66,157"/>
-<area shape="rect" href="classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="385,5,480,31"/>
-<area shape="poly" title=" " alt="" coords="319,15,371,15,371,21,319,21"/>
+<area shape="rect" href="classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="166,5,309,31"/>
+<area shape="poly" title=" " alt="" coords="66,128,102,85,127,61,156,40,168,33,170,38,159,44,131,65,106,88,70,131"/>
+<area shape="rect" href="classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="162,55,313,80"/>
+<area shape="poly" title=" " alt="" coords="80,127,156,89,175,82,177,87,158,94,82,132"/>
+<area shape="rect" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="157,104,317,129"/>
+<area shape="poly" title=" " alt="" coords="109,132,143,127,144,132,110,137"/>
+<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="169,153,305,179"/>
+<area shape="poly" title=" " alt="" coords="110,146,156,152,155,158,109,152"/>
+<area shape="rect" href="classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="192,203,283,228"/>
+<area shape="poly" title=" " alt="" coords="84,152,158,188,181,196,179,201,156,192,81,157"/>
+<area shape="rect" href="classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="171,252,303,277"/>
+<area shape="poly" title=" " alt="" coords="71,154,107,195,132,217,159,237,173,244,171,249,156,242,128,222,103,198,67,157"/>
+<area shape="rect" href="classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="408,5,503,31"/>
+<area shape="poly" title=" " alt="" coords="309,15,394,15,394,21,309,21"/>
+<area shape="rect" href="classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="365,55,545,80"/>
+<area shape="poly" title=" " alt="" coords="313,65,352,65,352,70,313,70"/>
 </map>
 </div>
 <div class="dynheader">
@@ -256,7 +256,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   68</span>    </div>
 <div class="line"><span class="lineno">   69</span>    cout &lt;&lt; <span class="stringliteral">&quot;\nStarting Exponential Test\n&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><span class="lineno">   70</span>    </div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_class" href="classModel.html">Model</a>&amp; model = <a class="code hl_function" href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a>(<span class="stringliteral">&quot;Exponential Model&quot;</span>);</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_class" href="classModel.html">Model</a>&amp; model = <a class="code hl_function" href="classModel.html#a51a6961eef61a054605c3b781410d753">Model::createModel</a>(<span class="stringliteral">&quot;Exponential Model&quot;</span>);</div>
 <div class="line"><span class="lineno">   72</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; pop1 = model.<a class="code hl_function" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56">createSystem</a>(<span class="stringliteral">&quot;POP1&quot;</span>, 100.0);</div>
 <div class="line"><span class="lineno">   73</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; pop2 = model.<a class="code hl_function" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56">createSystem</a>(<span class="stringliteral">&quot;POP2&quot;</span>, 0.0);</div>
 <div class="line"><span class="lineno">   74</span>    model.<a class="code hl_function" href="classModel.html#a80c13cc6ebd88648774508758d9b631e">createFlow</a>&lt;<a class="code hl_class" href="classExponentialFlow.html">ExponentialFlow</a>&gt;(&amp;pop1, &amp;pop2);</div>
@@ -280,20 +280,22 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="functional__tests_8hpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph.png" border="0" usemap="#afunctional__tests_8hpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph" alt=""/></div>
 <map name="afunctional__tests_8hpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph" id="afunctional__tests_8hpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph">
 <area shape="rect" title="Function to perform an exponential test." alt="" coords="5,129,131,155"/>
-<area shape="rect" href="classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="197,5,340,31"/>
-<area shape="poly" title=" " alt="" coords="78,127,118,84,146,60,177,40,191,33,194,38,180,44,150,65,122,88,82,131"/>
-<area shape="rect" href="classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="179,55,359,80"/>
-<area shape="poly" title=" " alt="" coords="92,127,178,89,201,81,202,86,180,94,95,132"/>
-<area shape="rect" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="189,104,349,129"/>
-<area shape="poly" title=" " alt="" coords="131,131,175,126,175,131,131,137"/>
-<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="201,153,337,179"/>
-<area shape="poly" title=" " alt="" coords="131,147,188,154,187,159,131,152"/>
-<area shape="rect" href="classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="223,203,314,228"/>
-<area shape="poly" title=" " alt="" coords="97,152,180,188,211,198,209,203,178,192,95,157"/>
-<area shape="rect" href="classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="203,252,335,277"/>
-<area shape="poly" title=" " alt="" coords="82,153,122,194,150,217,180,237,197,245,194,250,177,242,147,222,119,198,78,157"/>
-<area shape="rect" href="classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="407,5,501,31"/>
-<area shape="poly" title=" " alt="" coords="340,15,393,15,393,21,340,21"/>
+<area shape="rect" href="classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="187,5,330,31"/>
+<area shape="poly" title=" " alt="" coords="78,127,118,85,147,61,177,40,190,33,193,38,180,44,150,65,122,89,82,131"/>
+<area shape="rect" href="classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="183,55,334,80"/>
+<area shape="poly" title=" " alt="" coords="93,127,178,89,198,82,200,87,180,94,95,132"/>
+<area shape="rect" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="179,104,339,129"/>
+<area shape="poly" title=" " alt="" coords="131,131,165,126,165,132,131,136"/>
+<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="191,153,327,179"/>
+<area shape="poly" title=" " alt="" coords="131,147,177,153,177,158,131,153"/>
+<area shape="rect" href="classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="213,203,304,228"/>
+<area shape="poly" title=" " alt="" coords="97,152,180,188,203,196,201,201,178,192,95,157"/>
+<area shape="rect" href="classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="193,252,325,277"/>
+<area shape="poly" title=" " alt="" coords="83,153,123,194,150,217,180,237,195,245,193,249,177,242,147,221,120,198,79,157"/>
+<area shape="rect" href="classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="429,5,524,31"/>
+<area shape="poly" title=" " alt="" coords="331,15,415,15,415,21,331,21"/>
+<area shape="rect" href="classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="387,55,567,80"/>
+<area shape="poly" title=" " alt="" coords="334,65,373,65,373,70,334,70"/>
 </map>
 </div>
 <div class="dynheader">
@@ -331,7 +333,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   45</span>    </div>
 <div class="line"><span class="lineno">   46</span>    cout &lt;&lt; <span class="stringliteral">&quot;\nStarting Logistic Test\n&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><span class="lineno">   47</span>    </div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_class" href="classModel.html">Model</a>&amp; model = <a class="code hl_function" href="classModelImpl.html#aedca25d981322204bdf01395241e4752">ModelImpl::createModel</a>(<span class="stringliteral">&quot;Logistic Model&quot;</span>);</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_class" href="classModel.html">Model</a>&amp; model = <a class="code hl_function" href="classModel.html#a51a6961eef61a054605c3b781410d753">Model::createModel</a>(<span class="stringliteral">&quot;Logistic Model&quot;</span>);</div>
 <div class="line"><span class="lineno">   49</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; p1 = model.<a class="code hl_function" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56">createSystem</a>(<span class="stringliteral">&quot;P1&quot;</span>, 100.0);</div>
 <div class="line"><span class="lineno">   50</span>    <a class="code hl_class" href="classSystem.html">System</a>&amp; p2 = model.<a class="code hl_function" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56">createSystem</a>(<span class="stringliteral">&quot;P2&quot;</span>, 10.0);</div>
 <div class="line"><span class="lineno">   51</span>    model.<a class="code hl_function" href="classModel.html#a80c13cc6ebd88648774508758d9b631e">createFlow</a>&lt;<a class="code hl_class" href="classLogisticFlow.html">LogisticFlow</a>&gt;(&amp;p1, &amp;p2);</div>
@@ -356,20 +358,22 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="functional__tests_8hpp_a6c242456889f3f38d4f88e34922fada6_cgraph.png" border="0" usemap="#afunctional__tests_8hpp_a6c242456889f3f38d4f88e34922fada6_cgraph" alt=""/></div>
 <map name="afunctional__tests_8hpp_a6c242456889f3f38d4f88e34922fada6_cgraph" id="afunctional__tests_8hpp_a6c242456889f3f38d4f88e34922fada6_cgraph">
 <area shape="rect" title="Function to perform a logistic test." alt="" coords="5,129,100,155"/>
-<area shape="rect" href="classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="167,5,309,31"/>
-<area shape="poly" title=" " alt="" coords="60,127,94,84,119,60,147,40,159,33,161,38,149,44,122,64,98,88,65,131"/>
-<area shape="rect" href="classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="148,55,328,80"/>
-<area shape="poly" title=" " alt="" coords="73,127,107,108,147,89,168,81,170,86,149,94,109,112,76,132"/>
-<area shape="rect" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="158,104,318,129"/>
-<area shape="poly" title=" " alt="" coords="100,133,144,127,145,132,100,138"/>
-<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="170,153,306,179"/>
-<area shape="poly" title=" " alt="" coords="100,145,157,153,156,158,100,151"/>
-<area shape="rect" href="classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="193,203,283,228"/>
-<area shape="poly" title=" " alt="" coords="77,152,149,188,180,198,178,203,147,192,75,157"/>
-<area shape="rect" href="classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="172,252,304,277"/>
-<area shape="poly" title=" " alt="" coords="65,153,99,195,123,218,149,237,164,245,162,249,147,242,119,222,95,198,61,157"/>
-<area shape="rect" href="classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="376,5,471,31"/>
-<area shape="poly" title=" " alt="" coords="309,15,362,15,362,21,309,21"/>
+<area shape="rect" href="classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="157,5,299,31"/>
+<area shape="poly" title=" " alt="" coords="60,128,95,85,119,61,147,40,158,34,160,38,149,44,123,65,99,88,65,131"/>
+<area shape="rect" href="classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="153,55,303,80"/>
+<area shape="poly" title=" " alt="" coords="73,127,147,89,166,82,168,87,149,94,76,132"/>
+<area shape="rect" href="classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="148,104,308,129"/>
+<area shape="poly" title=" " alt="" coords="100,133,134,128,135,133,101,138"/>
+<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="160,153,296,179"/>
+<area shape="poly" title=" " alt="" coords="101,146,146,152,145,157,100,151"/>
+<area shape="rect" href="classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="183,203,273,228"/>
+<area shape="poly" title=" " alt="" coords="77,152,149,188,171,196,169,201,147,192,75,157"/>
+<area shape="rect" href="classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="162,252,294,277"/>
+<area shape="poly" title=" " alt="" coords="65,153,99,194,123,217,149,237,163,245,161,249,147,242,119,221,95,198,61,156"/>
+<area shape="rect" href="classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="399,5,493,31"/>
+<area shape="poly" title=" " alt="" coords="300,15,385,15,385,21,300,21"/>
+<area shape="rect" href="classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="356,55,536,80"/>
+<area shape="poly" title=" " alt="" coords="303,65,342,65,342,70,303,70"/>
 </map>
 </div>
 <div class="dynheader">
