@@ -74,6 +74,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classModelImpl-members.html">List of all members</a>  </div>
@@ -90,9 +91,9 @@ Inheritance diagram for ModelImpl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl__inherit__graph.png" border="0" usemap="#aModelImpl_inherit__map" alt="Inheritance graph"/></div>
 <map name="aModelImpl_inherit__map" id="aModelImpl_inherit__map">
-<area shape="rect" title="Implementation of the Model class." alt="" coords="5,359,136,724"/>
+<area shape="rect" title="Implementation of the Model class." alt="" coords="5,359,136,784"/>
 <area shape="rect" href="classModel.html" title="Abstract base class representing a model with systems, flows, and sub&#45;models." alt="" coords="5,5,136,311"/>
-<area shape="poly" title=" " alt="" coords="73,324,73,358,68,358,68,324"/>
+<area shape="poly" title=" " alt="" coords="73,325,73,359,68,359,68,325"/>
 </map>
 </div>
 <div class="dynheader">
@@ -100,9 +101,9 @@ Collaboration diagram for ModelImpl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl__coll__graph.png" border="0" usemap="#aModelImpl_coll__map" alt="Collaboration graph"/></div>
 <map name="aModelImpl_coll__map" id="aModelImpl_coll__map">
-<area shape="rect" title="Implementation of the Model class." alt="" coords="5,359,136,724"/>
+<area shape="rect" title="Implementation of the Model class." alt="" coords="5,359,136,784"/>
 <area shape="rect" href="classModel.html" title="Abstract base class representing a model with systems, flows, and sub&#45;models." alt="" coords="5,5,136,311"/>
-<area shape="poly" title=" " alt="" coords="73,324,73,358,68,358,68,324"/>
+<area shape="poly" title=" " alt="" coords="73,325,73,359,68,359,68,325"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -156,15 +157,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a027d6617b69c45b92243c3caca352ba5" id="r_a027d6617b69c45b92243c3caca352ba5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a027d6617b69c45b92243c3caca352ba5">getName</a> () const</td></tr>
 <tr class="memdesc:a027d6617b69c45b92243c3caca352ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the model.  <br /></td></tr>
 <tr class="separator:a027d6617b69c45b92243c3caca352ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa01c228bf49f0b7f5d72e293ac18defb" id="r_aa01c228bf49f0b7f5d72e293ac18defb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa01c228bf49f0b7f5d72e293ac18defb">add</a> (<a class="el" href="classSystem.html">System</a> *)</td></tr>
-<tr class="memdesc:aa01c228bf49f0b7f5d72e293ac18defb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> object to the model.  <br /></td></tr>
-<tr class="separator:aa01c228bf49f0b7f5d72e293ac18defb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33b51e276ed5f79ce97906a9abab85f7" id="r_a33b51e276ed5f79ce97906a9abab85f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33b51e276ed5f79ce97906a9abab85f7">add</a> (<a class="el" href="classFlow.html">Flow</a> *)</td></tr>
-<tr class="memdesc:a33b51e276ed5f79ce97906a9abab85f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classFlow.html" title="Abstract base class representing a flow in a system model.">Flow</a> object to the model.  <br /></td></tr>
-<tr class="separator:a33b51e276ed5f79ce97906a9abab85f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6230c100c06004691bcbf34dd297ffdb" id="r_a6230c100c06004691bcbf34dd297ffdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6230c100c06004691bcbf34dd297ffdb">add</a> (<a class="el" href="classModel.html">Model</a> *)</td></tr>
-<tr class="memdesc:a6230c100c06004691bcbf34dd297ffdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a sub-model to the model.  <br /></td></tr>
-<tr class="separator:a6230c100c06004691bcbf34dd297ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3d5938064d5a63a86df70ffa2653c26" id="r_af3d5938064d5a63a86df70ffa2653c26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3d5938064d5a63a86df70ffa2653c26">remove</a> (<a class="el" href="classSystem.html">System</a> *)</td></tr>
 <tr class="memdesc:af3d5938064d5a63a86df70ffa2653c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> object from the model.  <br /></td></tr>
 <tr class="separator:af3d5938064d5a63a86df70ffa2653c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +196,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a51a6961eef61a054605c3b781410d753 inherit pub_static_methods_classModel" id="r_a51a6961eef61a054605c3b781410d753"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classModel.html">Model</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a51a6961eef61a054605c3b781410d753">createModel</a> ()</td></tr>
 <tr class="memdesc:a51a6961eef61a054605c3b781410d753 inherit pub_static_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and return an instance of the <a class="el" href="classModel.html" title="Abstract base class representing a model with systems, flows, and sub-models.">Model</a> class with a default name.  <br /></td></tr>
 <tr class="separator:a51a6961eef61a054605c3b781410d753 inherit pub_static_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa01c228bf49f0b7f5d72e293ac18defb" id="r_aa01c228bf49f0b7f5d72e293ac18defb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa01c228bf49f0b7f5d72e293ac18defb">add</a> (<a class="el" href="classSystem.html">System</a> *)</td></tr>
+<tr class="memdesc:aa01c228bf49f0b7f5d72e293ac18defb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classSystem.html" title="Abstract base class representing a system in a model.">System</a> object to the model.  <br /></td></tr>
+<tr class="separator:aa01c228bf49f0b7f5d72e293ac18defb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b51e276ed5f79ce97906a9abab85f7" id="r_a33b51e276ed5f79ce97906a9abab85f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33b51e276ed5f79ce97906a9abab85f7">add</a> (<a class="el" href="classFlow.html">Flow</a> *)</td></tr>
+<tr class="memdesc:a33b51e276ed5f79ce97906a9abab85f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classFlow.html" title="Abstract base class representing a flow in a system model.">Flow</a> object to the model.  <br /></td></tr>
+<tr class="separator:a33b51e276ed5f79ce97906a9abab85f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6230c100c06004691bcbf34dd297ffdb" id="r_a6230c100c06004691bcbf34dd297ffdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6230c100c06004691bcbf34dd297ffdb">add</a> (<a class="el" href="classModel.html">Model</a> *)</td></tr>
+<tr class="memdesc:a6230c100c06004691bcbf34dd297ffdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a sub-model to the model.  <br /></td></tr>
+<tr class="separator:a6230c100c06004691bcbf34dd297ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -386,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -431,7 +435,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -476,7 +480,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

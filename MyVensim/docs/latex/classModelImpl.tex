@@ -11,7 +11,8 @@ Implementation of the \doxylink{classModel}{Model} class.
 
 
 
-Inheritance diagram for Model\+Impl\+:\nopagebreak
+Inheritance diagram for Model\+Impl\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Inheritance diagram for Model\+Impl\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Model\+Impl\+:\nopagebreak
+Collaboration diagram for Model\+Impl\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -62,12 +64,6 @@ void \mbox{\hyperlink{classModelImpl_a7d739629b93ec5662fe8350a64c32d19}{set\+Nam
 \begin{DoxyCompactList}\small\item\em Set the name of the model. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{classModelImpl_a027d6617b69c45b92243c3caca352ba5}{get\+Name}} () const
 \begin{DoxyCompactList}\small\item\em Get the name of the model. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb}{add}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
-\begin{DoxyCompactList}\small\item\em Add a \doxylink{classSystem}{System} object to the model. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classModelImpl_a33b51e276ed5f79ce97906a9abab85f7}{add}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*})
-\begin{DoxyCompactList}\small\item\em Add a \doxylink{classFlow}{Flow} object to the model. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classModelImpl_a6230c100c06004691bcbf34dd297ffdb}{add}} (\mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*})
-\begin{DoxyCompactList}\small\item\em Add a sub-\/model to the model. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classModelImpl_af3d5938064d5a63a86df70ffa2653c26}{remove}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
 \begin{DoxyCompactList}\small\item\em Remove a \doxylink{classSystem}{System} object from the model. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classModelImpl_a1273acfe9a1dc080229e6f5e881e2de7}{remove}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*})
@@ -99,6 +95,15 @@ static \mbox{\hyperlink{classModel}{Model}} \& \mbox{\hyperlink{classModel_adf45
 \begin{DoxyCompactList}\small\item\em Create and return an instance of the \doxylink{classModel}{Model} class. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{classModel}{Model}} \& \mbox{\hyperlink{classModel_a51a6961eef61a054605c3b781410d753}{create\+Model}} ()
 \begin{DoxyCompactList}\small\item\em Create and return an instance of the \doxylink{classModel}{Model} class with a default name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb}{add}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{classSystem}{System} object to the model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_a33b51e276ed5f79ce97906a9abab85f7}{add}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{classFlow}{Flow} object to the model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_a6230c100c06004691bcbf34dd297ffdb}{add}} (\mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Add a sub-\/model to the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -233,7 +238,7 @@ Definition at line \mbox{\hyperlink{ModelImpl_8cpp_source_l00037}{37}} of file \
 \index{ModelImpl@{ModelImpl}!add@{add}}
 \index{add@{add}!ModelImpl@{ModelImpl}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily bool Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 
 
@@ -269,7 +274,7 @@ Definition at line \mbox{\hyperlink{ModelImpl_8cpp_source_l00149}{149}} of file 
 \index{ModelImpl@{ModelImpl}!add@{add}}
 \index{add@{add}!ModelImpl@{ModelImpl}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily bool Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 
 
@@ -305,7 +310,7 @@ Definition at line \mbox{\hyperlink{ModelImpl_8cpp_source_l00156}{156}} of file 
 \index{ModelImpl@{ModelImpl}!add@{add}}
 \index{add@{add}!ModelImpl@{ModelImpl}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily bool Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 
 
@@ -363,8 +368,7 @@ Definition at line \mbox{\hyperlink{ModelImpl_8cpp_source_l00116}{116}} of file 
 \DoxyCodeLine{00120\ \}}
 
 \end{DoxyCode}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
