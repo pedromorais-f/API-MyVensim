@@ -15,6 +15,27 @@ protected:
     vector<Flow*> flows; ///< @brief Vector to store Flow objects.
     static vector<Model*> models; ///< @brief Vector to store sub-models.
 
+    /**
+     * @brief Add a System object to the model.
+     * @param system The System object to be added.
+     * @return True if the addition was successful, false otherwise.
+     */
+    bool add(System*);
+
+    /**
+     * @brief Add a Flow object to the model.
+     * @param flow The Flow object to be added.
+     * @return True if the addition was successful, false otherwise.
+     */
+    bool add(Flow*);
+
+    /**
+     * @brief Add a sub-model to the model.
+     * @param model The Model object to be added.
+     * @return True if the addition was successful, false otherwise.
+     */
+    bool add(Model*);
+
 private:
     /**
      * @brief Copy constructor for Model.
@@ -138,27 +159,6 @@ public:
      * @return The name of the model.
      */
     string getName() const;
-
-    /**
-     * @brief Add a System object to the model.
-     * @param system The System object to be added.
-     * @return True if the addition was successful, false otherwise.
-     */
-    bool add(System*);
-
-    /**
-     * @brief Add a Flow object to the model.
-     * @param flow The Flow object to be added.
-     * @return True if the addition was successful, false otherwise.
-     */
-    bool add(Flow*);
-
-    /**
-     * @brief Add a sub-model to the model.
-     * @param model The Model object to be added.
-     * @return True if the addition was successful, false otherwise.
-     */
-    bool add(Model*);
 
     /**
      * @brief Remove a System object from the model.
