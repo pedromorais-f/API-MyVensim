@@ -1,9 +1,10 @@
 <map id="LogisticFlow" name="LogisticFlow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,592,151,917"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Concrete implementation of the Flow class." alt="" coords="5,259,151,544"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,558,63,592,57,592,57,558"/>
-<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="81,558,81,592,75,592,75,558"/>
-<area shape="poly" id="edge4_Node000001_Node000002" title=" " alt="" coords="99,558,99,592,93,592,93,558"/>
-<area shape="rect" id="Node000003" href="$classFlow.html" title="Abstract base class representing a flow in a system model." alt="" coords="5,5,151,211"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,225,81,259,75,259,75,225"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,492,151,757"/>
+<area shape="rect" id="Node000002" href="$classFlowBody.html" title="Concrete implementation of the Flow class." alt="" coords="5,199,151,444"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,458,54,492,49,492,48,458"/>
+<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="72,458,72,492,66,492,66,458"/>
+<area shape="poly" id="edge4_Node000001_Node000002" title=" " alt="" coords="90,458,90,492,84,492,84,458"/>
+<area shape="poly" id="edge5_Node000001_Node000002" title=" " alt="" coords="108,458,107,492,102,492,102,458"/>
+<area shape="rect" id="Node000003" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="31,5,125,151"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,165,81,198,75,198,75,165"/>
 </map>

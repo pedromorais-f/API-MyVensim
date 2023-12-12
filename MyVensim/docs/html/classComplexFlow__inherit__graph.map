@@ -1,7 +1,7 @@
 <map id="ComplexFlow" name="ComplexFlow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,592,151,717"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Concrete implementation of the Flow class." alt="" coords="5,259,151,544"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,558,81,592,75,592,75,558"/>
-<area shape="rect" id="Node000003" href="$classFlow.html" title="Abstract base class representing a flow in a system model." alt="" coords="5,5,151,211"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,225,81,259,75,259,75,225"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,492,151,617"/>
+<area shape="rect" id="Node000002" href="$classFlowBody.html" title="Concrete implementation of the Flow class." alt="" coords="5,199,151,444"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,458,81,492,75,492,75,458"/>
+<area shape="rect" id="Node000003" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="31,5,125,151"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,165,81,198,75,198,75,165"/>
 </map>

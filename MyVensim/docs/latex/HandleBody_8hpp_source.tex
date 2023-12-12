@@ -1,0 +1,93 @@
+\doxysection{Handle\+Body.\+hpp}
+\hypertarget{HandleBody_8hpp_source}{}\label{HandleBody_8hpp_source}\index{src/HandleBody.hpp@{src/HandleBody.hpp}}
+\mbox{\hyperlink{HandleBody_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#if\ !defined(HANDLE\_BODY)}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ HANDLE\_BODY}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00011}\mbox{\hyperlink{HandleBody_8hpp_aeff79046387df0de04e7de11061a704b}{00011}}\ \textcolor{preprocessor}{\#define\ DEBUGING}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#ifdef\ DEBUGING}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00013}00013\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{HandleBody_8hpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00014}00014\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{HandleBody_8hpp_a01128a06118f949a0b24a3d080f515fd}{numHandleDeleted}};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00015}00015\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{HandleBody_8hpp_ac1322042429ed9724fbef55908244f3b}{numBodyCreated}};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00016}\mbox{\hyperlink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{00016}}\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{HandleBody_8hpp_aba38ebae7f83ef57afab8c447dddb6cf}{numBodyDeleted}};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00017}00017\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00025}00025\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00026}\mbox{\hyperlink{classHandle}{00026}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classHandle}{Handle}}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00027}00027\ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00029}00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{Handle<T>}}()}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00032}00032\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{T}};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>attach();}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00035}00035\ \textcolor{preprocessor}{\#ifdef\ DEBUGING}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{HandleBody_8hpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}}++;}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00037}00037\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00041}00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{\string~Handle<T>}}()}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00042}00042\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>detach();}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00044}00044\ \textcolor{preprocessor}{\#ifdef\ DEBUGING}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{HandleBody_8hpp_a01128a06118f949a0b24a3d080f515fd}{numHandleDeleted}}++;}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00046}00046\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00047}00047\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{Handle<T>}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classHandle}{Handle}}\ \&\mbox{\hyperlink{classHandle}{hd}})\ :\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}(\mbox{\hyperlink{classHandle}{hd}}.\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}})\ \{\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>attach();\ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00053}\mbox{\hyperlink{classHandle_a52e146e2a1427c8e7d3a692e9378185a}{00053}}\ \ \ \ \ \mbox{\hyperlink{classHandle}{Handle<T>}}\ \&\mbox{\hyperlink{classHandle_a52e146e2a1427c8e7d3a692e9378185a}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classHandle}{Handle}}\ \&\mbox{\hyperlink{classHandle}{hd}})}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00054}00054\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&\mbox{\hyperlink{classHandle}{hd}})}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHandle}{hd}}.\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>attach();}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>detach();}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}\ =\ \mbox{\hyperlink{classHandle}{hd}}.\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00062}00062\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00064}00064\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00066}\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{00066}}\ \ \ \ \ \mbox{\hyperlink{classHandle}{T}}\ *\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00067}00067\ \};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00076}\mbox{\hyperlink{classBody}{00076}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBody}{Body}}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00077}00077\ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00078}00078\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00080}\mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{00080}}\ \ \ \ \ \mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}}()\ :\ refCount\_(0)}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00081}00081\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00082}00082\ \textcolor{preprocessor}{\#ifdef\ DEBUGING}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00083}00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{HandleBody_8hpp_ac1322042429ed9724fbef55908244f3b}{numBodyCreated}}++;}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00084}00084\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00088}\mbox{\hyperlink{classBody_a5d53322c76a6952d096cb7564ac86db1}{00088}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBody_a5d53322c76a6952d096cb7564ac86db1}{attach}}()\ \{\ refCount\_++;\ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00092}\mbox{\hyperlink{classBody_ad481d0c8368db318795c9a0a8fdd3717}{00092}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBody_ad481d0c8368db318795c9a0a8fdd3717}{detach}}()}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00093}00093\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (-\/-\/refCount\_\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00098}00098\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00101}\mbox{\hyperlink{classBody_a59ae961812625b8636071ba61b1a75fc}{00101}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classBody_a59ae961812625b8636071ba61b1a75fc}{refCount}}()\ \{\ \textcolor{keywordflow}{return}\ refCount\_;\ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00104}\mbox{\hyperlink{classBody_a9b15e54cf881ac0ca64790ca1d50110e}{00104}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classBody_a9b15e54cf881ac0ca64790ca1d50110e}{\string~Body}}()}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00105}00105\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00106}00106\ \textcolor{preprocessor}{\#ifdef\ DEBUGING}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00107}00107\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{HandleBody_8hpp_aba38ebae7f83ef57afab8c447dddb6cf}{numBodyDeleted}}++;}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00108}00108\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00109}00109\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00111}00111\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00113}00113\ \ \ \ \ \mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classBody}{Body}}\ \&);}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00116}00116\ \ \ \ \ \mbox{\hyperlink{classBody}{Body}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classBody}{Body}}\ \&)\ \{\ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};\ \}}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00118}00118\ \ \ \ \ \textcolor{keywordtype}{int}\ refCount\_;\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00119}00119\ \};}
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{HandleBody_8hpp_source_l00121}00121\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

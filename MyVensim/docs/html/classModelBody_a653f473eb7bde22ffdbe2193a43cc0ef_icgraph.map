@@ -1,0 +1,62 @@
+<map id="ModelBody::createModel" name="ModelBody::createModel">
+<area shape="rect" id="Node000001" title="Create and return an instance of the Model class with a default name." alt="" coords="807,444,989,469"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="608,419,759,444"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="792,447,759,443,759,438,793,442"/>
+<area shape="rect" id="Node000023" href="$classModel.html#adf45e4dc2b1046a99fe14af8b7270936" title="Create and return an instance of the Model class." alt="" coords="608,468,759,493"/>
+<area shape="poly" id="edge37_Node000001_Node000023" title=" " alt="" coords="793,471,759,475,759,470,792,466"/>
+<area shape="rect" id="Node000003" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="Function to perform a complex test." alt="" coords="403,5,507,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="679,405,675,333,658,235,643,183,622,132,594,85,558,44,534,29,506,22,508,17,536,24,562,40,598,82,627,130,648,181,664,234,680,332,685,405"/>
+<area shape="rect" id="Node000005" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="Function to perform an exponential test." alt="" coords="392,55,517,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="678,405,671,342,652,257,637,212,616,168,590,128,558,93,539,81,517,74,518,69,541,76,562,89,595,125,621,166,641,210,657,255,676,341,683,405"/>
+<area shape="rect" id="Node000006" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="Function to perform a logistic test." alt="" coords="407,104,502,129"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="676,406,664,352,643,284,608,212,585,179,558,151,531,134,501,125,503,120,534,129,562,147,589,176,613,209,648,282,669,351,681,405"/>
+<area shape="rect" id="Node000007" href="$unit__handlebody_8cpp.html#ae34a86d00f2e32c66ba3983cc97478cd" title=" " alt="" coords="108,245,301,271"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="675,406,663,358,642,298,626,268,607,240,585,215,559,195,515,177,469,170,421,173,373,183,328,198,288,216,227,248,225,243,286,211,327,193,372,178,420,168,469,165,517,171,561,190,589,211,612,237,631,266,646,296,668,356,680,404"/>
+<area shape="rect" id="Node000009" href="$unit__model_8cpp.html#ae39eed2474a02a89632ebe6dde0c9e3b" title="Unit test for the parameterized constructor of the Model class." alt="" coords="367,205,543,231"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="670,407,654,370,630,326,598,282,558,246,535,233,537,228,562,241,602,279,634,323,659,368,675,405"/>
+<area shape="rect" id="Node000011" href="$unit__model_8cpp.html#adffd436052674a703d08777c23c64752" title="Unit test for the default constructor of the Model class." alt="" coords="367,255,543,295"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="663,409,619,359,590,332,559,310,535,298,537,293,561,305,594,328,623,355,667,406"/>
+<area shape="rect" id="Node000012" href="$unit__model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Unit test for the createFlow method of the Model class." alt="" coords="368,320,541,345"/>
+<area shape="poly" id="edge15_Node000002_Node000012" title=" " alt="" coords="652,413,609,385,559,359,524,348,526,343,561,354,612,380,655,408"/>
+<area shape="rect" id="Node000013" href="$unit__model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for the createModel method of the Model class." alt="" coords="363,369,546,395"/>
+<area shape="poly" id="edge17_Node000002_Node000013" title=" " alt="" coords="610,418,514,397,515,392,611,413"/>
+<area shape="rect" id="Node000014" href="$unit__model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for the createSystem method of the Model class." alt="" coords="359,419,550,444"/>
+<area shape="poly" id="edge19_Node000002_Node000014" title=" " alt="" coords="594,434,550,434,550,429,594,429"/>
+<area shape="rect" id="Node000015" href="$unit__model_8cpp.html#a311b7da9900493bb3dcd917d1cb45268" title="Unit test for the flowsBegin and flowsEnd methods of the Model class." alt="" coords="358,468,551,493"/>
+<area shape="poly" id="edge21_Node000002_Node000015" title=" " alt="" coords="611,450,515,471,514,465,610,444"/>
+<area shape="rect" id="Node000016" href="$unit__model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName method of the Model class." alt="" coords="374,517,535,543"/>
+<area shape="poly" id="edge23_Node000002_Node000016" title=" " alt="" coords="620,452,610,458,595,470,586,482,577,495,561,507,532,520,530,515,559,502,573,491,582,479,591,466,606,453,618,447"/>
+<area shape="rect" id="Node000017" href="$unit__model_8cpp.html#a0366f5eead69f99db5dc08522f394e86" title="Unit test for the modelsBegin and modelsEnd methods of the Model class." alt="" coords="353,567,556,592"/>
+<area shape="poly" id="edge25_Node000002_Node000017" title=" " alt="" coords="615,453,610,457,599,469,593,481,587,506,581,531,574,544,562,556,540,569,537,564,558,552,569,541,576,529,582,505,588,479,595,466,606,453,612,449"/>
+<area shape="rect" id="Node000018" href="$unit__model_8cpp.html#a9558a5ae2be456fcc8c7a3b1ecd5f3cb" title="Unit test for the removeFlow method of the Model class." alt="" coords="363,616,546,641"/>
+<area shape="poly" id="edge27_Node000002_Node000018" title=" " alt="" coords="614,453,610,457,596,475,590,493,587,530,585,568,577,587,562,605,543,618,540,614,558,601,572,584,579,567,582,530,584,492,592,473,606,454,611,449"/>
+<area shape="rect" id="Node000019" href="$unit__model_8cpp.html#ad30b83679de39115af7c05c286ed505b" title="Unit test for the removeSystem method of the Model class." alt="" coords="355,665,555,691"/>
+<area shape="poly" id="edge29_Node000002_Node000019" title=" " alt="" coords="614,454,610,457,593,481,586,506,585,530,588,555,590,580,588,605,580,630,562,655,544,667,541,663,558,651,575,627,583,604,584,580,582,555,580,530,581,505,589,479,606,454,610,450"/>
+<area shape="rect" id="Node000020" href="$unit__model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run method of the Model class." alt="" coords="393,715,516,740"/>
+<area shape="poly" id="edge31_Node000002_Node000020" title=" " alt="" coords="613,454,610,457,590,488,583,518,583,549,588,579,592,610,592,641,584,673,562,704,541,719,517,727,516,722,539,714,558,700,579,670,587,641,587,611,583,580,578,549,577,517,585,486,606,454,609,450"/>
+<area shape="rect" id="Node000021" href="$unit__model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName method of the Model class." alt="" coords="375,764,535,789"/>
+<area shape="poly" id="edge33_Node000002_Node000021" title=" " alt="" coords="613,454,610,457,587,494,579,531,581,567,588,604,595,641,596,678,587,716,562,753,536,770,533,766,558,749,582,714,591,678,589,642,583,605,576,568,574,530,582,492,606,454,609,451"/>
+<area shape="rect" id="Node000022" href="$unit__model_8cpp.html#a36ff125e2796273a0e04407c84852800" title="Unit test for the systemsBegin and systemsEnd methods of the Model class." alt="" coords="349,813,560,839"/>
+<area shape="poly" id="edge35_Node000002_Node000022" title=" " alt="" coords="613,454,610,457,594,479,584,501,576,544,579,587,589,630,598,673,600,716,597,738,591,760,579,782,562,804,548,815,545,811,558,800,575,779,586,758,592,737,595,716,592,674,583,631,574,588,570,544,579,499,590,476,606,454,609,451"/>
+<area shape="rect" id="Node000004" href="$mainFTest_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="177,55,232,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="389,33,233,65,232,60,388,28"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="378,70,232,70,232,65,378,65"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="393,107,232,75,233,70,394,102"/>
+<area shape="rect" id="Node000008" href="$mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,336,60,361"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="169,279,59,338,57,334,166,275"/>
+<area shape="rect" id="Node000010" href="$unit__test_8cpp.html#a533d06849d453f8f9d0da4a88f2b2061" title="Run unit tests for the Model class." alt="" coords="143,492,266,517"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="361,239,351,245,320,274,294,306,271,342,253,378,226,446,212,493,207,491,221,444,248,376,267,339,290,303,316,270,348,241,358,234"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="178,485,46,364,50,360,181,481"/>
+<area shape="poly" id="edge14_Node000011_Node000010" title=" " alt="" coords="360,304,351,309,325,330,302,355,262,407,232,457,214,493,209,491,228,454,257,404,298,351,322,327,348,305,357,299"/>
+<area shape="poly" id="edge16_Node000012_Node000010" title=" " alt="" coords="364,353,351,359,307,391,268,428,217,493,213,490,264,425,303,386,348,354,362,348"/>
+<area shape="poly" id="edge18_Node000013_Node000010" title=" " alt="" coords="370,401,350,408,312,428,276,452,222,494,219,490,273,447,309,424,348,404,368,396"/>
+<area shape="poly" id="edge20_Node000014_Node000010" title=" " alt="" coords="381,450,350,458,241,494,239,489,349,453,379,445"/>
+<area shape="poly" id="edge22_Node000015_Node000010" title=" " alt="" coords="344,494,266,501,266,496,344,489"/>
+<area shape="poly" id="edge24_Node000016_Node000010" title=" " alt="" coords="360,523,266,513,267,508,361,518"/>
+<area shape="poly" id="edge26_Node000017_Node000010" title=" " alt="" coords="383,566,349,557,240,520,241,515,350,551,385,561"/>
+<area shape="poly" id="edge28_Node000018_Node000010" title=" " alt="" coords="371,614,348,606,310,586,274,562,219,520,222,516,277,558,312,581,350,601,373,610"/>
+<area shape="poly" id="edge30_Node000019_Node000010" title=" " alt="" coords="365,663,348,655,303,623,264,585,213,519,217,516,268,581,307,619,351,650,367,658"/>
+<area shape="poly" id="edge32_Node000020_Node000010" title=" " alt="" coords="379,719,348,704,321,683,297,659,257,606,227,556,209,519,214,517,232,553,261,603,301,656,325,679,351,700,381,714"/>
+<area shape="poly" id="edge34_Node000021_Node000010" title=" " alt="" coords="360,761,348,753,318,727,291,696,250,628,222,564,207,519,212,517,227,562,255,625,296,692,321,723,351,749,363,757"/>
+<area shape="poly" id="edge36_Node000022_Node000010" title=" " alt="" coords="354,809,348,804,314,771,285,733,262,692,243,649,218,572,206,518,211,517,223,570,248,647,267,689,290,730,318,768,351,800,358,805"/>
+</map>

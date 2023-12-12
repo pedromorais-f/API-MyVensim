@@ -11,11 +11,12 @@ Abstract base class representing a flow in a system model.
 
 
 
-Inheritance diagram for Flow\+:\nopagebreak
+Inheritance diagram for Flow\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classFlow__inherit__graph}
+\includegraphics[width=189pt]{classFlow__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -30,21 +31,21 @@ Collaboration diagram for Flow\+:\nopagebreak
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
 \begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classFlow_a0ed1020c54f158d82bf54c5e6da03469}{set\+Begin}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})=0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{classFlow_a0ed1020c54f158d82bf54c5e6da03469}{set\+Begin}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to set the beginning system of the flow. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{get\+Begin}} () const =0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{get\+Begin}} () \mbox{\hyperlink{classHandle}{const}} =0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to get the beginning system of the flow. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classFlow_acb35a71459c15be848c46923be0e11fa}{set\+End}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})=0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{classFlow_acb35a71459c15be848c46923be0e11fa}{set\+End}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to set the ending system of the flow. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{get\+End}} () const =0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{get\+End}} () \mbox{\hyperlink{classHandle}{const}} =0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to get the ending system of the flow. \end{DoxyCompactList}\item 
-virtual double \mbox{\hyperlink{classFlow_a3e9249aaabe8a49653f212bb18f18d76}{execute\+Function}} ()=0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{double}} \mbox{\hyperlink{classFlow_a3e9249aaabe8a49653f212bb18f18d76}{execute\+Function}} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function representing the execution of the flow. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlow_abc7aa7f9178c49badf56c845ef3809ed}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&)=0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlow_abc7aa7f9178c49badf56c845ef3809ed}{operator=}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlow}{Flow}} \&)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function representing the override of the operator "{}="{} of flow. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{classFlow_aafbd677301cdd3ba24754a2035f8f693}{operator==}} (const \mbox{\hyperlink{classFlow}{Flow}} \&) const =0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{bool}} \mbox{\hyperlink{classFlow_aafbd677301cdd3ba24754a2035f8f693}{operator==}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlow}{Flow}} \&) \mbox{\hyperlink{classHandle}{const}} =0
 \begin{DoxyCompactList}\small\item\em Pure virtual function representing the override of the operator "{}=="{} of flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -60,7 +61,7 @@ Definition at line \mbox{\hyperlink{Flow_8hpp_source_l00009}{9}} of file \mbox{\
 \index{Flow@{Flow}!````~Flow@{\texorpdfstring{$\sim$}{\string~}Flow}}
 \index{````~Flow@{\texorpdfstring{$\sim$}{\string~}Flow}!Flow@{Flow}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Flow()}{\string~Flow()}}
-{\footnotesize\ttfamily virtual Flow\+::\texorpdfstring{$\sim$}{\string~}\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} Flow\+::\texorpdfstring{$\sim$}{\string~}\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -82,7 +83,7 @@ Definition at line \mbox{\hyperlink{Flow_8hpp_source_l00014}{14}} of file \mbox{
 \index{Flow@{Flow}!executeFunction@{executeFunction}}
 \index{executeFunction@{executeFunction}!Flow@{Flow}}
 \doxysubsubsection{\texorpdfstring{executeFunction()}{executeFunction()}}
-{\footnotesize\ttfamily virtual double Flow\+::execute\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{double}} Flow\+::execute\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -93,13 +94,13 @@ The result of the flow\textquotesingle{}s execution, of type double.
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classLogisticFlow_ab13aa2218e41515991af57a443baee8b}{Logistic\+Flow}}, \mbox{\hyperlink{classExponentialFlow_ac41a726ed3552ef1c63ee5b6a1c838d6}{Exponential\+Flow}}, \mbox{\hyperlink{classComplexFlow_a1321de8d4e7789950af6dc9289f47eb2}{Complex\+Flow}}, \mbox{\hyperlink{classLogisticFlow_ab13aa2218e41515991af57a443baee8b}{Logistic\+Flow}}, \mbox{\hyperlink{classLogisticFlow_ab13aa2218e41515991af57a443baee8b}{Logistic\+Flow}}, and \mbox{\hyperlink{classFlowImpl_a7f3c660150c834afe98bb95f6f5607fd}{Flow\+Impl}}.
+Implemented in \mbox{\hyperlink{classFlowHandle_aeb802b80fc7e9e56a1261ff6affd61b9}{Flow\+Handle$<$ T $>$}}.
 
 \Hypertarget{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}\label{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509} 
 \index{Flow@{Flow}!getBegin@{getBegin}}
 \index{getBegin@{getBegin}!Flow@{Flow}}
 \doxysubsubsection{\texorpdfstring{getBegin()}{getBegin()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+::get\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+::get\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -110,20 +111,21 @@ A pointer to the starting system of the flow.
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classFlowImpl_a627c43fe1fc29a2d416d65766305977d}{Flow\+Impl}}.
+Implemented in \mbox{\hyperlink{classFlowHandle_a05dbeaa25c027a1a6a3677191e483033}{Flow\+Handle$<$ T $>$}}.
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509_icgraph}
+\includegraphics[width=343pt]{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}\label{classFlow_a0e8d9a54d44cd150112595fd1068c3c5} 
 \index{Flow@{Flow}!getEnd@{getEnd}}
 \index{getEnd@{getEnd}!Flow@{Flow}}
 \doxysubsubsection{\texorpdfstring{getEnd()}{getEnd()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+::get\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+::get\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -134,20 +136,21 @@ A pointer to the ending system of the flow.
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classFlowImpl_a7b07f691e98d9f1443041af4dc89878b}{Flow\+Impl}}.
+Implemented in \mbox{\hyperlink{classFlowHandle_acc73209b823959b6900df6eb4f5c4521}{Flow\+Handle$<$ T $>$}}.
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classFlow_a0e8d9a54d44cd150112595fd1068c3c5_icgraph}
+\includegraphics[width=333pt]{classFlow_a0e8d9a54d44cd150112595fd1068c3c5_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classFlow_abc7aa7f9178c49badf56c845ef3809ed}\label{classFlow_abc7aa7f9178c49badf56c845ef3809ed} 
 \index{Flow@{Flow}!operator=@{operator=}}
 \index{operator=@{operator=}!Flow@{Flow}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{classFlow}{Flow}} \& Flow\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow}{Flow}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classFlow}{Flow}} \& Flow\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlow}{Flow}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -155,13 +158,13 @@ Pure virtual function representing the override of the operator "{}="{} of flow.
 
 
 
-Implemented in \mbox{\hyperlink{classFlowImpl_a22ed015e864eba17baee68994a3dfd6b}{Flow\+Impl}}.
+Implemented in \mbox{\hyperlink{classFlowHandle_a07db5580d2ebfb9916db9747655814ec}{Flow\+Handle$<$ T $>$}}.
 
 \Hypertarget{classFlow_aafbd677301cdd3ba24754a2035f8f693}\label{classFlow_aafbd677301cdd3ba24754a2035f8f693} 
 \index{Flow@{Flow}!operator==@{operator==}}
 \index{operator==@{operator==}!Flow@{Flow}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
-{\footnotesize\ttfamily virtual bool Flow\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow}{Flow}} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{bool}} Flow\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlow}{Flow}} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -169,13 +172,13 @@ Pure virtual function representing the override of the operator "{}=="{} of flow
 
 
 
-Implemented in \mbox{\hyperlink{classFlowImpl_a36eb29867b76b4ca4518a0ca78d30f25}{Flow\+Impl}}.
+Implemented in \mbox{\hyperlink{classFlowHandle_a7b215e1bd3b2c973df060bfc78e4771f}{Flow\+Handle$<$ T $>$}}.
 
 \Hypertarget{classFlow_a0ed1020c54f158d82bf54c5e6da03469}\label{classFlow_a0ed1020c54f158d82bf54c5e6da03469} 
 \index{Flow@{Flow}!setBegin@{setBegin}}
 \index{setBegin@{setBegin}!Flow@{Flow}}
 \doxysubsubsection{\texorpdfstring{setBegin()}{setBegin()}}
-{\footnotesize\ttfamily virtual void Flow\+::set\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{void}} Flow\+::set\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -188,20 +191,13 @@ Pure virtual function to set the beginning system of the flow.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classFlowImpl_a8b2a89140290339f2c5c6a79c6da0f5c}{Flow\+Impl}}.
+Implemented in \mbox{\hyperlink{classFlowHandle_aafc52716a2b53bdef50a261a2b9db918}{Flow\+Handle$<$ T $>$}}.
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classFlow_a0ed1020c54f158d82bf54c5e6da03469_icgraph}
-\end{center}
-\end{figure}
 \Hypertarget{classFlow_acb35a71459c15be848c46923be0e11fa}\label{classFlow_acb35a71459c15be848c46923be0e11fa} 
 \index{Flow@{Flow}!setEnd@{setEnd}}
 \index{setEnd@{setEnd}!Flow@{Flow}}
 \doxysubsubsection{\texorpdfstring{setEnd()}{setEnd()}}
-{\footnotesize\ttfamily virtual void Flow\+::set\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{void}} Flow\+::set\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -214,15 +210,8 @@ Pure virtual function to set the ending system of the flow.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classFlowImpl_a6583461348e5829675bfd5fe6382329a}{Flow\+Impl}}.
+Implemented in \mbox{\hyperlink{classFlowHandle_a6b3665d4049451b7ded6a551ae9a87ca}{Flow\+Handle$<$ T $>$}}.
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classFlow_acb35a71459c15be848c46923be0e11fa_icgraph}
-\end{center}
-\end{figure}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

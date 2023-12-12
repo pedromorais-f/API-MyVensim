@@ -6,75 +6,144 @@
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ MODELIMPL\_H}}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00003}00003\ }
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Model_8hpp}{Model.hpp}}"{}}}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00005}00005\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00006}00006\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00007}00007\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00011}\mbox{\hyperlink{classModelImpl}{00011}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classModelImpl}{ModelImpl}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classModel}{Model}}\ \{}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00012}00012\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00013}\mbox{\hyperlink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{00013}}\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name}};\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00014}\mbox{\hyperlink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{00014}}\ \ \ \ \ vector<System*>\ \mbox{\hyperlink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems}};\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00015}\mbox{\hyperlink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{00015}}\ \ \ \ \ vector<Flow*>\ \mbox{\hyperlink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}};\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00016}\mbox{\hyperlink{classModelImpl_a9c39b73552a3d681f5148d40e1746b8e}{00016}}\ \ \ \ \ \textcolor{keyword}{static}\ vector<Model*>\ \mbox{\hyperlink{classModelImpl_a9c39b73552a3d681f5148d40e1746b8e}{models}};\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00017}00017\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb}{add}}(\mbox{\hyperlink{classSystem}{System}}*);}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00024}00024\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb}{add}}(\mbox{\hyperlink{classFlow}{Flow}}*);}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00031}00031\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00037}00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb}{add}}(\mbox{\hyperlink{classModel}{Model}}*);}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00038}00038\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00039}00039\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{classModelImpl_a081505846c37ce9928f2176d77db4bc8}{ModelImpl}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelImpl}{ModelImpl}}\&);}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00045}00045\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{classModelImpl}{ModelImpl}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelImpl}{ModelImpl}}\&);}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00052}00052\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00053}00053\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00057}00057\ \ \ \ \ \mbox{\hyperlink{classModelImpl_a081505846c37ce9928f2176d77db4bc8}{ModelImpl}}();}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00058}00058\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00063}00063\ \ \ \ \ \mbox{\hyperlink{classModelImpl_a081505846c37ce9928f2176d77db4bc8}{ModelImpl}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name}});}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00064}00064\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00068}00068\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classModelImpl_a427f422a6d356b94afbe3937d6452a2b}{\string~ModelImpl}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{HandleBody_8hpp}{HandleBody.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00007}00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00012}\mbox{\hyperlink{classModelBody}{00012}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classModelBody}{ModelBody}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBody}{Body}}\ \{}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00013}00013\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00014}\mbox{\hyperlink{classModelBody_a31381d779f86d0a202122e50c1449ead}{00014}}\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classModelBody_a31381d779f86d0a202122e50c1449ead}{name}};\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00015}\mbox{\hyperlink{classModelBody_a6204f76405f7d7fea398a3dd03f144e7}{00015}}\ \ \ \ \ \mbox{\hyperlink{classHandle}{vector<System*>}}\ \mbox{\hyperlink{classModelBody_a6204f76405f7d7fea398a3dd03f144e7}{systems}};\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00016}\mbox{\hyperlink{classModelBody_a275a4efed4bca08a5d995c6d532d4c41}{00016}}\ \ \ \ \ \mbox{\hyperlink{classHandle}{vector<Flow*>}}\ \mbox{\hyperlink{classModelBody_a275a4efed4bca08a5d995c6d532d4c41}{flows}};\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00017}\mbox{\hyperlink{classModelBody_ac7520681b552ec8ea86dc899b61d8b71}{00017}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classHandle}{vector<Model*>}}\ \mbox{\hyperlink{classModelBody_ac7520681b552ec8ea86dc899b61d8b71}{models}};\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00019}00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{classModelBody_a6063bddda2422802c33f7061c1b91087}{ModelBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelBody}{ModelBody}}\&);}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{classModelBody}{ModelBody}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelBody}{ModelBody}}\&);}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00034}00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00036}00036\ \ \ \ \ \mbox{\hyperlink{classModelBody_a6063bddda2422802c33f7061c1b91087}{ModelBody}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00038}00038\ \ \ \ \ \mbox{\hyperlink{classModelBody_a6063bddda2422802c33f7061c1b91087}{ModelBody}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classModelBody_a61bb091ef404a3615bace348e2071809}{\string~ModelBody}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelBody_ac8f68f6da92b5d0444ad0945cc369672}{add}}(\mbox{\hyperlink{classSystem}{System}}*);}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00055}00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelBody_ac8f68f6da92b5d0444ad0945cc369672}{add}}(\mbox{\hyperlink{classFlow}{Flow}}*);}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelBody_ac8f68f6da92b5d0444ad0945cc369672}{add}}(\mbox{\hyperlink{classModel}{Model}}*);}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00068}00068\ \ \ \ \ Model\ ::\ systemsIterator\ \mbox{\hyperlink{classModelBody_a60c6260eba08c1094dad25e28fdef18f}{systemsBegin}}();}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00069}00069\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00074}00074\ \ \ \ \ \mbox{\hyperlink{classModel_ae2987d24c6adff4b124fb758dcc6bb83}{systemsIterator}}\ \mbox{\hyperlink{classModelImpl_a43e37d70bc3c50579187a749d94e2ae8}{systemsBegin}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00074}00074\ \ \ \ \ Model\ ::\ systemsIterator\ \mbox{\hyperlink{classModelBody_a14843e848c3f9e20f62e302f8fa6e9ea}{systemsEnd}}();}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00075}00075\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00080}00080\ \ \ \ \ \mbox{\hyperlink{classModel_ae2987d24c6adff4b124fb758dcc6bb83}{systemsIterator}}\ \mbox{\hyperlink{classModelImpl_a9c43899645ff8112b6470cf6f72f3775}{systemsEnd}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00080}00080\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelBody_ad69f1633c263a49bda25af43801e34f8}{systemsSize}}();}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00081}00081\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00086}00086\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelImpl_ad95b31c43021dec4c4b67cb74a2dc138}{systemsSize}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00086}00086\ \ \ \ \ Model\ ::\ flowsIterator\ \mbox{\hyperlink{classModelBody_a400604eb7af4590bd648b24f675b5b30}{flowsBegin}}();}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00087}00087\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00092}00092\ \ \ \ \ \mbox{\hyperlink{classModel_ac2413a62cd7cbbed3103667f4459a035}{flowsIterator}}\ \mbox{\hyperlink{classModelImpl_a35c5bb8e0ff89778a1d3621102990492}{flowsBegin}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00092}00092\ \ \ \ \ Model\ ::\ flowsIterator\ \mbox{\hyperlink{classModelBody_acd74842419c49ef91ad542ce701a59fe}{flowsEnd}}();}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00093}00093\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00098}00098\ \ \ \ \ \mbox{\hyperlink{classModel_ac2413a62cd7cbbed3103667f4459a035}{flowsIterator}}\ \mbox{\hyperlink{classModelImpl_a085f4eda6b6a6e1a63a35b779f6b3601}{flowsEnd}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00098}00098\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelBody_a11872814d1b06d4f0204c340a98ed36e}{flowsSize}}();}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00099}00099\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00104}00104\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelImpl_aa4e0c943fef808771f0800f03ae84386}{flowsSize}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00104}00104\ \ \ \ \ Model\ ::\ modelsIterator\ \mbox{\hyperlink{classModelBody_a34829c42adfcf6e80a12ee46203a6743}{modelsBegin}}();}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00105}00105\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00110}00110\ \ \ \ \ \mbox{\hyperlink{classModel_a0b506dad53e16fb95fc57592cc530c0d}{modelsIterator}}\ \mbox{\hyperlink{classModelImpl_a09c53cd1e079bf552895633ba1e5a578}{modelsBegin}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00110}00110\ \ \ \ \ Model\ ::\ modelsIterator\ \mbox{\hyperlink{classModelBody_a3f40f3f59eab9d27df907a5c999b67dd}{modelsEnd}}();}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00111}00111\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00116}00116\ \ \ \ \ \mbox{\hyperlink{classModel_a0b506dad53e16fb95fc57592cc530c0d}{modelsIterator}}\ \mbox{\hyperlink{classModelImpl_abfc37cb0b560d02d692b2c009ea94c07}{modelsEnd}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00116}00116\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelBody_a6ca412017c656a7e6754e2a544d3a98c}{modelsSize}}();}
 \DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00117}00117\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00122}00122\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelImpl_abdf1b89a2852f366c5dd6a07506b8067}{modelsSize}}();}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00123}00123\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00129}00129\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classModel}{Model}}\&\ \mbox{\hyperlink{classModelImpl_aedca25d981322204bdf01395241e4752}{createModel}}(\textcolor{keywordtype}{string});}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00130}00130\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00135}00135\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classModel}{Model}}\&\ \mbox{\hyperlink{classModelImpl_aedca25d981322204bdf01395241e4752}{createModel}}();}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00136}00136\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00143}00143\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classModelImpl_af26447b7a361575ba18e4b03b2e638cb}{createSystem}}(\textcolor{keywordtype}{string},\ \textcolor{keywordtype}{double});}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00144}00144\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00149}00149\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classModelImpl_af26447b7a361575ba18e4b03b2e638cb}{createSystem}}();}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00150}00150\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00155}00155\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelImpl_a7d739629b93ec5662fe8350a64c32d19}{setName}}(\textcolor{keywordtype}{string});}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00156}00156\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00161}00161\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classModelImpl_a027d6617b69c45b92243c3caca352ba5}{getName}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00162}00162\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00168}00168\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelImpl_af3d5938064d5a63a86df70ffa2653c26}{remove}}(\mbox{\hyperlink{classSystem}{System}}*);}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00169}00169\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00175}00175\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelImpl_af3d5938064d5a63a86df70ffa2653c26}{remove}}(\mbox{\hyperlink{classFlow}{Flow}}*);}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00176}00176\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00182}00182\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelImpl_af3d5938064d5a63a86df70ffa2653c26}{remove}}(\mbox{\hyperlink{classModel}{Model}}*);}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00183}00183\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00190}00190\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelImpl_a9f67e5631ddc2367d7fe428c23a683ea}{run}}(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00191}00191\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00195}00195\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelImpl_aeabfa48e76fe9c18951ab2f1ad86ebea}{summary}}();}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00196}00196\ \};}
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00197}00197\ }
-\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00198}00198\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00118}00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelBody_a0e16d92af55547086394cf85f5d8ab7f}{erase}}(Model\ ::\ modelsIterator);}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00125}00125\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classModel}{Model}}\&\ \mbox{\hyperlink{classModelBody_a653f473eb7bde22ffdbe2193a43cc0ef}{createModel}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00131}00131\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classModel}{Model}}\&\ \mbox{\hyperlink{classModelBody_a653f473eb7bde22ffdbe2193a43cc0ef}{createModel}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00139}00139\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classModelBody_a8935dafaa773723004e6ed02facf3300}{createSystem}}(\textcolor{keywordtype}{string},\ \textcolor{keywordtype}{double});}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00140}00140\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00145}00145\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classModelBody_a8935dafaa773723004e6ed02facf3300}{createSystem}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00151}00151\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelBody_affe79ea948033ec19d3218d159b2fd98}{setName}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00157}00157\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classModelBody_a739f9c5245937a5e513d8c6d8aa6802b}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00164}00164\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelBody_adb5db54723ff39e0f5409930cd502a72}{remove}}(\mbox{\hyperlink{classSystem}{System}}*);}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00165}00165\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00171}00171\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelBody_adb5db54723ff39e0f5409930cd502a72}{remove}}(\mbox{\hyperlink{classFlow}{Flow}}*);}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00172}00172\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00178}00178\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelBody_adb5db54723ff39e0f5409930cd502a72}{remove}}(\mbox{\hyperlink{classModel}{Model}}*);}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00179}00179\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00186}00186\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelBody_afd28990022fe3992194d3ac5997d9587}{run}}(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00187}00187\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00191}00191\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelBody_ad319ec9facca8bfd40114c38e94fffa0}{summary}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00192}00192\ \};}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00193}00193\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00194}00194\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00198}\mbox{\hyperlink{classModelHandle}{00198}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classModelHandle}{ModelHandle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classModel}{Model}},\ \mbox{\hyperlink{classHandle}{Handle}}<ModelBody>\ \{}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00199}00199\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00200}00200\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00206}\mbox{\hyperlink{classModelHandle_ab6f4576949625f20246a3e5a2fe99129}{00206}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelHandle_ab6f4576949625f20246a3e5a2fe99129}{add}}(\mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classHandle}{system}})\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_ac8f68f6da92b5d0444ad0945cc369672}{add}}(\mbox{\hyperlink{classHandle}{system}});\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00207}00207\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00213}\mbox{\hyperlink{classModelHandle_a7cf362d2803c03768a6797e9a1aa79d8}{00213}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelHandle_a7cf362d2803c03768a6797e9a1aa79d8}{add}}(\mbox{\hyperlink{classFlow}{Flow}}*\ \mbox{\hyperlink{classHandle}{flow}})\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_ac8f68f6da92b5d0444ad0945cc369672}{add}}(\mbox{\hyperlink{classHandle}{flow}});\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00214}00214\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00220}\mbox{\hyperlink{classModelHandle_a4a5df3acece7f090fb30538c7251743c}{00220}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelHandle_a4a5df3acece7f090fb30538c7251743c}{add}}(\mbox{\hyperlink{classModel}{Model}}*\ \mbox{\hyperlink{classHandle}{model}})\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_ac8f68f6da92b5d0444ad0945cc369672}{add}}(\mbox{\hyperlink{classHandle}{model}});\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00221}00221\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00225}\mbox{\hyperlink{classModelHandle_a1c203c425e69e245ad1e3f65143fa69b}{00225}}\ \ \ \ \ \mbox{\hyperlink{classModelHandle_a1c203c425e69e245ad1e3f65143fa69b}{ModelHandle}}()\{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_affe79ea948033ec19d3218d159b2fd98}{setName}}(\textcolor{stringliteral}{"{}"{}});\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00226}00226\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00231}\mbox{\hyperlink{classModelHandle_acfca9fe5f344efadae912c048ef65138}{00231}}\ \ \ \ \ \mbox{\hyperlink{classModelHandle_acfca9fe5f344efadae912c048ef65138}{ModelHandle}}(\textcolor{keywordtype}{string}\ name)\{\mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_affe79ea948033ec19d3218d159b2fd98}{setName}}(name);\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00232}00232\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00236}\mbox{\hyperlink{classModelHandle_aa2813029166b0166dc9f20398d7e4bdb}{00236}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classModelHandle_aa2813029166b0166dc9f20398d7e4bdb}{\string~ModelHandle}}()\{}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00237}00237\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00238}00238\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classModel_a0b506dad53e16fb95fc57592cc530c0d}{modelsIterator}}\ \mbox{\hyperlink{classHandle}{modelsIt}}\ =\ \mbox{\hyperlink{classModelHandle_abdb92fcb0f581d7d469944d8c760c857}{modelsBegin}}();}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00239}00239\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{classHandle}{modelsIt}}\ !=\ \mbox{\hyperlink{classModelHandle_a8c8808abe5e2f18b3e4da2fc983d51d5}{modelsEnd}}())\{}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00240}00240\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(*\mbox{\hyperlink{classHandle}{modelsIt}}\ ==\ \textcolor{keyword}{this})\{}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00241}00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_a0e16d92af55547086394cf85f5d8ab7f}{erase}}(\mbox{\hyperlink{classHandle}{modelsIt}});}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00242}00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00243}00243\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00244}00244\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00245}00245\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00246}00246\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00251}\mbox{\hyperlink{classModelHandle_ac16f37046337ef83667edf3c8cfe2c1d}{00251}}\ \ \ \ \ \mbox{\hyperlink{classModel_ae2987d24c6adff4b124fb758dcc6bb83}{systemsIterator}}\ \mbox{\hyperlink{classModelHandle_ac16f37046337ef83667edf3c8cfe2c1d}{systemsBegin}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_a60c6260eba08c1094dad25e28fdef18f}{systemsBegin}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00252}00252\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00257}\mbox{\hyperlink{classModelHandle_a181b25f4edb799f17e5971ad18b94112}{00257}}\ \ \ \ \ \mbox{\hyperlink{classModel_ae2987d24c6adff4b124fb758dcc6bb83}{systemsIterator}}\ \mbox{\hyperlink{classModelHandle_a181b25f4edb799f17e5971ad18b94112}{systemsEnd}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_a14843e848c3f9e20f62e302f8fa6e9ea}{systemsEnd}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00258}00258\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00263}\mbox{\hyperlink{classModelHandle_a663fd17a4b79ceb18bc334a8a2c99d63}{00263}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelHandle_a663fd17a4b79ceb18bc334a8a2c99d63}{systemsSize}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_ad69f1633c263a49bda25af43801e34f8}{systemsSize}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00264}00264\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00269}\mbox{\hyperlink{classModelHandle_ad7fa1fe900b9dcf66fcb366d7f1c02be}{00269}}\ \ \ \ \ \mbox{\hyperlink{classModel_ac2413a62cd7cbbed3103667f4459a035}{flowsIterator}}\ \mbox{\hyperlink{classModelHandle_ad7fa1fe900b9dcf66fcb366d7f1c02be}{flowsBegin}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_a400604eb7af4590bd648b24f675b5b30}{flowsBegin}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00270}00270\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00275}\mbox{\hyperlink{classModelHandle_a4c02c5eac6560edfb3a8d9fe2d89008e}{00275}}\ \ \ \ \ \mbox{\hyperlink{classModel_ac2413a62cd7cbbed3103667f4459a035}{flowsIterator}}\ \mbox{\hyperlink{classModelHandle_a4c02c5eac6560edfb3a8d9fe2d89008e}{flowsEnd}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_acd74842419c49ef91ad542ce701a59fe}{flowsEnd}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00276}00276\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00281}\mbox{\hyperlink{classModelHandle_ab0ec7b8d14b9ce882181dd632b919039}{00281}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelHandle_ab0ec7b8d14b9ce882181dd632b919039}{flowsSize}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_a11872814d1b06d4f0204c340a98ed36e}{flowsSize}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00282}00282\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00287}\mbox{\hyperlink{classModelHandle_abdb92fcb0f581d7d469944d8c760c857}{00287}}\ \ \ \ \ \mbox{\hyperlink{classModel_a0b506dad53e16fb95fc57592cc530c0d}{modelsIterator}}\ \mbox{\hyperlink{classModelHandle_abdb92fcb0f581d7d469944d8c760c857}{modelsBegin}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_a34829c42adfcf6e80a12ee46203a6743}{modelsBegin}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00288}00288\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00293}\mbox{\hyperlink{classModelHandle_a8c8808abe5e2f18b3e4da2fc983d51d5}{00293}}\ \ \ \ \ \mbox{\hyperlink{classModel_a0b506dad53e16fb95fc57592cc530c0d}{modelsIterator}}\ \mbox{\hyperlink{classModelHandle_a8c8808abe5e2f18b3e4da2fc983d51d5}{modelsEnd}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_a3f40f3f59eab9d27df907a5c999b67dd}{modelsEnd}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00294}00294\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00299}\mbox{\hyperlink{classModelHandle_ad249f819055f552968f34846f39a42e8}{00299}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelHandle_ad249f819055f552968f34846f39a42e8}{modelsSize}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_a6ca412017c656a7e6754e2a544d3a98c}{modelsSize}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00300}00300\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00307}\mbox{\hyperlink{classModelHandle_adea6ced7be51df48cfebbd4512112998}{00307}}\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classModelHandle_adea6ced7be51df48cfebbd4512112998}{createSystem}}(\textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{double}\ value)\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_ae6e4418246c1d644e7d0cef30a5faa09}{createSystem}}(name,\ value);\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00308}00308\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00313}\mbox{\hyperlink{classModelHandle_a70c507548f6802ea0d462b3f3fc1c5a6}{00313}}\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classModelHandle_a70c507548f6802ea0d462b3f3fc1c5a6}{createSystem}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_ae6e4418246c1d644e7d0cef30a5faa09}{createSystem}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00314}00314\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00319}\mbox{\hyperlink{classModelHandle_a6c4ace92428dfe0423d41f2ab200fa4b}{00319}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelHandle_a6c4ace92428dfe0423d41f2ab200fa4b}{setName}}(\textcolor{keywordtype}{string}\ name)\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_affe79ea948033ec19d3218d159b2fd98}{setName}}(name);\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00320}00320\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00325}\mbox{\hyperlink{classModelHandle_a3c3020fc71844e75fc6e4672514b5205}{00325}}\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classModelHandle_a3c3020fc71844e75fc6e4672514b5205}{getName}}()\textcolor{keyword}{\ const}\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_a739f9c5245937a5e513d8c6d8aa6802b}{getName}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00326}00326\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00332}\mbox{\hyperlink{classModelHandle_a5d71d342738a6c23b2b2f0e7f2366763}{00332}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelHandle_a5d71d342738a6c23b2b2f0e7f2366763}{remove}}(\mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classHandle}{system}})\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_adb5db54723ff39e0f5409930cd502a72}{remove}}(\mbox{\hyperlink{classHandle}{system}});\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00333}00333\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00339}\mbox{\hyperlink{classModelHandle_abc19d0d17edb65a41769eecb65002642}{00339}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelHandle_abc19d0d17edb65a41769eecb65002642}{remove}}(\mbox{\hyperlink{classFlow}{Flow}}*\ \mbox{\hyperlink{classHandle}{flow}})\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_adb5db54723ff39e0f5409930cd502a72}{remove}}(\mbox{\hyperlink{classHandle}{flow}});\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00340}00340\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00346}\mbox{\hyperlink{classModelHandle_a7d9926fdb13c154411f4e1c46d5ab059}{00346}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelHandle_a7d9926fdb13c154411f4e1c46d5ab059}{remove}}(\mbox{\hyperlink{classModel}{Model}}*\ \mbox{\hyperlink{classHandle}{model}})\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_adb5db54723ff39e0f5409930cd502a72}{remove}}(\mbox{\hyperlink{classHandle}{model}});\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00347}00347\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00354}\mbox{\hyperlink{classModelHandle_aaa86eed2abf1e448f81cd4c5c8573aa4}{00354}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelHandle_aaa86eed2abf1e448f81cd4c5c8573aa4}{run}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classHandle}{t\_begin}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classHandle}{t\_end}})\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_afd28990022fe3992194d3ac5997d9587}{run}}(\mbox{\hyperlink{classHandle}{t\_begin}},\ \mbox{\hyperlink{classHandle}{t\_end}});\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00355}00355\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00359}\mbox{\hyperlink{classModelHandle_abf7084551f777fe47f19fc9f91cc4e5e}{00359}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelHandle_abf7084551f777fe47f19fc9f91cc4e5e}{summary}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classModelBody_ad319ec9facca8bfd40114c38e94fffa0}{summary}}();\}}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00360}00360\ \};}
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00361}00361\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00362}00362\ }
+\DoxyCodeLine{\Hypertarget{ModelImpl_8hpp_source_l00363}00363\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

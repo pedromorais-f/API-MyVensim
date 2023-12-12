@@ -1,0 +1,5 @@
+<map id="ModelBody::summary" name="ModelBody::summary">
+<area shape="rect" id="Node000001" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="232,5,396,31"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#abf7084551f777fe47f19fc9f91cc4e5e" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="5,5,184,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,21,184,21,184,15,219,15"/>
+</map>

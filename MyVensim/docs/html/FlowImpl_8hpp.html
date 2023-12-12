@@ -81,14 +81,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Flow_8hpp_source.html">Flow.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="HandleBody_8hpp_source.html">HandleBody.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for FlowImpl.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="FlowImpl_8hpp__incl.png" border="0" usemap="#asrc_2FlowImpl_8hpp" alt=""/></div>
 <map name="asrc_2FlowImpl_8hpp" id="asrc_2FlowImpl_8hpp">
-<area shape="rect" title=" " alt="" coords="25,5,159,31"/>
+<area shape="rect" title=" " alt="" coords="89,5,223,31"/>
 <area shape="rect" href="Flow_8hpp.html" title=" " alt="" coords="52,79,132,104"/>
-<area shape="poly" title=" " alt="" coords="95,31,95,65,89,65,89,31"/>
+<area shape="poly" title=" " alt="" coords="147,33,113,70,109,67,143,29"/>
+<area shape="rect" href="HandleBody_8hpp.html" title=" " alt="" coords="157,79,283,104"/>
+<area shape="poly" title=" " alt="" coords="169,29,203,67,199,70,165,33"/>
 <area shape="rect" href="System_8hpp.html" title=" " alt="" coords="43,152,141,177"/>
 <area shape="poly" title=" " alt="" coords="95,104,95,138,89,138,89,104"/>
 <area shape="rect" title=" " alt="" coords="5,225,85,251"/>
@@ -102,32 +105,30 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="FlowImpl_8hpp__dep__incl.png" border="0" usemap="#asrc_2FlowImpl_8hppdep" alt=""/></div>
 <map name="asrc_2FlowImpl_8hppdep" id="asrc_2FlowImpl_8hppdep">
-<area shape="rect" title=" " alt="" coords="351,5,485,31"/>
-<area shape="rect" href="FlowImpl_8cpp.html" title=" " alt="" coords="5,86,137,111"/>
-<area shape="poly" title=" " alt="" coords="353,36,151,81,119,89,118,83,149,76,352,31"/>
-<area shape="rect" href="ModelImpl_8cpp.html" title=" " alt="" coords="162,86,303,111"/>
-<area shape="poly" title=" " alt="" coords="380,38,261,88,259,84,378,33"/>
-<area shape="rect" href="functional__tests_8hpp.html" title=" " alt="" coords="328,79,508,119"/>
-<area shape="poly" title=" " alt="" coords="421,44,421,79,415,79,415,44"/>
-<area shape="rect" href="unit__flow_8hpp.html" title=" " alt="" coords="539,86,705,111"/>
-<area shape="poly" title=" " alt="" coords="461,33,593,83,591,88,459,38"/>
-<area shape="rect" href="unit__model_8hpp.html" title=" " alt="" coords="730,86,911,111"/>
-<area shape="poly" title=" " alt="" coords="491,31,763,83,762,89,490,36"/>
-<area shape="rect" href="functional__tests_8cpp.html" title=" " alt="" coords="105,167,285,207"/>
-<area shape="poly" title=" " alt="" coords="357,126,245,169,243,164,356,121"/>
-<area shape="rect" href="mainFTest_8cpp.html" title=" " alt="" coords="310,174,518,199"/>
-<area shape="poly" title=" " alt="" coords="419,133,417,174,412,173,414,132"/>
-<area shape="rect" href="unit__flow_8cpp.html" title=" " alt="" coords="542,174,707,199"/>
-<area shape="poly" title=" " alt="" coords="625,125,627,173,622,174,620,125"/>
-<area shape="rect" href="unit__test_8hpp.html" title=" " alt="" coords="731,174,897,199"/>
-<area shape="poly" title=" " alt="" coords="662,115,789,171,787,176,659,120"/>
-<area shape="rect" href="mainUTest_8cpp.html" title=" " alt="" coords="629,255,805,280"/>
-<area shape="poly" title=" " alt="" coords="791,210,733,257,729,252,787,206"/>
-<area shape="rect" href="unit__test_8cpp.html" title=" " alt="" coords="829,255,993,280"/>
-<area shape="poly" title=" " alt="" coords="841,206,899,252,895,257,837,210"/>
-<area shape="poly" title=" " alt="" coords="821,125,818,174,812,173,816,125"/>
-<area shape="rect" href="unit__model_8cpp.html" title=" " alt="" coords="921,174,1101,199"/>
-<area shape="poly" title=" " alt="" coords="860,115,987,171,984,176,858,120"/>
+<area shape="rect" title=" " alt="" coords="654,5,787,31"/>
+<area shape="rect" href="FlowImpl_8cpp.html" title=" " alt="" coords="387,79,519,104"/>
+<area shape="poly" title=" " alt="" coords="665,37,497,81,495,76,663,32"/>
+<area shape="rect" href="Model_8hpp.html" title=" " alt="" coords="595,79,708,104"/>
+<area shape="poly" title=" " alt="" coords="702,43,664,80,661,77,698,39"/>
+<area shape="rect" href="ModelImpl_8cpp.html" title=" " alt="" coords="714,247,855,273"/>
+<area shape="poly" title=" " alt="" coords="768,33,807,52,850,77,889,110,919,151,926,172,919,193,902,213,882,229,836,250,834,245,879,225,899,210,914,191,921,172,914,153,885,114,846,81,805,56,766,38"/>
+<area shape="rect" href="functional__tests_8hpp.html" title=" " alt="" coords="115,152,295,192"/>
+<area shape="poly" title=" " alt="" coords="682,39,584,81,559,95,532,107,439,128,296,156,295,151,438,123,530,101,557,90,582,76,679,34"/>
+<area shape="rect" href="unit__model_8cpp.html" title=" " alt="" coords="724,159,904,185"/>
+<area shape="poly" title=" " alt="" coords="737,41,809,158,805,161,733,44"/>
+<area shape="rect" href="unit__flow_8cpp.html" title=" " alt="" coords="979,79,1145,104"/>
+<area shape="poly" title=" " alt="" coords="789,31,1007,76,1006,81,788,36"/>
+<area shape="rect" href="ModelImpl_8hpp.html" title=" " alt="" coords="557,159,700,185"/>
+<area shape="poly" title=" " alt="" coords="647,118,635,160,629,158,642,117"/>
+<area shape="poly" title=" " alt="" coords="581,107,308,155,295,157,294,152,307,149,580,102"/>
+<area shape="rect" href="unit__handlebody_8cpp.html" title=" " alt="" coords="319,159,533,185"/>
+<area shape="poly" title=" " alt="" coords="607,111,460,162,458,157,605,106"/>
+<area shape="poly" title=" " alt="" coords="688,107,791,157,789,162,686,112"/>
+<area shape="poly" title=" " alt="" coords="663,189,765,245,762,249,660,194"/>
+<area shape="rect" href="functional__tests_8cpp.html" title=" " alt="" coords="5,240,185,280"/>
+<area shape="poly" title=" " alt="" coords="171,203,121,242,118,238,168,199"/>
+<area shape="rect" href="mainFTest_8cpp.html" title=" " alt="" coords="210,247,418,273"/>
+<area shape="poly" title=" " alt="" coords="241,198,301,245,297,249,238,203"/>
 </map>
 </div>
 </div>
@@ -135,8 +136,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlowImpl.html">FlowImpl</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete implementation of the <a class="el" href="classFlow.html" title="Abstract base class representing a flow in a system model.">Flow</a> class.  <a href="classFlowImpl.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlowBody.html">FlowBody</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete implementation of the <a class="el" href="classFlow.html" title="Abstract base class representing a flow in a system model.">Flow</a> class.  <a href="classFlowBody.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlowHandle.html">FlowHandle&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

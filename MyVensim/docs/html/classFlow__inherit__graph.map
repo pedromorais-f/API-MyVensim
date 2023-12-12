@@ -1,13 +1,5 @@
 <map id="Flow" name="Flow">
-<area shape="rect" id="Node000001" title="Abstract base class representing a flow in a system model." alt="" coords="357,5,503,211"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Concrete implementation of the Flow class." alt="" coords="357,259,503,544"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="433,225,433,259,427,259,427,225"/>
-<area shape="rect" id="Node000003" href="$classComplexFlow.html" title=" " alt="" coords="5,692,151,817"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,451,254,513,208,551,165,594,131,642,105,693,100,690,126,639,161,590,204,547,251,509,344,446"/>
-<area shape="rect" id="Node000004" href="$classExponentialFlow.html" title=" " alt="" coords="175,692,333,817"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="355,558,287,693,283,691,350,555"/>
-<area shape="rect" id="Node000005" href="$classLogisticFlow.html" title=" " alt="" coords="357,592,503,917"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="415,558,415,592,409,592,409,558"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="433,558,433,592,427,592,427,558"/>
-<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="451,558,451,592,445,592,445,558"/>
+<area shape="rect" id="Node000001" title="Abstract base class representing a flow in a system model." alt="" coords="5,5,151,211"/>
+<area shape="rect" id="Node000002" href="$classFlowHandle.html" title=" " alt="" coords="5,259,151,524"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,225,81,258,75,258,75,225"/>
 </map>

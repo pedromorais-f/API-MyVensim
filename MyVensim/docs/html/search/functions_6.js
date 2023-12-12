@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['main_0',['main',['../mainFTest_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089',1,'main(int argc, char const *argv[]):&#160;mainFTest.cpp'],['../mainUTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;mainUTest.cpp']]],
-  ['modelimpl_1',['modelimpl',['../classModelImpl.html#a081505846c37ce9928f2176d77db4bc8',1,'ModelImpl::ModelImpl()'],['../classModelImpl.html#a0f8677546b2c1e3120ebb9e760211c58',1,'ModelImpl::ModelImpl(string name)']]],
-  ['modelsbegin_2',['modelsbegin',['../classModel.html#a214e492d02b844dfa8899cc9e8d659bf',1,'Model::modelsBegin()'],['../classModelImpl.html#a09c53cd1e079bf552895633ba1e5a578',1,'ModelImpl::modelsBegin()']]],
-  ['modelsend_3',['modelsend',['../classModel.html#ac8d7fdf01d3f62864800882d11e7dfdf',1,'Model::modelsEnd()'],['../classModelImpl.html#abfc37cb0b560d02d692b2c009ea94c07',1,'ModelImpl::modelsEnd()']]],
-  ['modelssize_4',['modelssize',['../classModel.html#a1d21c83c4f49491b0c02fba8e192ff76',1,'Model::modelsSize()'],['../classModelImpl.html#abdf1b89a2852f366c5dd6a07506b8067',1,'ModelImpl::modelsSize()']]]
+  ['getbegin_0',['getbegin',['../classFlow.html#a00cac5efd69c52e5a7ed4e68abfd4509',1,'Flow::getBegin()'],['../classFlowBody.html#a1f132aa6e647c5f3cd626d53e4b97f74',1,'FlowBody::getBegin()'],['../classFlowHandle.html#a05dbeaa25c027a1a6a3677191e483033',1,'FlowHandle::getBegin()']]],
+  ['getend_1',['getend',['../classFlow.html#a0e8d9a54d44cd150112595fd1068c3c5',1,'Flow::getEnd()'],['../classFlowBody.html#a692c2991efbbd2490615c531fef3bfbf',1,'FlowBody::getEnd()'],['../classFlowHandle.html#acc73209b823959b6900df6eb4f5c4521',1,'FlowHandle::getEnd()']]],
+  ['getname_2',['getname',['../classModel.html#aa5365ab557ae47efffdf14ba7a46dac8',1,'Model::getName()'],['../classModelBody.html#a739f9c5245937a5e513d8c6d8aa6802b',1,'ModelBody::getName()'],['../classModelHandle.html#a3c3020fc71844e75fc6e4672514b5205',1,'ModelHandle::getName()'],['../classSystem.html#ab4f23c21832d6bbef462a5a20b296912',1,'System::getName()'],['../classSystemBody.html#a6274f513d0a11f2eb28314d995f60d89',1,'SystemBody::getName()'],['../classSystemHandle.html#ae0e8c19df92e41d60f2156562fd2bd52',1,'SystemHandle::getName()']]],
+  ['getvalue_3',['getvalue',['../classSystem.html#a41b673faa6c199eb8e4f204639fab4f2',1,'System::getValue()'],['../classSystemBody.html#aaa79b2b5454c81ffd4020de4d0b9da6a',1,'SystemBody::getValue()'],['../classSystemHandle.html#aeb69190853dc47d4c73ccd3928bfc3a1',1,'SystemHandle::getValue()']]]
 ];

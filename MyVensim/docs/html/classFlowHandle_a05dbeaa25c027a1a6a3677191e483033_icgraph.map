@@ -1,0 +1,5 @@
+<map id="FlowHandle::getBegin" name="FlowHandle::getBegin">
+<area shape="rect" id="Node000001" title="Get the starting system of the flow." alt="" coords="237,5,403,31"/>
+<area shape="rect" id="Node000002" href="$classFlowHandle.html#a7b215e1bd3b2c973df060bfc78e4771f" title="Overloaded equality operator." alt="" coords="5,5,189,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,21,190,21,190,15,223,15"/>
+</map>

@@ -11,6 +11,14 @@ class FlowBody : public Body {
 protected:
     System *begin, *end; ///< @brief Source and Target systems of the Flow.
 public:
+    FlowBody();
+
+    FlowBody(System*, System*);
+
+    FlowBody(const Flow&);
+
+    virtual ~FlowBody();
+
     /**
      * @brief Set the starting system of the flow.
      * @param begin The starting system of the flow.
@@ -150,7 +158,7 @@ public:
      *
      * @return The result of the flow's execution.
      */
-    virtual double executeFunction() = 0;
+    double executeFunction(){return Handle<T>:: pImpl_->executeFunction();}
 };
 
 #endif

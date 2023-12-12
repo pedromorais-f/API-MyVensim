@@ -11,11 +11,12 @@ Abstract base class representing a system in a model.
 
 
 
-Inheritance diagram for System\+:\nopagebreak
+Inheritance diagram for System\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=176pt]{classSystem__inherit__graph}
+\includegraphics[width=189pt]{classSystem__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -30,19 +31,19 @@ Collaboration diagram for System\+:\nopagebreak
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{classSystem_a2fc0f34023977cab9b628aa9f734d88c}{\texorpdfstring{$\sim$}{\string~}\+System}} ()
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classSystem_a2fc0f34023977cab9b628aa9f734d88c}{\texorpdfstring{$\sim$}{\string~}\+System}} ()
 \begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{classSystem}{System} class. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classSystem_aacc697c3f09eecce394380a6bde96c34}{set\+Name}} (string)=0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{classSystem_aacc697c3f09eecce394380a6bde96c34}{set\+Name}} (\mbox{\hyperlink{classHandle}{string}})=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to set the name of the system. \end{DoxyCompactList}\item 
-virtual string \mbox{\hyperlink{classSystem_ab4f23c21832d6bbef462a5a20b296912}{get\+Name}} () const =0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{string}} \mbox{\hyperlink{classSystem_ab4f23c21832d6bbef462a5a20b296912}{get\+Name}} () \mbox{\hyperlink{classHandle}{const}} =0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to get the name of the system. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classSystem_a95e6d4c1ce05b47b5fa743fd2401dd03}{set\+Value}} (double)=0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{classSystem_a95e6d4c1ce05b47b5fa743fd2401dd03}{set\+Value}} (\mbox{\hyperlink{classHandle}{double}})=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to set the value of the system. \end{DoxyCompactList}\item 
-virtual double \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{get\+Value}} () const =0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{double}} \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{get\+Value}} () \mbox{\hyperlink{classHandle}{const}} =0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to get the value of the system. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{classSystem}{System}} \& \mbox{\hyperlink{classSystem_ab73e1ebfa825066444140269d67f66a4}{operator=}} (const \mbox{\hyperlink{classSystem}{System}} \&)=0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classSystem}{System}} \& \mbox{\hyperlink{classSystem_ab73e1ebfa825066444140269d67f66a4}{operator=}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classSystem}{System}} \&)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function representing the override of the operator "{}="{} of system. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{classSystem_a1ca32416fb75f161e674f8364ca834a7}{operator==}} (const \mbox{\hyperlink{classSystem}{System}} \&) const =0
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{bool}} \mbox{\hyperlink{classSystem_a1ca32416fb75f161e674f8364ca834a7}{operator==}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classSystem}{System}} \&) \mbox{\hyperlink{classHandle}{const}} =0
 \begin{DoxyCompactList}\small\item\em Pure virtual function representing the override of the operator "{}=="{} of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -58,7 +59,7 @@ Definition at line \mbox{\hyperlink{System_8hpp_source_l00012}{12}} of file \mbo
 \index{System@{System}!````~System@{\texorpdfstring{$\sim$}{\string~}System}}
 \index{````~System@{\texorpdfstring{$\sim$}{\string~}System}!System@{System}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}System()}{\string~System()}}
-{\footnotesize\ttfamily virtual System\+::\texorpdfstring{$\sim$}{\string~}\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} System\+::\texorpdfstring{$\sim$}{\string~}\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -80,7 +81,7 @@ Definition at line \mbox{\hyperlink{System_8hpp_source_l00017}{17}} of file \mbo
 \index{System@{System}!getName@{getName}}
 \index{getName@{getName}!System@{System}}
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
-{\footnotesize\ttfamily virtual string System\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{string}} System\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -91,20 +92,13 @@ The name of the system.
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classSystemImpl_a4407f82b905d49335f76c4a18fbfef8d}{System\+Impl}}.
+Implemented in \mbox{\hyperlink{classSystemHandle_ae0e8c19df92e41d60f2156562fd2bd52}{System\+Handle}}.
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classSystem_ab4f23c21832d6bbef462a5a20b296912_icgraph}
-\end{center}
-\end{figure}
 \Hypertarget{classSystem_a41b673faa6c199eb8e4f204639fab4f2}\label{classSystem_a41b673faa6c199eb8e4f204639fab4f2} 
 \index{System@{System}!getValue@{getValue}}
 \index{getValue@{getValue}!System@{System}}
 \doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
-{\footnotesize\ttfamily virtual double System\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{double}} System\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -115,9 +109,10 @@ The value of the system.
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classSystemImpl_aa21b5abc7021e73715c06449fea9e08f}{System\+Impl}}.
+Implemented in \mbox{\hyperlink{classSystemHandle_aeb69190853dc47d4c73ccd3928bfc3a1}{System\+Handle}}.
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -128,7 +123,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{System@{System}!operator=@{operator=}}
 \index{operator=@{operator=}!System@{System}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{classSystem}{System}} \& System\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classSystem}{System}} \& System\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classSystem}{System}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -136,13 +131,13 @@ Pure virtual function representing the override of the operator "{}="{} of syste
 
 
 
-Implemented in \mbox{\hyperlink{classSystemImpl_a21ff1901ed75b0b2e19ee273eaf98ca5}{System\+Impl}}.
+Implemented in \mbox{\hyperlink{classSystemHandle_abed01f2d4e9472d0334643091281772d}{System\+Handle}}.
 
 \Hypertarget{classSystem_a1ca32416fb75f161e674f8364ca834a7}\label{classSystem_a1ca32416fb75f161e674f8364ca834a7} 
 \index{System@{System}!operator==@{operator==}}
 \index{operator==@{operator==}!System@{System}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
-{\footnotesize\ttfamily virtual bool System\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{bool}} System\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classSystem}{System}} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -150,13 +145,13 @@ Pure virtual function representing the override of the operator "{}=="{} of syst
 
 
 
-Implemented in \mbox{\hyperlink{classSystemImpl_afa9bca3b7c79eff70d01075033549da8}{System\+Impl}}.
+Implemented in \mbox{\hyperlink{classSystemHandle_affda91833f3d825d29e6b9ebd7b9f1c0}{System\+Handle}}.
 
 \Hypertarget{classSystem_aacc697c3f09eecce394380a6bde96c34}\label{classSystem_aacc697c3f09eecce394380a6bde96c34} 
 \index{System@{System}!setName@{setName}}
 \index{setName@{setName}!System@{System}}
 \doxysubsubsection{\texorpdfstring{setName()}{setName()}}
-{\footnotesize\ttfamily virtual void System\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{void}} System\+::set\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{string}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -169,20 +164,13 @@ Pure virtual function to set the name of the system.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classSystemImpl_a933db9a473f523aef4c3485d8c456e49}{System\+Impl}}.
+Implemented in \mbox{\hyperlink{classSystemHandle_aa8da8c60723c4a7dd3457419a2527c4f}{System\+Handle}}.
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classSystem_aacc697c3f09eecce394380a6bde96c34_icgraph}
-\end{center}
-\end{figure}
 \Hypertarget{classSystem_a95e6d4c1ce05b47b5fa743fd2401dd03}\label{classSystem_a95e6d4c1ce05b47b5fa743fd2401dd03} 
 \index{System@{System}!setValue@{setValue}}
 \index{setValue@{setValue}!System@{System}}
 \doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
-{\footnotesize\ttfamily virtual void System\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classHandle}{void}} System\+::set\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{double}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -195,9 +183,10 @@ Pure virtual function to set the value of the system.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classSystemImpl_ac2a6145e6e12d46076b0d4b1a3b4e290}{System\+Impl}}.
+Implemented in \mbox{\hyperlink{classSystemHandle_aa7206ceb4d5ceaf67271edb1b12e135d}{System\+Handle}}.
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

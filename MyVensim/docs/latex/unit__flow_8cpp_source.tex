@@ -3,123 +3,126 @@
 \mbox{\hyperlink{unit__flow_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{unit__flow_8hpp}{unit\_flow.hpp}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00002}00002\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00003}00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00004}00004\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00005}\mbox{\hyperlink{classLogisticFlow_ab0f7906cfe1a27e18a4f558124e53ee0}{00005}}\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_ab0f7906cfe1a27e18a4f558124e53ee0}{LogisticFlow}}()\{\}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00006}\mbox{\hyperlink{classLogisticFlow_a19e27a6b25feca2bf2ca809146e89ad2}{00006}}\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_a19e27a6b25feca2bf2ca809146e89ad2}{LogisticFlow}}(\mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})\ :\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}(\mbox{\hyperlink{classFlowImpl_af416f041f8389a468f651c21d7b58942}{begin}},\ \mbox{\hyperlink{classFlowImpl_a6f11a7ef6e5d41757972b4e393149779}{end}})\{\}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00007}\mbox{\hyperlink{classLogisticFlow_a05370e1e359028a7bef7e97b50534ac9}{00007}}\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_a05370e1e359028a7bef7e97b50534ac9}{LogisticFlow}}(\mbox{\hyperlink{classFlow}{Flow}}\&\ flow)\ :\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}(flow)\{\}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00008}\mbox{\hyperlink{classLogisticFlow_adabfb4a28ef10f247eda68dc083edef3}{00008}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classLogisticFlow_adabfb4a28ef10f247eda68dc083edef3}{\string~LogisticFlow}}()\{\}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00009}00009\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00010}\mbox{\hyperlink{classLogisticFlow_ab13aa2218e41515991af57a443baee8b}{00010}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classLogisticFlow_ab13aa2218e41515991af57a443baee8b}{executeFunction}}()\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlowImpl_a7b07f691e98d9f1443041af4dc89878b}{getEnd}}()-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SystemImpl_8hpp}{../../src/SystemImpl.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{FlowImpl_8hpp}{../../src/FlowImpl.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <assert.h>}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00006}00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowBody}{FlowBody}}\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00007}00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00008}\mbox{\hyperlink{classLogisticFlow_ab0f7906cfe1a27e18a4f558124e53ee0}{00008}}\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_ab0f7906cfe1a27e18a4f558124e53ee0}{LogisticFlow}}()\{\}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00009}\mbox{\hyperlink{classLogisticFlow_a19e27a6b25feca2bf2ca809146e89ad2}{00009}}\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_a19e27a6b25feca2bf2ca809146e89ad2}{LogisticFlow}}(\mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowBody_a49cf1dbb4891a4bb42cd3b9b4ace9211}{begin}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowBody_abd267ae95a2e652358f628fbe9f78d7d}{end}})\ :\ \mbox{\hyperlink{classFlowBody}{FlowBody}}(\mbox{\hyperlink{classFlowBody_a49cf1dbb4891a4bb42cd3b9b4ace9211}{begin}},\ \mbox{\hyperlink{classFlowBody_abd267ae95a2e652358f628fbe9f78d7d}{end}})\{\}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00010}\mbox{\hyperlink{classLogisticFlow_a05370e1e359028a7bef7e97b50534ac9}{00010}}\ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_a05370e1e359028a7bef7e97b50534ac9}{LogisticFlow}}(\mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{flow}})\ :\ \mbox{\hyperlink{classFlowBody}{FlowBody}}(\mbox{\hyperlink{classHandle}{flow}})\{\}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00011}\mbox{\hyperlink{classLogisticFlow_adabfb4a28ef10f247eda68dc083edef3}{00011}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classLogisticFlow_adabfb4a28ef10f247eda68dc083edef3}{\string~LogisticFlow}}()\{\}}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00012}00012\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ value\ *\ (1\ -\/\ value\ /\ 70.0);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00014}00014\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00015}00015\ \};}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00016}00016\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00017}00017\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00018}\mbox{\hyperlink{unit__flow_8cpp_ae502bb4b61e85495d882bf85de330609}{00018}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_ae502bb4b61e85495d882bf85de330609}{unit\_Flow\_Constructor\_Default}}()\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00019}00019\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}();}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00020}00020\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00021}00021\ \ \ \ \ assert(logisticflow.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}()\ ==\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00022}00022\ \ \ \ \ assert(logisticflow.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}()\ ==\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00013}\mbox{\hyperlink{classLogisticFlow_ab13aa2218e41515991af57a443baee8b}{00013}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classLogisticFlow_ab13aa2218e41515991af57a443baee8b}{executeFunction}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ value\ =\ \mbox{\hyperlink{classFlowBody_a692c2991efbbd2490615c531fef3bfbf}{getEnd}}()-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ value\ *\ (1\ -\/\ value\ /\ 70.0);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00017}00017\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00018}00018\ \};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00021}\mbox{\hyperlink{unit__flow_8cpp_ae502bb4b61e85495d882bf85de330609}{00021}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_ae502bb4b61e85495d882bf85de330609}{unit\_Flow\_Constructor\_Default}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00022}00022\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle}{FlowHandle<LogisticFlow>}}();}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00023}00023\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00025}00025\ \}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00026}00026\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00027}\mbox{\hyperlink{unit__flow_8cpp_ac62d05f27f2a2ddfa9b88d73f7de6700}{00027}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_ac62d05f27f2a2ddfa9b88d73f7de6700}{unit\_Flow\_Constructor}}()\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00030}00030\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00032}00032\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00033}00033\ \ \ \ \ assert(logisticflow.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}()\ ==\ \&system1);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00034}00034\ \ \ \ \ assert(logisticflow.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}()\ ==\ \&system2);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow}}.getBegin()\ ==\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow}}.getEnd()\ ==\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00026}00026\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{logisticflow}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00030}\mbox{\hyperlink{unit__flow_8cpp_ac62d05f27f2a2ddfa9b88d73f7de6700}{00030}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_ac62d05f27f2a2ddfa9b88d73f7de6700}{unit\_Flow\_Constructor}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00032}00032\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system2}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00033}00033\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00034}00034\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle}{FlowHandle<LogisticFlow>}}(\&\mbox{\hyperlink{classHandle}{system1}},\ \&\mbox{\hyperlink{classHandle}{system2}});}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00035}00035\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00039}00039\ \}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00040}00040\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00041}\mbox{\hyperlink{unit__flow_8cpp_aafbcde741b03e07df1b3d0320b0305a9}{00041}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_aafbcde741b03e07df1b3d0320b0305a9}{unit\_Flow\_Destrutor}}()\{\}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00042}00042\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00043}\mbox{\hyperlink{unit__flow_8cpp_ad7c6eb53d0fef33d1dddb14937d9e1b2}{00043}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_ad7c6eb53d0fef33d1dddb14937d9e1b2}{unit\_Flow\_Construtor\_Copy}}()\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00046}00046\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00047}00047\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(logisticflow1);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00036}00036\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow}}.getBegin()\ ==\ \&\mbox{\hyperlink{classHandle}{system1}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00037}00037\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow}}.getEnd()\ ==\ \&\mbox{\hyperlink{classHandle}{system2}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{logisticflow}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system2}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00042}00042\ \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00044}\mbox{\hyperlink{unit__flow_8cpp_aafbcde741b03e07df1b3d0320b0305a9}{00044}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_aafbcde741b03e07df1b3d0320b0305a9}{unit\_Flow\_Destrutor}}()\{\}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00046}\mbox{\hyperlink{unit__flow_8cpp_ad7c6eb53d0fef33d1dddb14937d9e1b2}{00046}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_ad7c6eb53d0fef33d1dddb14937d9e1b2}{unit\_Flow\_Construtor\_Copy}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00047}00047\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system2}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00049}00049\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00050}00050\ \ \ \ \ assert(logisticflow1\ ==\ logisticflow2);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00051}00051\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow2;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00056}00056\ \}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00057}00057\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00058}\mbox{\hyperlink{unit__flow_8cpp_add8e00ba50937a6f6c947445f9189a46}{00058}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_add8e00ba50937a6f6c947445f9189a46}{unit\_Flow\_Equals}}()\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00060}00060\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00061}00061\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00062}00062\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00063}00063\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow2\ =\ logisticflow1;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle}{FlowHandle<LogisticFlow>}}(\&\mbox{\hyperlink{classHandle}{system1}},\ \&\mbox{\hyperlink{classHandle}{system2}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow2}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle}{FlowHandle<LogisticFlow>}}(\mbox{\hyperlink{classHandle}{logisticflow1}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow1}}\ ==\ \mbox{\hyperlink{classHandle}{logisticflow2}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{logisticflow1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{logisticflow2}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system2}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00059}00059\ \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00061}\mbox{\hyperlink{unit__flow_8cpp_add8e00ba50937a6f6c947445f9189a46}{00061}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_add8e00ba50937a6f6c947445f9189a46}{unit\_Flow\_Equals}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00062}00062\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00063}00063\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system2}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00064}00064\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00065}00065\ \ \ \ \ assert(logisticflow1\ ==\ logisticflow2);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00066}00066\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00068}00068\ \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00065}00065\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle}{FlowHandle<LogisticFlow>}}(\&\mbox{\hyperlink{classHandle}{system1}},\ \&\mbox{\hyperlink{classHandle}{system2}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00066}00066\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow2}}\ =\ \mbox{\hyperlink{classHandle}{logisticflow1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow1}}\ ==\ \mbox{\hyperlink{classHandle}{logisticflow2}});}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00069}00069\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00070}\mbox{\hyperlink{unit__flow_8cpp_a25270d0605cccc3cc9457f6b839201c3}{00070}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_a25270d0605cccc3cc9457f6b839201c3}{unit\_Flow\_setBegin}}()\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00071}00071\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{logisticflow1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00071}00071\ \}}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00072}00072\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00073}00073\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}();}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00074}00074\ \ \ \ \ logisticflow1.\mbox{\hyperlink{classFlow_a0ed1020c54f158d82bf54c5e6da03469}{setBegin}}(\&system1);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00073}\mbox{\hyperlink{unit__flow_8cpp_a25270d0605cccc3cc9457f6b839201c3}{00073}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_a25270d0605cccc3cc9457f6b839201c3}{unit\_Flow\_setBegin}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00074}00074\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00075}00075\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00076}00076\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}()\ ==\ \&system1);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00077}00077\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00078}00078\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00080}00080\ \}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00081}00081\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00082}\mbox{\hyperlink{unit__flow_8cpp_aaa7fbd238c4ca91b6c7a17c6b28553ee}{00082}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_aaa7fbd238c4ca91b6c7a17c6b28553ee}{unit\_Flow\_getBegin}}()\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00083}00083\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00084}00084\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00085}00085\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00086}00086\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00087}00087\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a00cac5efd69c52e5a7ed4e68abfd4509}{getBegin}}()\ ==\ \&system1);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00076}00076\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle}{FlowHandle<LogisticFlow>}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00077}00077\ \ \ \ \ \mbox{\hyperlink{classHandle}{logisticflow1}}.setBegin(\&\mbox{\hyperlink{classHandle}{system1}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00079}00079\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow1}}.getBegin()\ ==\ \&\mbox{\hyperlink{classHandle}{system1}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{logisticflow1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00083}00083\ \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00085}\mbox{\hyperlink{unit__flow_8cpp_aaa7fbd238c4ca91b6c7a17c6b28553ee}{00085}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_aaa7fbd238c4ca91b6c7a17c6b28553ee}{unit\_Flow\_getBegin}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00086}00086\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00087}00087\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system2}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00088}00088\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00092}00092\ \}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00093}00093\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00094}\mbox{\hyperlink{unit__flow_8cpp_a253c183d645a3420275f0e6d59e432e1}{00094}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_a253c183d645a3420275f0e6d59e432e1}{unit\_Flow\_setEnd}}()\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00095}00095\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00089}00089\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle}{FlowHandle<LogisticFlow>}}(\&\mbox{\hyperlink{classHandle}{system1}},\ \&\mbox{\hyperlink{classHandle}{system2}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00090}00090\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow1}}.getBegin()\ ==\ \&\mbox{\hyperlink{classHandle}{system1}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00092}00092\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00093}00093\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system2}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00094}00094\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{logisticflow1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00095}00095\ \}}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00096}00096\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00097}00097\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}();}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00098}00098\ \ \ \ \ logisticflow1.\mbox{\hyperlink{classFlow_acb35a71459c15be848c46923be0e11fa}{setEnd}}(\&system1);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00097}\mbox{\hyperlink{unit__flow_8cpp_a253c183d645a3420275f0e6d59e432e1}{00097}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_a253c183d645a3420275f0e6d59e432e1}{unit\_Flow\_setEnd}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00098}00098\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00099}00099\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00100}00100\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}()\ ==\ \&system1);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00101}00101\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00102}00102\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00103}00103\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00104}00104\ \}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00105}00105\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00106}\mbox{\hyperlink{unit__flow_8cpp_a0ee342e03efd22f4de4150a821642fdb}{00106}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_a0ee342e03efd22f4de4150a821642fdb}{unit\_Flow\_getEnd}}()\{}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00107}00107\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00108}00108\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ system2\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00109}00109\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00110}00110\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ logisticflow1\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}(\&system1,\ \&system2);}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00111}00111\ \ \ \ \ assert(logisticflow1.\mbox{\hyperlink{classFlow_a0e8d9a54d44cd150112595fd1068c3c5}{getEnd}}()\ ==\ \&system2);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00100}00100\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle}{FlowHandle<LogisticFlow>}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00101}00101\ \ \ \ \ \mbox{\hyperlink{classHandle}{logisticflow1}}.setEnd(\&\mbox{\hyperlink{classHandle}{system1}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00103}00103\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow1}}.getEnd()\ ==\ \&\mbox{\hyperlink{classHandle}{system1}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00105}00105\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00106}00106\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{logisticflow1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00107}00107\ \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00109}\mbox{\hyperlink{unit__flow_8cpp_a0ee342e03efd22f4de4150a821642fdb}{00109}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__flow_8cpp_a0ee342e03efd22f4de4150a821642fdb}{unit\_Flow\_getEnd}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00110}00110\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System1"{}},\ 100);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00111}00111\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classHandle}{system2}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemHandle}{SystemHandle}}(\textcolor{stringliteral}{"{}System2"{}},\ 10);}
 \DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00112}00112\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00113}00113\ \ \ \ \ \textcolor{keyword}{delete}\ \&system1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00114}00114\ \ \ \ \ \textcolor{keyword}{delete}\ \&system2;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00115}00115\ \ \ \ \ \textcolor{keyword}{delete}\ \&logisticflow1;}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00116}00116\ \}}
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00117}00117\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00118}00118\ }
-\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00113}00113\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{logisticflow1}}\ =\ *\textcolor{keyword}{new}\ \mbox{\hyperlink{classHandle}{FlowHandle<LogisticFlow>}}(\&\mbox{\hyperlink{classHandle}{system1}},\ \&\mbox{\hyperlink{classHandle}{system2}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00114}00114\ \ \ \ \ \mbox{\hyperlink{classHandle}{assert}}(\mbox{\hyperlink{classHandle}{logisticflow1}}.getEnd()\ ==\ \&\mbox{\hyperlink{classHandle}{system2}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00116}00116\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00117}00117\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{system2}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00118}00118\ \ \ \ \ \textcolor{keyword}{delete}\ \&\mbox{\hyperlink{classHandle}{logisticflow1}};}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00119}00119\ \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00122}00122\ }
 
 \end{DoxyCode}

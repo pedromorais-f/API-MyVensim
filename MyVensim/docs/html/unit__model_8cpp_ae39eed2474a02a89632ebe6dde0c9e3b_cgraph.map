@@ -1,9 +1,9 @@
 <map id="unit_Model_Constructor" name="unit_Model_Constructor">
-<area shape="rect" id="Node000001" title="Unit test for the parameterized constructor of the Model class." alt="" coords="5,31,181,56"/>
+<area shape="rect" id="Node000001" title="Unit test for the parameterized constructor of the Model class." alt="" coords="5,5,181,31"/>
 <area shape="rect" id="Node000002" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="229,5,380,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,30,216,26,216,31,182,35"/>
-<area shape="rect" id="Node000004" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Get the name of the model." alt="" coords="239,55,370,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,51,226,56,225,61,181,56"/>
-<area shape="rect" id="Node000003" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="428,5,608,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,15,216,15,216,21,181,21"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a653f473eb7bde22ffdbe2193a43cc0ef" title="Create and return an instance of the Model class with a default name." alt="" coords="428,5,611,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,15,414,15,414,21,380,21"/>
+<area shape="rect" id="Node000004" href="$classHandle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="659,5,781,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="611,15,645,15,645,21,611,21"/>
 </map>

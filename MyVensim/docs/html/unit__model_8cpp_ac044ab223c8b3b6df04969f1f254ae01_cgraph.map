@@ -1,13 +1,9 @@
 <map id="unit_Model_createFlow" name="unit_Model_createFlow">
-<area shape="rect" id="Node000001" title="Unit test for the createFlow method of the Model class." alt="" coords="5,55,179,80"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="231,5,373,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,52,233,31,235,36,147,57"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="227,55,377,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,65,213,65,213,70,179,70"/>
-<area shape="rect" id="Node000006" href="$classModel.html#a2bbba88aae97908b686af0724aeeb59a" title="Get the size of the flows vector." alt="" coords="237,104,367,129"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="147,77,235,98,233,103,146,83"/>
-<area shape="rect" id="Node000003" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="468,5,563,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,15,454,15,454,21,373,21"/>
-<area shape="rect" id="Node000005" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="425,55,605,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="378,65,412,65,412,70,378,70"/>
+<area shape="rect" id="Node000001" title="Unit test for the createFlow method of the Model class." alt="" coords="5,5,179,31"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="227,5,377,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,15,213,15,213,21,179,21"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a653f473eb7bde22ffdbe2193a43cc0ef" title="Create and return an instance of the Model class with a default name." alt="" coords="425,5,608,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,15,412,15,412,21,377,21"/>
+<area shape="rect" id="Node000004" href="$classHandle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="656,5,779,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="608,15,642,15,642,21,608,21"/>
 </map>

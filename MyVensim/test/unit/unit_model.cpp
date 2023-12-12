@@ -1,10 +1,13 @@
 #include "unit_model.hpp"
+#include "../../src/Model.hpp"
+#include "../../src/FlowImpl.hpp"
+#include <assert.h>
 
-class LogisticFlow : public FlowImpl{
+class LogisticFlow : public FlowBody{
 public:
     LogisticFlow(){}
-    LogisticFlow(System *begin, System *end) : FlowImpl(begin, end){}
-    LogisticFlow(Flow& flow) : FlowImpl(flow){}
+    LogisticFlow(System *begin, System *end) : FlowBody(begin, end){}
+    LogisticFlow(Flow& flow) : FlowBody(flow){}
     virtual ~LogisticFlow(){}
 
     double executeFunction(){

@@ -1,19 +1,9 @@
 <map id="exponentialTest" name="exponentialTest">
-<area shape="rect" id="Node000001" title="Function to perform an exponential test." alt="" coords="5,129,131,155"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="187,5,330,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,127,118,85,147,61,177,40,190,33,193,38,180,44,150,65,122,89,82,131"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="183,55,334,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="93,127,178,89,198,82,200,87,180,94,95,132"/>
-<area shape="rect" id="Node000006" href="$classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="179,104,339,129"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="131,131,165,126,165,132,131,136"/>
-<area shape="rect" id="Node000007" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="191,153,327,179"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="131,147,177,153,177,158,131,153"/>
-<area shape="rect" id="Node000008" href="$classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="213,203,304,228"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="97,152,180,188,203,196,201,201,178,192,95,157"/>
-<area shape="rect" id="Node000009" href="$classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="193,252,325,277"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="83,153,123,194,150,217,180,237,195,245,193,249,177,242,147,221,120,198,79,157"/>
-<area shape="rect" id="Node000003" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="429,5,524,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,15,415,15,415,21,331,21"/>
-<area shape="rect" id="Node000005" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="387,55,567,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="334,65,373,65,373,70,334,70"/>
+<area shape="rect" id="Node000001" title="Function to perform an exponential test." alt="" coords="5,5,131,31"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="179,5,329,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,15,165,15,165,21,131,21"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a653f473eb7bde22ffdbe2193a43cc0ef" title="Create and return an instance of the Model class with a default name." alt="" coords="377,5,560,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,15,364,15,364,21,329,21"/>
+<area shape="rect" id="Node000004" href="$classHandle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="608,5,731,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="560,15,594,15,594,21,560,21"/>
 </map>

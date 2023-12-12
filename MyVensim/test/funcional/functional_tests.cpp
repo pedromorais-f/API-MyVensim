@@ -1,10 +1,17 @@
 #include "functional_tests.hpp"
 
+#define DEBUGING
+#ifdef DEBUGING
+    int numHandleCreated = 0;
+	int numHandleDeleted = 0;
+	int numBodyCreated = 0;
+	int numBodyDeleted = 0;
+#endif
 
-class LogisticFlow : public FlowImpl{
+class LogisticFlow : public FlowBody{
 public:
     LogisticFlow(){}
-    LogisticFlow(System *begin, System *end) : FlowImpl(begin, end){}
+    LogisticFlow(System *begin, System *end) : FlowBody(begin, end){}
     virtual ~LogisticFlow(){}
 
     double executeFunction(){
@@ -14,10 +21,10 @@ public:
     }
 };
 
-class ExponentialFlow : public FlowImpl{
+class ExponentialFlow : public FlowBody{
 public:
     ExponentialFlow(){}
-    ExponentialFlow(System *begin, System *end) : FlowImpl(begin, end){}
+    ExponentialFlow(System *begin, System *end) : FlowBody(begin, end){}
     virtual ~ExponentialFlow(){}
 
     double executeFunction(){
@@ -27,10 +34,10 @@ public:
     }
 };
 
-class ComplexFlow : public FlowImpl{
+class ComplexFlow : public FlowBody{
 public:
     ComplexFlow(){}
-    ComplexFlow(System *begin, System *end) : FlowImpl(begin, end){}
+    ComplexFlow(System *begin, System *end) : FlowBody(begin, end){}
     virtual ~ComplexFlow(){}
 
     double executeFunction(){

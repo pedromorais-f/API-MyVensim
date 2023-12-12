@@ -1,0 +1,9 @@
+<map id="run_unit_test_HandleBody" name="run_unit_test_HandleBody">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,199,31"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="247,5,397,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,15,232,15,232,21,199,21"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a653f473eb7bde22ffdbe2193a43cc0ef" title="Create and return an instance of the Model class with a default name." alt="" coords="445,5,628,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,15,432,15,432,21,397,21"/>
+<area shape="rect" id="Node000004" href="$classHandle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="676,5,799,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="628,15,662,15,662,21,628,21"/>
+</map>

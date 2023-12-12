@@ -1,0 +1,9 @@
+<map id="ModelBody::setName" name="ModelBody::setName">
+<area shape="rect" id="Node000001" title="Set the name of the model." alt="" coords="256,55,417,80"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a1c203c425e69e245ad1e3f65143fa69b" title="Default constructor for the ModelImpl class." alt="" coords="5,5,208,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,54,166,33,167,28,264,49"/>
+<area shape="rect" id="Node000003" href="$classModelHandle.html#acfca9fe5f344efadae912c048ef65138" title="Constructor that initializes a Model with a name." alt="" coords="5,55,208,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,70,208,70,208,65,242,65"/>
+<area shape="rect" id="Node000004" href="$classModelHandle.html#a6c4ace92428dfe0423d41f2ab200fa4b" title="Set the name of the model." alt="" coords="19,104,194,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="264,85,167,107,166,101,263,80"/>
+</map>

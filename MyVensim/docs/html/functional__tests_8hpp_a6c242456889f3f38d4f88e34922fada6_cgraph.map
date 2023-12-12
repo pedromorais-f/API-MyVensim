@@ -1,19 +1,9 @@
 <map id="logisticTest" name="logisticTest">
-<area shape="rect" id="Node000001" title="Function to perform a logistic test." alt="" coords="5,129,100,155"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="157,5,299,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,128,95,85,119,61,147,40,158,34,160,38,149,44,123,65,99,88,65,131"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="153,55,303,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="73,127,147,89,166,82,168,87,149,94,76,132"/>
-<area shape="rect" id="Node000006" href="$classModel.html#a3fe003a645eedd53d8dda6921dcd4a56" title="Create and return an instance of the System class." alt="" coords="148,104,308,129"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="100,133,134,128,135,133,101,138"/>
-<area shape="rect" id="Node000007" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="160,153,296,179"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="101,146,146,152,145,157,100,151"/>
-<area shape="rect" id="Node000008" href="$classModel.html#a4ff5eb3fd50c1853d975bd1e39736c63" title="Run the model for a specified number of iterations." alt="" coords="183,203,273,228"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="77,152,149,188,171,196,169,201,147,192,75,157"/>
-<area shape="rect" id="Node000009" href="$classModel.html#a019a2458da608586cbec1cb51b0cbc3c" title="Print a summary of the model&#39;s systems, flows, and sub&#45;models." alt="" coords="162,252,294,277"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="65,153,99,194,123,217,149,237,163,245,161,249,147,242,119,221,95,198,61,156"/>
-<area shape="rect" id="Node000003" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="399,5,493,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,15,385,15,385,21,300,21"/>
-<area shape="rect" id="Node000005" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="356,55,536,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="303,65,342,65,342,70,303,70"/>
+<area shape="rect" id="Node000001" title="Function to perform a logistic test." alt="" coords="5,5,100,31"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="148,5,299,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,15,134,15,134,21,100,21"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a653f473eb7bde22ffdbe2193a43cc0ef" title="Create and return an instance of the Model class with a default name." alt="" coords="347,5,529,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,15,333,15,333,21,299,21"/>
+<area shape="rect" id="Node000004" href="$classHandle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="577,5,700,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="530,15,563,15,563,21,530,21"/>
 </map>

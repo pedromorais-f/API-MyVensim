@@ -1,12 +1,13 @@
-all: lib_MyLibrary functional_tests  unit_test
+all: lib_MyLibrary functional_tests unit_test
 	
 	@g++ -o bin/fTests test/funcional/mainFTest.cpp bin/functional_tests.o -Lbin -l_myLibrary
-	@g++ -o bin/uTests test/unit/mainUTest.cpp bin/unit_system.o bin/unit_flow.o bin/unit_model.o bin/unit_test.o -Lbin -l_myLibrary
+	@g++ -o bin/uTests test/unit/mainUTest.cpp bin/unit_system.o bin/unit_handlebody.o bin/unit_flow.o bin/unit_model.o bin/unit_test.o -Lbin -l_myLibrary
 	@export LD_LIBRARY_PATH=:"../MyVensim/bin"
 
 #Unit Tests
 
-unit_test: test/unit/unit_system.cpp test/unit/unit_flow.cpp test/unit/unit_model.cpp test/unit/unit_test.cpp
+ unit_test: test/unit/unit_system.cpp test/unit/unit_flow.cpp test/unit/unit_model.cpp test/unit/unit_test.cpp
+	@g++ -c test/unit/unit_handlebody.cpp -o bin/unit_handlebody.o -Wall
 	@g++ -c test/unit/unit_system.cpp -o bin/unit_system.o -Wall
 	@g++ -c test/unit/unit_flow.cpp -o bin/unit_flow.o -Wall
 	@g++ -c test/unit/unit_model.cpp -o bin/unit_model.o -Wall

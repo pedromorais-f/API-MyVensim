@@ -1,10 +1,6 @@
 #ifndef UNIT_FLOW_HPP
 #define UNIT_FLOW_HPP
 
-#include "../../src/SystemImpl.hpp"
-#include "../../src/FlowImpl.hpp"
-#include <assert.h>
-
 /**
  * @brief Unit test for the default constructor of the Flow class.
  */

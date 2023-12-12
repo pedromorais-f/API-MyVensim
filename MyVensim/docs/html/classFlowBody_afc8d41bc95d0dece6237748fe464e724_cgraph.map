@@ -1,0 +1,7 @@
+<map id="FlowBody::FlowBody" name="FlowBody::FlowBody">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,163,56"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a00cac5efd69c52e5a7ed4e68abfd4509" title="Pure virtual function to get the beginning system of the flow." alt="" coords="211,5,329,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,30,197,25,197,31,163,35"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a0e8d9a54d44cd150112595fd1068c3c5" title="Pure virtual function to get the ending system of the flow." alt="" coords="217,55,323,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,51,204,56,203,61,163,56"/>
+</map>

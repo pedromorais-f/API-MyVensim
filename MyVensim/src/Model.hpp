@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "Flow.hpp"
+#include "FlowImpl.hpp"
 
 /**
  * @brief Abstract base class representing a model with systems, flows, and sub-models.
@@ -108,7 +109,7 @@ public:
      */
     template <typename TYPE>
     Flow& createFlow(System *begin = nullptr, System *end = nullptr) {
-        Flow* flow = new TYPE(begin, end);
+        Flow* flow = new FlowHandle<TYPE>(begin, end);
         add(flow);
         return *flow;
     }

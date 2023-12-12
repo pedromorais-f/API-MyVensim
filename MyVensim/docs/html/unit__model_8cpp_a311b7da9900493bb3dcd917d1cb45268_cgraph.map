@@ -1,17 +1,9 @@
 <map id="unit_Model_FlowBeginEnd" name="unit_Model_FlowBeginEnd">
-<area shape="rect" id="Node000001" title="Unit test for the flowsBegin and flowsEnd methods of the Model class." alt="" coords="5,104,199,129"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a80c13cc6ebd88648774508758d9b631e" title="Create and return an instance of the Flow class." alt="" coords="251,5,393,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,102,178,72,246,40,263,33,265,38,248,44,181,76,126,106"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="247,55,397,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,101,251,80,252,86,160,107"/>
-<area shape="rect" id="Node000006" href="$classModel.html#a12d4767f5fe89090a58c1d1091dfa1f1" title="Get an iterator pointing to the beginning of the flows vector." alt="" coords="251,104,393,129"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="199,114,238,114,238,119,199,119"/>
-<area shape="rect" id="Node000007" href="$classModel.html#a865a19570378a396e1751c8ce4e6590b" title="Get an iterator pointing to the end of the flows vector." alt="" coords="258,153,386,179"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="160,127,252,148,251,153,159,132"/>
-<area shape="rect" id="Node000008" href="$classModel.html#a2bbba88aae97908b686af0724aeeb59a" title="Get the size of the flows vector." alt="" coords="257,203,387,228"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="127,127,181,156,248,188,268,195,266,200,246,192,179,161,124,132"/>
-<area shape="rect" id="Node000003" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Add a System object to the model." alt="" coords="488,5,583,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,15,474,15,474,21,393,21"/>
-<area shape="rect" id="Node000005" href="$classModelImpl.html#aedca25d981322204bdf01395241e4752" title="Create and return an instance of the Model class with a default name." alt="" coords="445,55,625,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="398,65,432,65,432,70,398,70"/>
+<area shape="rect" id="Node000001" title="Unit test for the flowsBegin and flowsEnd methods of the Model class." alt="" coords="5,5,199,31"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a51a6961eef61a054605c3b781410d753" title="Create and return an instance of the Model class with a default name." alt="" coords="247,5,397,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,15,232,15,232,21,199,21"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a653f473eb7bde22ffdbe2193a43cc0ef" title="Create and return an instance of the Model class with a default name." alt="" coords="445,5,628,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,15,432,15,432,21,397,21"/>
+<area shape="rect" id="Node000004" href="$classHandle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="676,5,799,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="628,15,662,15,662,21,628,21"/>
 </map>

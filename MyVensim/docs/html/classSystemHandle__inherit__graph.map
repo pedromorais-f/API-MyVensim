@@ -1,0 +1,7 @@
+<map id="SystemHandle" name="SystemHandle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="75,239,220,504"/>
+<area shape="rect" id="Node000002" href="$classSystem.html" title="Abstract base class representing a system in a model." alt="" coords="5,5,121,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,203,109,238,104,239,93,205"/>
+<area shape="rect" id="Node000003" href="$classHandle.html" title=" " alt="" coords="145,35,317,161"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,174,191,239,186,238,206,173"/>
+</map>

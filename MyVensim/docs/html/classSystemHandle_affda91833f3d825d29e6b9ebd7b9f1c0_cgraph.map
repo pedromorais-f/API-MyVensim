@@ -1,0 +1,7 @@
+<map id="SystemHandle::operator==" name="SystemHandle::operator==">
+<area shape="rect" id="Node000001" title="Overloaded equality operator." alt="" coords="5,31,208,56"/>
+<area shape="rect" id="Node000002" href="$classSystemBody.html#a6274f513d0a11f2eb28314d995f60d89" title="Get the name of the system." alt="" coords="256,5,427,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,30,242,26,243,31,208,35"/>
+<area shape="rect" id="Node000003" href="$classSystemBody.html#aaa79b2b5454c81ffd4020de4d0b9da6a" title="Get the value associated with the system." alt="" coords="257,55,425,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,51,244,55,243,60,208,56"/>
+</map>

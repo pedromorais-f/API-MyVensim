@@ -1,0 +1,9 @@
+<map id="ModelBody::add" name="ModelBody::add">
+<area shape="rect" id="Node000001" title="Add a System object to the model." alt="" coords="193,55,320,80"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a7cf362d2803c03768a6797e9a1aa79d8" title="Add a Flow object to the model." alt="" coords="5,5,145,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,53,122,33,124,28,197,48"/>
+<area shape="rect" id="Node000003" href="$classModelHandle.html#a4a5df3acece7f090fb30538c7251743c" title="Add a sub&#45;model to the model." alt="" coords="5,55,145,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,70,146,70,146,65,179,65"/>
+<area shape="rect" id="Node000004" href="$classModelHandle.html#ab6f4576949625f20246a3e5a2fe99129" title="Add a System object to the model." alt="" coords="5,104,145,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,86,124,106,122,101,195,81"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="ModelBody::modelsEnd" name="ModelBody::modelsEnd">
+<area shape="rect" id="Node000001" title="Get an iterator pointing to the end of the models vector." alt="" coords="503,5,677,31"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a8c8808abe5e2f18b3e4da2fc983d51d5" title="Get an iterator pointing to the end of the models vector." alt="" coords="267,5,455,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="489,21,455,21,455,15,489,15"/>
+<area shape="rect" id="Node000003" href="$classModelHandle.html#aa2813029166b0166dc9f20398d7e4bdb" title="Destructor for the ModelImpl class." alt="" coords="5,5,219,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="253,21,219,21,219,15,253,15"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="ModelHandle::run" name="ModelHandle::run">
+<area shape="rect" id="Node000001" title="Run the model for a specified number of iterations." alt="" coords="5,55,143,80"/>
+<area shape="rect" id="Node000002" href="$classModelBody.html#afd28990022fe3992194d3ac5997d9587" title="Run the model for a specified number of iterations." alt="" coords="191,55,313,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,65,177,65,177,70,143,70"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Pure virtual function to get the value of the system." alt="" coords="361,5,497,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,52,369,32,370,37,299,57"/>
+<area shape="rect" id="Node000004" href="$classHandle.html#a6a72028918adf79c0ff8d9996e5e4107" title="constructor" alt="" coords="368,55,491,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="313,65,354,65,354,70,313,70"/>
+<area shape="rect" id="Node000005" href="$classSystem.html#a95e6d4c1ce05b47b5fa743fd2401dd03" title="Pure virtual function to set the value of the system." alt="" coords="362,104,497,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="299,77,370,98,369,103,298,83"/>
+</map>

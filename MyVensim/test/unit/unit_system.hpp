@@ -1,10 +1,6 @@
 #ifndef UNIT_SYSTEM_HPP
 #define UNIT_SYSTEM_HPP
 
-#include <assert.h>
-#include <cmath>
-#include "../../src/SystemImpl.hpp"
-
 /**
  * @brief Unit test for the default constructor of the System class.
  */
